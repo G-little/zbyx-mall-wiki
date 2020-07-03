@@ -1,0 +1,5 @@
+site_name: Mall Docs
+nav:
+  - Home: 'index.md'
+  - User: 
+    - Main: './user/user.md'
