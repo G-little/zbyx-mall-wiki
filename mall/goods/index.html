@@ -148,6 +148,22 @@
 <li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#11">1.1 商品详情信息</a><ul>
+<li><a href="#_12">接口说明</a></li>
+<li><a href="#_13">请求说明</a></li>
+<li><a href="#_14">输入参数</a></li>
+<li><a href="#_15">错误说明</a></li>
+<li><a href="#_16">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#12">1.2 相关商品推荐</a><ul>
+<li><a href="#_17">接口说明</a></li>
+<li><a href="#_18">请求说明</a></li>
+<li><a href="#_19">输入参数</a></li>
+<li><a href="#_20">错误说明</a></li>
+<li><a href="#_21">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -312,6 +328,287 @@
         &quot;previousPage&quot;: 1,
         &quot;totalPages&quot;: 1,
         &quot;empty&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="11">1.1 商品详情信息</h4>
+<h5 id="_12">接口说明</h5>
+<p>根据产品ID获取产品详细信息</p>
+<h5 id="_13">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/goods/detail</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">错误说明</h5>
+<h5 id="_16">返回实例</h5>
+<pre><code class="json">
+   {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;info&quot;: {
+            &quot;id&quot;: 1057036, //产品ID
+            &quot;goodsSn&quot;: &quot;1057036&quot;, //产品SN
+            &quot;name&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //品名
+            &quot;categoryId&quot;: 1008002, //品类
+            &quot;brandId&quot;: 1001000, //商标
+            &quot;gallery&quot;: [   //商品图片
+                &quot;http://yanxuan.nosdn.127.net/bec107bf0cc86dcf90fa084584d68c76.jpg&quot;
+            ],
+            &quot;keywords&quot;: &quot;&quot;, //关键词
+            &quot;brief&quot;: &quot;水洗亚麻，透气亲肤&quot;, //简介
+            &quot;isOnSale&quot;: true, //是否在售
+            &quot;sortOrder&quot;: 6, //排序
+            &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;,  //缩略图
+            &quot;shareUrl&quot;: &quot;&quot;,
+            &quot;isNew&quot;: false,  //是否新品
+            &quot;isHot&quot;: false, //是否热门
+            &quot;unit&quot;: &quot;件&quot;, //单位
+            &quot;counterPrice&quot;: 99.00, //专柜价
+            &quot;retailPrice&quot;: 79.00, //销售价
+            &quot;vipPrice&quot;: 100000.00, //vip价格
+            &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;, //添加时间
+            &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;, //更新时间
+            &quot;deleted&quot;: false,
+            &quot;detail&quot;: &quot;&quot;, //富文本商品信息
+            &quot;tags&quot;: [],  //标签
+            &quot;videos&quot;: [],
+            &quot;testReports&quot;: []  //测试报告
+        },
+        &quot;userHasCollect&quot;: 0,  //是否已收藏
+        &quot;issue&quot;: {  //常见问题
+            &quot;total&quot;: 0,
+            &quot;list&quot;: [
+                {
+                    &quot;id&quot;: 1,
+                    &quot;question&quot;: &quot;购买运费如何收取？&quot;,
+                    &quot;answer&quot;: &quot;单笔订单金额（不含运费）满88元免邮费；不满88元，每单收取10元运费。\n(港澳台地区需满&quot;,
+                    &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;deleted&quot;: false
+                },
+                {
+                    &quot;id&quot;: 2,
+                    &quot;question&quot;: &quot;使用什么快递发货？&quot;,
+                    &quot;answer&quot;: &quot;严选默认使用顺丰快递发货（个别商品使用其他快递），配送范围覆盖全国大部分地区（港澳台地区除&quot;,
+                    &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;deleted&quot;: false
+                },
+                {
+                    &quot;id&quot;: 3,
+                    &quot;question&quot;: &quot;如何申请退货？&quot;,
+                    &quot;answer&quot;: &quot;1.自收到商品之日起30日内，顾客可申请无忧退货，退款将原路返还，不同的银行处理时间不同，&quot;,
+                    &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;deleted&quot;: false
+                },
+                {
+                    &quot;id&quot;: 4,
+                    &quot;question&quot;: &quot;如何开具发票？&quot;,
+                    &quot;answer&quot;: &quot;1.如需开具普通发票，请在下单时选择“我要开发票”并填写相关信息（APP仅限2.4.0及以&quot;,
+                    &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                    &quot;deleted&quot;: false
+                }
+            ],
+            &quot;pageNum&quot;: 0,
+            &quot;pageSize&quot;: 0,
+            &quot;size&quot;: 0,
+            &quot;startRow&quot;: 0,
+            &quot;endRow&quot;: 0,
+            &quot;pages&quot;: 0,
+            &quot;prePage&quot;: 0,
+            &quot;nextPage&quot;: 0,
+            &quot;isFirstPage&quot;: false,
+            &quot;isLastPage&quot;: false,
+            &quot;hasPreviousPage&quot;: false,
+            &quot;hasNextPage&quot;: false,
+            &quot;navigatePages&quot;: 0,
+            &quot;navigatepageNums&quot;: null,
+            &quot;navigateFirstPage&quot;: 0,
+            &quot;navigateLastPage&quot;: 0
+        },
+        &quot;comment&quot;: {  // 评论
+            &quot;count&quot;: 0, // 总数
+            &quot;data&quot;: [] // 评论数据
+        },
+        &quot;specificationList&quot;: [  //商品规格列表
+            {
+                &quot;name&quot;: &quot;规格&quot;,  //规格名
+                &quot;valueList&quot;: [  //规格值
+                    {
+                        &quot;id&quot;: 70,  //规格ID
+                        &quot;goodsId&quot;: 1057036, //产品ID
+                        &quot;specification&quot;: &quot;规格&quot;, //规格名
+                        &quot;value&quot;: &quot;标准&quot;,  //规格值
+                        &quot;picUrl&quot;: &quot;&quot;, //规格图片
+                        &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;, //添加时间
+                        &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;, //更新时间
+                        &quot;deleted&quot;: false //删除
+                    }
+                ]
+            }
+        ],
+        &quot;productList&quot;: [  //产品列表
+            {
+                &quot;id&quot;: 71,  //商品ID
+                &quot;goodsId&quot;: 1057036, // 产品ID
+                &quot;specifications&quot;: [  //规格列表
+                    &quot;标准&quot;
+                ],
+                &quot;price&quot;: 79.00,  //价格
+                &quot;number&quot;: 96, //剩余总数
+                &quot;url&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;,  //规格图片
+                &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;, //添加时间
+                &quot;updateTime&quot;: &quot;2020-06-20 17:31:29&quot;, //更新时间
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;attribute&quot;: [   //产品属性
+            {
+                &quot;id&quot;: 259,  //属性ID
+                &quot;goodsId&quot;: 1057036, //产品ID
+                &quot;attribute&quot;: &quot;尺寸&quot;, //属性名
+                &quot;value&quot;: &quot;45*45cm&quot;,//属性值
+                &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;,  //添加时间
+                &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot; //更新时间
+                &quot;deleted&quot;: false
+            },
+            {
+                &quot;id&quot;: 260,
+                &quot;goodsId&quot;: 1057036,
+                &quot;attribute&quot;: &quot;颜色&quot;,
+                &quot;value&quot;: &quot;灰紫/ 蓝色/ 灰色/ 咖色&quot;,
+                &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;brand&quot;: {  //品牌信息
+            &quot;id&quot;: 1001000, //品牌ID
+            &quot;name&quot;: &quot;MUJI制造商&quot;, //品牌名称
+            &quot;desc&quot;: &quot;严选精选了MUJI制造商和生产原料，\n用几乎零利润的价格，剔除品牌溢价，\n让用户享受原品牌的品质生活。&quot;, //品牌描述
+            &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/1541445967645114dd75f6b0edc4762d.png&quot;,  //图片信息
+            &quot;sortOrder&quot;: 2, //排序
+            &quot;floorPrice&quot;: 12.90, //商品低价
+            &quot;addTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+            &quot;updateTime&quot;: &quot;2018-02-01 00:00:00&quot;,
+            &quot;deleted&quot;: false
+        },
+        &quot;groupon&quot;: [],
+        &quot;share&quot;: false,
+        &quot;shareImage&quot;: &quot;&quot; //分享图
+    }
+}
+
+</code></pre>
+
+<h4 id="12">1.2 相关商品推荐</h4>
+<h5 id="_17">接口说明</h5>
+<p>相关商品推荐</p>
+<h5 id="_18">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/goods/related</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_19">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_20">错误说明</h5>
+<h5 id="_21">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 6,
+        &quot;total&quot;: 6,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1057036, //产品ID
+                &quot;name&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //产品名称
+                &quot;tags&quot;: null, //产品标签
+                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;, //产品Url
+                &quot;unit&quot;: &quot;件&quot;, //单位
+                &quot;counterPrice&quot;: 99.00, //专柜价格
+                &quot;retailPrice&quot;: 79.00, //销售价格
+                &quot;vipPrice&quot;: 100000.00, //vip 价格
+                &quot;brief&quot;: &quot;水洗亚麻，透气亲肤&quot; //运营简介
+            }
+        ],
+        &quot;unit&quot;: &quot;条&quot;,
+        &quot;extInfo&quot;: null,
+        &quot;empty&quot;: false,
+        &quot;endIndex&quot;: 6,
+        &quot;startIndex&quot;: 0,
+        &quot;firstPage&quot;: true,
+        &quot;lastPage&quot;: true,
+        &quot;nextPage&quot;: 1,
+        &quot;previousPage&quot;: 1,
+        &quot;totalPages&quot;: 1
     }
 }
 
