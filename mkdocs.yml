@@ -3,3 +3,7 @@ nav:
   - Home: 'index.md'
   - User: 
     - Main: './user/user.md'
+  - Mall: 
+    - 首页: './mall/index.md'    
+    - 优惠券: './mall/coupon.md'    
+    - 产品: './mall/goods.md'    
