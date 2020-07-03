@@ -7,3 +7,4 @@ nav:
     - 首页: './mall/index.md'    
     - 优惠券: './mall/coupon.md'    
     - 产品: './mall/goods.md'    
+    - 搜索: './mall/search.md'    
