@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>搜索相关接口 - Mall Docs</title>
+        <title>搜索 - Mall Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -60,6 +60,10 @@
 <li>
     <a href="../goods/" class="dropdown-item">产品</a>
 </li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">搜索</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -70,6 +74,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../goods/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -126,12 +140,20 @@
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#11">1.1 搜索主页</a><ul>
+<li><a href="#10">1.0 搜索主页</a><ul>
 <li><a href="#_7">接口说明</a></li>
 <li><a href="#_8">请求说明</a></li>
 <li><a href="#_9">输入参数</a></li>
 <li><a href="#_10">错误说明</a></li>
 <li><a href="#_11">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#11">1.1 清空搜索历史</a><ul>
+<li><a href="#_12">接口说明</a></li>
+<li><a href="#_13">请求说明</a></li>
+<li><a href="#_14">输入参数</a></li>
+<li><a href="#_15">错误说明</a></li>
+<li><a href="#_16">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -170,7 +192,7 @@
 <h2 id="_4">产品说明</h2>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
-<h4 id="11">1.1 搜索主页</h4>
+<h4 id="10">1.0 搜索主页</h4>
 <h5 id="_7">接口说明</h5>
 <p>获取搜索主页信息</p>
 <h5 id="_8">请求说明</h5>
@@ -212,6 +234,39 @@
                 &quot;from&quot;: null
             }
         ]
+    }
+}
+
+</code></pre>
+
+<h4 id="11">1.1 清空搜索历史</h4>
+<h5 id="_12">接口说明</h5>
+<p>清空搜索历史记录</p>
+<h5 id="_13">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/search/clearhistory</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">输入参数</h5>
+<p>无</p>
+<h5 id="_15">错误说明</h5>
+<h5 id="_16">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
