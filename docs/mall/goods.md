@@ -301,6 +301,20 @@
                 "deleted": false
             }
         ],
+        "keyIndicators": [  //关键指标
+            {
+                "id": 1,
+                "goodsId": 1057036,
+                "name": "无机砷",  //检测箱
+                "unit": "mg/kg", //单位
+                "value": "无", //值
+                "deleted": false, //删除状态
+                "limited": "0.05", //限定值
+                "addTime": null, //添加时间 
+                "updateTime": null //更新时间
+            }
+        ],
+        
         "brand": {  //品牌信息
             "id": 1001000, //品牌ID
             "name": "MUJI制造商", //品牌名称
