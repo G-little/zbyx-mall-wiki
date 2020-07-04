@@ -64,6 +64,14 @@
 <li>
     <a href="../search/" class="dropdown-item">搜索</a>
 </li>
+                                    
+<li>
+    <a href="../cart/" class="dropdown-item">购物车</a>
+</li>
+                                    
+<li>
+    <a href="../address/" class="dropdown-item">地址</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -154,6 +162,14 @@
 <li><a href="#_14">输入参数</a></li>
 <li><a href="#_15">错误说明</a></li>
 <li><a href="#_16">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#12">1.2 相关商品推荐</a><ul>
+<li><a href="#_17">接口说明</a></li>
+<li><a href="#_18">请求说明</a></li>
+<li><a href="#_19">输入参数</a></li>
+<li><a href="#_20">错误说明</a></li>
+<li><a href="#_21">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -524,6 +540,83 @@
         &quot;groupon&quot;: [],
         &quot;share&quot;: false,
         &quot;shareImage&quot;: &quot;&quot; //分享图
+    }
+}
+
+</code></pre>
+
+<h4 id="12">1.2 相关商品推荐</h4>
+<h5 id="_17">接口说明</h5>
+<p>相关商品推荐</p>
+<h5 id="_18">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/goods/related</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_19">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_20">错误说明</h5>
+<h5 id="_21">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 6,
+        &quot;total&quot;: 6,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1057036, //产品ID
+                &quot;name&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //产品名称
+                &quot;tags&quot;: null, //产品标签
+                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;, //产品Url
+                &quot;unit&quot;: &quot;件&quot;, //单位
+                &quot;counterPrice&quot;: 99.00, //专柜价格
+                &quot;retailPrice&quot;: 79.00, //销售价格
+                &quot;vipPrice&quot;: 100000.00, //vip 价格
+                &quot;brief&quot;: &quot;水洗亚麻，透气亲肤&quot; //运营简介
+            }
+        ],
+        &quot;unit&quot;: &quot;条&quot;,
+        &quot;extInfo&quot;: null,
+        &quot;empty&quot;: false,
+        &quot;endIndex&quot;: 6,
+        &quot;startIndex&quot;: 0,
+        &quot;firstPage&quot;: true,
+        &quot;lastPage&quot;: true,
+        &quot;nextPage&quot;: 1,
+        &quot;previousPage&quot;: 1,
+        &quot;totalPages&quot;: 1
     }
 }
 

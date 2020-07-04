@@ -8,3 +8,5 @@ nav:
     - 优惠券: './mall/coupon.md'    
     - 产品: './mall/goods.md'    
     - 搜索: './mall/search.md'    
+    - 购物车: './mall/cart.md'
+    - 地址: './mall/address.md'    
