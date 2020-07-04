@@ -68,6 +68,10 @@
 <li>
     <a href="./" class="dropdown-item active">购物车</a>
 </li>
+                                    
+<li>
+    <a href="../address/" class="dropdown-item">地址</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -84,7 +88,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../address/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -206,6 +210,14 @@
 <li><a href="#_44">输入参数</a></li>
 <li><a href="#_45">错误说明</a></li>
 <li><a href="#_46">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#16">1.6 购物车结算</a><ul>
+<li><a href="#_47">接口说明</a></li>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">错误说明</a></li>
+<li><a href="#_51">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -747,6 +759,133 @@
         }
     }
 }
+</code></pre>
+
+<h4 id="16">1.6 购物车结算</h4>
+<h5 id="_47">接口说明</h5>
+<p>结算购物车商品</p>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/cart/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">cartId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">购物车ID</td>
+<td align="left">如果购物车商品ID是空，则下单当前用户所有购物车商品； 如果购物车商品ID非空，则只下单当前购物车商品。</td>
+</tr>
+<tr>
+<td align="left">addressId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">收货地址ID</td>
+<td align="left">如果收货地址ID是空，则查询当前用户的默认地址。</td>
+</tr>
+<tr>
+<td align="left">couponId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">优惠券ID</td>
+<td align="left">如果优惠券ID是空，则自动选择合适的优惠券。</td>
+</tr>
+<tr>
+<td align="left">userCouponId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户选择的优惠券ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">grouponRulesId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">团购规则ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">错误说明</h5>
+<h5 id="_51">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;addressId&quot;: 3,   //地址ID
+        &quot;couponId&quot;: 2, //优惠券ID
+        &quot;userCouponId&quot;: 5, //用户优惠券ID
+        &quot;cartId&quot;: 0, // 购物车ID
+        &quot;grouponRulesId&quot;: 0, //团购规则
+        &quot;grouponPrice&quot;: 0, //团购价
+        &quot;checkedAddress&quot;: {   //地址的选择
+            &quot;id&quot;: 3,  //地址ID
+            &quot;name&quot;: &quot;我&quot;, //地址名称
+            &quot;userId&quot;: 11445, //用户ID
+            &quot;province&quot;: &quot;北京市&quot;, //省
+            &quot;city&quot;: &quot;市辖区&quot;, //市
+            &quot;county&quot;: &quot;朝阳区&quot;, //朝阳
+            &quot;addressDetail&quot;: &quot;211&quot;, //地址详情
+            &quot;areaCode&quot;: &quot;110105&quot;, //地址编码
+            &quot;postalCode&quot;: null, //邮政编码
+            &quot;tel&quot;: &quot;15201008961&quot;, //手机号
+            &quot;isDefault&quot;: true, //是否默认
+            &quot;addTime&quot;: &quot;2020-06-29 14:46:15&quot;, //创建时间
+            &quot;updateTime&quot;: &quot;2020-06-29 14:46:15&quot;, //更新时间
+            &quot;deleted&quot;: false //是否已删除
+        },
+        &quot;availableCouponLength&quot;: 2, //可用优惠券数量
+        &quot;goodsTotalPrice&quot;: 237.00, //产品总价格
+        &quot;freightPrice&quot;: 0,  //运费
+        &quot;couponPrice&quot;: 10.00, //优惠金额
+        &quot;orderTotalPrice&quot;: 227.00, //订单总金额
+        &quot;actualPrice&quot;: 227.00, //实付金额 
+        &quot;checkedGoodsList&quot;: [  //结算商品列表
+            {
+                &quot;id&quot;: 10,  //ID
+                &quot;userId&quot;: 11445, //用户ID
+                &quot;goodsId&quot;: 1057036, //产品ID
+                &quot;goodsSn&quot;: &quot;1057036&quot;, //产品SN
+                &quot;goodsName&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //产品名称
+                &quot;productId&quot;: 71, //商品ID
+                &quot;price&quot;: 79.00, //商品价格
+                &quot;number&quot;: 3, //商品数量
+                &quot;specifications&quot;: [  //规格
+                    &quot;标准&quot;
+                ],
+                &quot;checked&quot;: true, //是否选中
+                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;, //缩略图
+                &quot;addTime&quot;: &quot;2020-07-03 23:11:14&quot;, //添加时间
+                &quot;updateTime&quot;: &quot;2020-07-03 23:35:09&quot;, //更新时间
+                &quot;deleted&quot;: false //是否已删除
+            }
+        ]
+    }
+}
+
 </code></pre></div>
             </div>
         </div>
