@@ -73,7 +73,15 @@
                 "counterPrice": 919.00,  //专柜价
                 "retailPrice": 899.00, //零售价
                 "vipPrice": 100000.00, //会员价
-                "brief": "设计师原款，精致绣花" //简介
+                "brief": "设计师原款，精致绣花", //简介
+                "gallery":["http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png"], //图片
+                "videos":[
+                        {
+                            "url":"/xxxx",
+                            "cover":"cover",
+                            "size":"x*y"
+                        }
+                    ]
             }
         ],
         "unit": "条",
@@ -358,7 +366,15 @@
                 "counterPrice": 99.00, //专柜价格
                 "retailPrice": 79.00, //销售价格
                 "vipPrice": 100000.00, //vip 价格
-                "brief": "水洗亚麻，透气亲肤" //运营简介
+                "brief": "水洗亚麻，透气亲肤", //运营简介
+                       "gallery":["http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png"], //图片
+                "videos":[
+                        {
+                            "url":"/xxxx",
+                            "cover":"cover",
+                            "size":"x*y"
+                        }
+                    ]
             }
         ],
         "unit": "条",

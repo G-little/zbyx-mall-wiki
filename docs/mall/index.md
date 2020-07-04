@@ -112,6 +112,14 @@
                     "retailPrice": 899.00, //销售价
                     "vipPrice": null, //会员价
                     "brief": null  //运营描述
+                    "gallery":["http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png"], //图片
+                    "videos":[
+                        {
+                            "url":"/xxxx",
+                            "cover":"cover",
+                            "size":"x*y"
+                        }
+                    ]
                 }
                 
             ],
@@ -176,7 +184,15 @@
                 "counterPrice": 919.00,  //专柜价
                 "retailPrice": 899.00, //零售价
                 "vipPrice": 100000.00, //会员价
-                "brief": "设计师原款，精致绣花" //简介
+                "brief": "设计师原款，精致绣花", //简介
+                "gallery":["http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png"], //图片
+                "videos":[
+                        {
+                            "url":"/xxxx",
+                            "cover":"cover",
+                            "size":"x*y"
+                        }
+                    ]
             }
         ],
         "unit": "条",
