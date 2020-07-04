@@ -123,6 +123,37 @@
     "c": 0,
     "m": null,
     "d": {
+        "defaultAddress": {  //默认收货地址
+            "id": 3,
+            "name": "我",
+            "userId": 11445,
+            "province": "北京市",
+            "city": "市辖区",
+            "county": "朝阳区",
+            "addressDetail": "211",
+            "areaCode": "110105",
+            "postalCode": null,
+            "tel": "15201008961",
+            "isDefault": true,
+            "addTime": "2020-06-29 14:46:15",
+            "updateTime": "2020-06-29 14:46:15",
+            "deleted": false
+        },
+        "couponList": [ //可用优惠券列表
+            {
+                "id": 2,
+                "cid": null,
+                "name": "限时满减券",
+                "desc": "全场通用",
+                "tag": "无限制",
+                "min": 99.00,
+                "discount": 10.00,
+                "startTime": null,
+                "endTime": null,
+                "available": false,
+                "reducedMoney": 10.00
+            }
+        ]
         "info": {
             "id": 1057036, //产品ID
             "goodsSn": "1057036", //产品SN
