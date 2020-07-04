@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>购物车相关接口 - Mall Docs</title>
+        <title>购物车 - Mall Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -64,6 +64,10 @@
 <li>
     <a href="../search/" class="dropdown-item">搜索</a>
 </li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">购物车</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -74,6 +78,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../search/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -184,6 +198,14 @@
 <li><a href="#_39">输入参数</a></li>
 <li><a href="#_40">错误说明</a></li>
 <li><a href="#_41">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#15">1.5 删除购物车商品</a><ul>
+<li><a href="#_42">接口说明</a></li>
+<li><a href="#_43">请求说明</a></li>
+<li><a href="#_44">输入参数</a></li>
+<li><a href="#_45">错误说明</a></li>
+<li><a href="#_46">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -568,7 +590,32 @@
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
-    &quot;d&quot;: 1  //购物车ID
+    &quot;d&quot;: {
+        &quot;cartList&quot;: [  //购物车列表
+            {
+                &quot;id&quot;: 11,  //购物车项ID
+                &quot;goodsId&quot;: 1057036, //产品ID
+                &quot;goodsSn&quot;: &quot;1057036&quot;, //产品SN
+                &quot;goodsName&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //产品名称
+                &quot;productId&quot;: 71, //商品ID
+                &quot;price&quot;: 79.00, //总价格
+                &quot;number&quot;: 3, //数量
+                &quot;specifications&quot;: [  //规格
+                    &quot;标准&quot;
+                ],
+                &quot;checked&quot;: true, //是否选中
+                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;,  //展示图
+                &quot;addTime&quot;: &quot;2020-07-04 09:29:23&quot;, //添加时间
+                &quot;updateTime&quot;: &quot;2020-07-04 09:29:23&quot; //更新时间
+            }
+        ],
+        &quot;cartTotal&quot;: {   //统计信息
+            &quot;goodsCount&quot;: 3, //商品数量
+            &quot;goodsAmount&quot;: 237.00, //总价格
+            &quot;checkedGoodsCount&quot;: 3, //选中商品总数量
+            &quot;checkedGoodsAmount&quot;: 237.00 //选中商品总价格
+        }
+    }
 }
 
 </code></pre>
@@ -599,9 +646,107 @@
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
-    &quot;d&quot;: 1  //购物车ID
+    &quot;d&quot;: {
+        &quot;cartList&quot;: [  //购物车列表
+            {
+                &quot;id&quot;: 11,  //购物车项ID
+                &quot;goodsId&quot;: 1057036, //产品ID
+                &quot;goodsSn&quot;: &quot;1057036&quot;, //产品SN
+                &quot;goodsName&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //产品名称
+                &quot;productId&quot;: 71, //商品ID
+                &quot;price&quot;: 79.00, //总价格
+                &quot;number&quot;: 3, //数量
+                &quot;specifications&quot;: [  //规格
+                    &quot;标准&quot;
+                ],
+                &quot;checked&quot;: true, //是否选中
+                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;,  //展示图
+                &quot;addTime&quot;: &quot;2020-07-04 09:29:23&quot;, //添加时间
+                &quot;updateTime&quot;: &quot;2020-07-04 09:29:23&quot; //更新时间
+            }
+        ],
+        &quot;cartTotal&quot;: {   //统计信息
+            &quot;goodsCount&quot;: 3, //商品数量
+            &quot;goodsAmount&quot;: 237.00, //总价格
+            &quot;checkedGoodsCount&quot;: 3, //选中商品总数量
+            &quot;checkedGoodsAmount&quot;: 237.00 //选中商品总价格
+        }
+    }
 }
+</code></pre>
 
+<h4 id="15">1.5 删除购物车商品</h4>
+<h5 id="_42">接口说明</h5>
+<p>删除购物车商品</p>
+<h5 id="_43">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/cart/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">productIds</td>
+<td align="center">是</td>
+<td align="left">int[]</td>
+<td align="left">商品ID数组</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_45">错误说明</h5>
+<h5 id="_46">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;cartList&quot;: [  //购物车列表
+            {
+                &quot;id&quot;: 11,  //购物车项ID
+                &quot;goodsId&quot;: 1057036, //产品ID
+                &quot;goodsSn&quot;: &quot;1057036&quot;, //产品SN
+                &quot;goodsName&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //产品名称
+                &quot;productId&quot;: 71, //商品ID
+                &quot;price&quot;: 79.00, //总价格
+                &quot;number&quot;: 3, //数量
+                &quot;specifications&quot;: [  //规格
+                    &quot;标准&quot;
+                ],
+                &quot;checked&quot;: true, //是否选中
+                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;,  //展示图
+                &quot;addTime&quot;: &quot;2020-07-04 09:29:23&quot;, //添加时间
+                &quot;updateTime&quot;: &quot;2020-07-04 09:29:23&quot; //更新时间
+            }
+        ],
+        &quot;cartTotal&quot;: {   //统计信息
+            &quot;goodsCount&quot;: 3, //商品数量
+            &quot;goodsAmount&quot;: 237.00, //总价格
+            &quot;checkedGoodsCount&quot;: 3, //选中商品总数量
+            &quot;checkedGoodsAmount&quot;: 237.00 //选中商品总价格
+        }
+    }
+}
 </code></pre></div>
             </div>
         </div>
