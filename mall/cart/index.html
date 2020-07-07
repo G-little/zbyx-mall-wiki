@@ -76,6 +76,14 @@
 <li>
     <a href="../activity/" class="dropdown-item">活动</a>
 </li>
+                                    
+<li>
+    <a href="../order/" class="dropdown-item">订单</a>
+</li>
+                                    
+<li>
+    <a href="../my/" class="dropdown-item">个人中心</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -886,7 +894,24 @@
                 &quot;updateTime&quot;: &quot;2020-07-03 23:35:09&quot;, //更新时间
                 &quot;deleted&quot;: false //是否已删除
             }
-        ]
+        ],
+    &quot;payTypes&quot;: [  //支付方式列表
+            {
+                &quot;typeName&quot;: &quot;balance&quot;,
+                &quot;comment&quot;: &quot;余额支付&quot;,
+                &quot;thumbnail&quot;: null
+            },
+            {
+                &quot;typeName&quot;: &quot;ALIPAYCASH&quot;,
+                &quot;comment&quot;: &quot;支付宝支付&quot;,
+                &quot;thumbnail&quot;: null
+            },
+            {
+                &quot;typeName&quot;: &quot;WX_APP&quot;,
+                &quot;comment&quot;: &quot;微信支付&quot;,
+                &quot;thumbnail&quot;: null
+            }
+        ]   
     }
 }
 
