@@ -455,7 +455,24 @@
                 "updateTime": "2020-07-03 23:35:09", //更新时间
                 "deleted": false //是否已删除
             }
-        ]
+        ],
+    "payTypes": [  //支付方式列表
+            {
+                "typeName": "balance",
+                "comment": "余额支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "ALIPAYCASH",
+                "comment": "支付宝支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "WX_APP",
+                "comment": "微信支付",
+                "thumbnail": null
+            }
+        ]   
     }
 }
 

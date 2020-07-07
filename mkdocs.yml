@@ -10,4 +10,6 @@ nav:
     - 搜索: './mall/search.md'    
     - 购物车: './mall/cart.md'
     - 地址: './mall/address.md'    
-    - 活动: './mall/activity.md'    
+    - 活动: './mall/activity.md'
+    - 订单: './mall/order.md'    
+    - 个人中心: './mall/my.md'    
