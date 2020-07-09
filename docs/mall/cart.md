@@ -386,7 +386,7 @@
 
 | http 请求方式          | post     |
 |:------------- |:---------------:|
-| url      | /cart/delete |
+| url      | /cart/checkout |
 
 #####  输入参数
 
