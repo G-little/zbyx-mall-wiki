@@ -212,6 +212,22 @@
 <li><a href="#_40">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#17">1.7 微信小程序授权登录</a><ul>
+<li><a href="#_41">接口说明</a></li>
+<li><a href="#_42">请求说明</a></li>
+<li><a href="#_43">输入参数</a></li>
+<li><a href="#_44">错误说明</a></li>
+<li><a href="#_45">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#18">1.8 微信授权获取手机号</a><ul>
+<li><a href="#_46">接口说明</a></li>
+<li><a href="#_47">请求说明</a></li>
+<li><a href="#_48">输入参数</a></li>
+<li><a href="#_49">错误说明</a></li>
+<li><a href="#_50">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -721,6 +737,124 @@
         &quot;createTime&quot;: null,
         &quot;updateTime&quot;: null,
         &quot;pass&quot;: &quot;tTofWxX&quot; //解密密钥
+    }
+}
+
+</code></pre>
+
+<h4 id="17">1.7 微信小程序授权登录</h4>
+<h5 id="_41">接口说明</h5>
+<p>刷新登录token</p>
+<h5 id="_42">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/oauth2/get_mobile_weixin</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_43">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">encryptedData</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">微信授权返回数据</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">iv</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">微信授权返回数据</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">错误说明</h5>
+<h5 id="_45">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="18">1.8 微信授权获取手机号</h4>
+<h5 id="_46">接口说明</h5>
+<p>刷新登录token</p>
+<h5 id="_47">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/oauth2/get_mobile_weixin</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_48">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">encryptedData</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">微信授权返回数据</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">iv</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">微信授权返回数据</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">错误说明</h5>
+<h5 id="_50">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
