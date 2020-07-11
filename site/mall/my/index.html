@@ -160,7 +160,7 @@
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 提交订单</a><ul>
+<li><a href="#10">1.0 我的个人中心</a><ul>
 <li><a href="#_7">接口说明</a></li>
 <li><a href="#_8">请求说明</a></li>
 <li><a href="#_9">输入参数</a></li>
@@ -200,13 +200,13 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
-<p>订单相关接口</p>
+<p>个人中心相关接口</p>
 <h2 id="_4">产品说明</h2>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 提交订单</h4>
+<h4 id="10">1.0 我的个人中心</h4>
 <h5 id="_7">接口说明</h5>
-<p>首页每日优选，拉取更多</p>
+<p>我的个人中心页</p>
 <h5 id="_8">请求说明</h5>
 <table>
 <thead>
@@ -218,38 +218,12 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/day_selected/list</td>
+<td align="center">/home/u/index</td>
 </tr>
 </tbody>
 </table>
 <h5 id="_9">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">页码</td>
-<td align="left">默认值 1</td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">单页条数</td>
-<td align="left">默认值 10</td>
-</tr>
-</tbody>
-</table>
+<p>无</p>
 <h5 id="_10">错误说明</h5>
 <h5 id="_11">返回实例</h5>
 <pre><code class="json">
@@ -257,40 +231,33 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 1,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
+        &quot;user&quot;: {
+            &quot;nickname&quot;: null,  //昵称
+            &quot;avatar&quot;: &quot;/c/d/e&quot;, //头像
+            &quot;vip&quot;: false, //是否VIP
+            &quot;level&quot;: null, //vip 等级
+            &quot;startTime&quot;: null, //开始时间
+            &quot;endTime&quot;: null //截止时间
+        },
+        &quot;order&quot;: {  //订单信息
+            &quot;unpaid&quot;: 0,  //待支付
+            &quot;unship&quot;: 0, // 待发货
+            &quot;unrecv&quot;: 0, // 待收货
+            &quot;uncomment&quot;: 0 //待评论
+        },
+        &quot;banner&quot;: [  //广告
             {
-                &quot;id&quot;: 1006002,  //产品ID
-                &quot;name&quot;: &quot;轻奢纯棉刺绣水洗四件套&quot;, //名称
-                &quot;tags&quot;: null,  //标签
-                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png&quot;,
-                &quot;unit&quot;: &quot;件&quot;, //单位
-                &quot;counterPrice&quot;: 919.00,  //专柜价
-                &quot;retailPrice&quot;: 899.00, //零售价
-                &quot;vipPrice&quot;: 100000.00, //会员价
-                &quot;brief&quot;: &quot;设计师原款，精致绣花&quot;, //简介
-                &quot;gallery&quot;:[&quot;http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png&quot;], //图片
-                &quot;videos&quot;:[
-                        {
-                            &quot;url&quot;:&quot;/xxxx&quot;,
-                            &quot;cover&quot;:&quot;cover&quot;,
-                            &quot;size&quot;:&quot;x*y&quot;
-                        }
-                    ]
+                &quot;id&quot;: 8,
+                &quot;url&quot;: &quot;http://yanxuan.nosdn.127.net/8e50c65fda145e6dd1bf4fb7ee0fcecc.jpg&quot;,
+                &quot;link&quot;: &quot;&quot;,
+                &quot;content&quot;: &quot;活动 母亲节5&quot;
             }
         ],
-        &quot;unit&quot;: &quot;条&quot;,
-        &quot;extInfo&quot;: null,
-        &quot;endIndex&quot;: 10,
-        &quot;startIndex&quot;: 0,
-        &quot;firstPage&quot;: true,
-        &quot;lastPage&quot;: true,
-        &quot;nextPage&quot;: 1,
-        &quot;previousPage&quot;: 1,
-        &quot;totalPages&quot;: 1,
-        &quot;empty&quot;: false
+        &quot;wallet&quot;: {
+            &quot;couponCount&quot;: 0,  //优惠券数量
+            &quot;redEnvelopCount&quot;: 0, //红包数量
+            &quot;giftCardCount&quot;: 0 //礼品卡数量
+        }
     }
 }
 
