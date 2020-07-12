@@ -336,7 +336,7 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
             "logisticCode": "1234561", //快递号
             "shipperCode": "ZTO", //编码
             "traces": [],   //轨迹
-            "ebusinessID": "1638638",  //厂商
+            "ebusinessID": "1638638",  //厂商b
             "shipperName": "中通快递",  //快递名称
             "LogisticCode": "1234561",
             "ShipperCode": "ZTO",
