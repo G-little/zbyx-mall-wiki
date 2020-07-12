@@ -67,10 +67,13 @@
         },
         "banner": [  //广告
             {
-                "id": 8,
-                "url": "http://yanxuan.nosdn.127.net/8e50c65fda145e6dd1bf4fb7ee0fcecc.jpg",
-                "link": "",
-                "content": "活动 母亲节5"
+                "id": 2, //id
+                "url": "http://yanxuan.nosdn.127.net/bff2e49136fcef1fd829f5036e07f116.jpg", //图片
+                "link": "", //跳转
+                "content": "活动 美食节", // 描述
+                "type": 1, //跳转类型 0 h5（取link跳转）  1 产品  2 活动
+                "idValue": 1110016,  // 1: 对应产品ID  2: 对应活动ID
+                "extParams": null  //附加自定义参数 json 格式 
             }
         ],
         "wallet": {
