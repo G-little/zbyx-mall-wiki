@@ -329,7 +329,23 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
                 "deleted": false //是否已删除
             }
         ],
-        "expressInfo": null  //物流信息
+        "expressInfo": {   //物流信息
+            "state": "0",
+            "success": true,
+            "reason": "暂无轨迹信息",  //原因
+            "logisticCode": "1234561", //快递号
+            "shipperCode": "ZTO", //编码
+            "traces": [],   //轨迹
+            "ebusinessID": "1638638",  //厂商
+            "shipperName": "中通快递",  //快递名称
+            "LogisticCode": "1234561",
+            "ShipperCode": "ZTO",
+            "Traces": [],
+            "State": "0",
+            "EBusinessID": "1638638",
+            "Success": true,
+            "Reason": "暂无轨迹信息"
+        }
     }
 }
 
