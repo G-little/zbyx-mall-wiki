@@ -286,6 +286,7 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
             "orderSn": "20200711391009", //订单sN
             "message": "", //留言
             "addTime": "2020-07-11 18:48:01", //添加时间
+            "payTime": "2020-07-11 18:48:01", //支付时间
             "consignee": "string", //收货人
             "mobile": "15201008961", //手机号
             "address": "stringstringstring string",  //收货地址
