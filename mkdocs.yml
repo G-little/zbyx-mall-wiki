@@ -16,4 +16,6 @@
       - 收藏: './mall/collect.md'  
     - 管理后台: 
       - 用户: './admin/user.md'    
+      - 商品: './admin/goods.md'    
+      - 推广: './admin/ad.md'    
       
