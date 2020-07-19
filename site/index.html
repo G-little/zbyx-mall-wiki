@@ -145,14 +145,6 @@
             
             <li class="nav-item" data-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -161,19 +153,59 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<h4 id="_1">上传接口</h4>
+<h5 id="_2">接口说明</h5>
+<p>首页每日优选，拉取更多</p>
+<h5 id="_3">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/storage/upload</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_4">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">file</td>
+<td align="center">否</td>
+<td align="left">file</td>
+<td align="left">文件</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_5">错误说明</h5>
+<h5 id="_6">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;:1,
+        &quot;key&quot;:1,
+        &quot;name&quot;:&quot;xxx&quot;,
+        &quot;url&quot;:&quot;http://xxxx.jpg&quot;, //下载地址
+
+    }
+
 </code></pre></div>
             </div>
         </div>
@@ -258,5 +290,5 @@ docs/
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-07-19 11:59:05.448931+00:00
+Build Date UTC : 2020-07-19 14:18:52.179873+00:00
 -->

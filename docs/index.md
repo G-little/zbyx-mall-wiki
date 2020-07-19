@@ -1,17 +1,45 @@
 # Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+#### 上传接口
 
-## Commands
+##### 接口说明
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+首页每日优选，拉取更多
 
-## Project layout
+##### 请求说明
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.        
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /storage/upload |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| file      | 否|  file  |  文件  | |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+    {
+    "c": 0,
+    "m": null,
+    "d": {
+        "id":1,
+        "key":1,
+        "name":"xxx",
+        "url":"http://xxxx.jpg", //下载地址
+        
+    }
+
+```
+
+
+
+
