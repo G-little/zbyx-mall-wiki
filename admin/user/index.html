@@ -181,6 +181,14 @@
 <li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#11">1.1 会员管理</a><ul>
+<li><a href="#_12">接口说明</a></li>
+<li><a href="#_13">请求说明</a></li>
+<li><a href="#_14">输入参数</a></li>
+<li><a href="#_15">错误说明</a></li>
+<li><a href="#_16">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -316,7 +324,119 @@
         &quot;startIndex&quot;: 0
     }
 }  
-</code></pre></div>
+</code></pre>
+
+<h4 id="11">1.1 会员管理</h4>
+<h5 id="_12">接口说明</h5>
+<p>管理中心用户列表</p>
+<h5 id="_13">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/user/vip_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">name</td>
+<td align="center">否</td>
+<td align="left">strring</td>
+<td align="left">用户名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">uid</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">mobile</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">vipStatus</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">会员状态</td>
+<td align="left">0 全部 1 vip 2 已过期</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left">默认1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">限制单页条数</td>
+<td align="left">默认10</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">错误说明</h5>
+<h5 id="_16">返回实例</h5>
+<pre><code class="json">    ```json
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;uid&quot;: 11452,
+                &quot;avatar&quot;: &quot;https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erWxMXolPylQhpDXp2ian7PBuoDRWGINpdHib4KRB1aQiahicibznMcyj7atEIw9HM98dTQW19xKAWicFog/132&quot;,
+                &quot;name&quot;: &quot;狂奔的蜗牛&quot;,
+                &quot;gender&quot;: 1,    //性别 1:男  2:女  0:保密
+                &quot;birthday&quot;: null,
+                &quot;status&quot;: 0,
+                &quot;mobile&quot;: null,
+                &quot;createTime&quot;: 1595066012848,
+                &quot;updateTime&quot;: null,
+                &quot;vipStartTime&quot;: null,
+                &quot;vipEndTime&quot;: null,
+                &quot;userSource&quot;: null, //用户来源 APP:  应用  MINI: 小程序
+                &quot;level&quot;: null, //会员等级
+                &quot;vipTotalDays&quot;: null, //会员累计天数
+                &quot;vip&quot;: false, //是否vip
+                &quot;buyTimes&quot;: 5 // 会员累计购买次数
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0
+    }
+}  
+</code></pre>
+
+<p>```</p></div>
             </div>
         </div>
 
