@@ -296,12 +296,14 @@
                 "goodsSn": "1057036", //产品SN
                 "goodsName": "日式纯色水洗亚麻抱枕", //产品名称
                 "productId": 71, //商品ID
-                "price": 79.00, //总价格
+                "price": 79.00, //货品单价
+                "vipPrice": 79.00, //会员价
                 "number": 3, //数量
                 "specifications": [  //规格
                     "标准"
                 ],
                 "checked": true, //是否选中
+                "tags":[], //标签
                 "picUrl": "http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png",  //展示图
                 "addTime": "2020-07-04 09:29:23", //添加时间
                 "updateTime": "2020-07-04 09:29:23" //更新时间

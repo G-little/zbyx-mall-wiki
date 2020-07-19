@@ -13,4 +13,7 @@
       - 活动: './mall/activity.md'
       - 订单: './mall/order.md'    
       - 个人中心: './mall/my.md'  
-      - 收藏: './mall/collect.md'    
+      - 收藏: './mall/collect.md'  
+    - 管理后台: 
+      - 用户: './admin/user.md'    
+      
