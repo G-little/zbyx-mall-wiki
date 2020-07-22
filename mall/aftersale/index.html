@@ -193,7 +193,7 @@
 <li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#11_1">1.1 申请售后</a><ul>
+<li><a href="#12">1.2 申请售后</a><ul>
 <li><a href="#_12">接口说明</a></li>
 <li><a href="#_13">请求说明</a></li>
 <li><a href="#_14">输入参数</a></li>
@@ -201,7 +201,7 @@
 <li><a href="#_16">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#12">1.2 取消售后</a><ul>
+<li><a href="#12_1">1.2 取消售后</a><ul>
 <li><a href="#_17">接口说明</a></li>
 <li><a href="#_18">请求说明</a></li>
 <li><a href="#_19">输入参数</a></li>
@@ -281,7 +281,7 @@
 <td align="center">是</td>
 <td align="left">int</td>
 <td align="left">状态</td>
-<td align="left">如果是空则是全部 0是可申请，1是用户已申请，2是管理员审核通过，3是管理员退款成功，4是管理员审核拒绝，5是用户已取消</td>
+<td align="left">0是可申请，1处理中 2 历史记录</td>
 </tr>
 <tr>
 <td align="left">page</td>
@@ -310,42 +310,20 @@
         &quot;currentPage&quot;: 1,
         &quot;list&quot;: [
             {
-                &quot;aftersale&quot;: {  //售后列表
-                    &quot;id&quot;: 1, //售后ID
-                    &quot;aftersaleSn&quot;: &quot;20200720284331&quot;, //售后SN
-                    &quot;orderId&quot;: 98, // 订单ID
-                    &quot;userId&quot;: 11443, //用户ID
-                    &quot;type&quot;: 1, // 售后类型，0是未收货退款，1是已收货（无需退货）退款，2用户退货退款
-                    &quot;reason&quot;: &quot;xxxxxxx&quot;, //退款原因
-                    &quot;amount&quot;: 50.00, //退款金额
-                    &quot;pictures&quot;: [], //图片说明
-                    &quot;comment&quot;: &quot;&quot;, //描述
-                    &quot;status&quot;: 1, //状态 售后状态，0是可申请，1是用户已申请，2是管理员审核通过，3是管理员退款成功，4是管理员审核拒绝，5是用户已取消
-                    &quot;handleTime&quot;: null,  //处理时间
-                    &quot;addTime&quot;: &quot;2020-07-20 21:04:42&quot;, //添加时间
-                    &quot;updateTime&quot;: &quot;2020-07-20 21:04:42&quot;,
-                    &quot;deleted&quot;: false
-                },
-                &quot;goodsList&quot;: [  //产品信息
-                    {
-                        &quot;id&quot;: 112,
-                        &quot;orderId&quot;: 98,
-                        &quot;goodsId&quot;: 1110016,
-                        &quot;goodsName&quot;: &quot;天然硅胶宠物除毛按摩刷&quot;,
-                        &quot;goodsSn&quot;: &quot;1110016&quot;,
-                        &quot;productId&quot;: 150,
-                        &quot;number&quot;: 2,
-                        &quot;price&quot;: 39.00,
-                        &quot;specifications&quot;: [
-                            &quot;标准&quot;
-                        ],
-                        &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/3bd73b7279a83d1cbb50c0e45778e6d6.png&quot;,
-                        &quot;comment&quot;: 0,
-                        &quot;addTime&quot;: &quot;2020-07-20 20:21:50&quot;,
-                        &quot;updateTime&quot;: &quot;2020-07-20 20:21:50&quot;,
-                        &quot;deleted&quot;: false
-                    }
-                ]
+                &quot;id&quot;: 2,  //ID
+                &quot;orderId&quot;: 99, //订单ID
+                &quot;goodsId&quot;: 0, //订单产品ID
+                &quot;goodsName&quot;: null, //商品名称
+                &quot;picUrl&quot;: null, //商品图片
+                &quot;price&quot;: null, //商品售价
+                &quot;number&quot;: 0, //商品数量
+                &quot;type&quot;: null, // 退款类型 售后类型，0是未收货退款，1是已收货（无需退货）退款，2用户退货退款
+                &quot;aftersaleStatus&quot;: 2, //售后状态，0是可申请，1是用户已申请，2是管理员审核通过，3是管理员退款成功，4是管理员审核拒绝，5是用户已取消
+                &quot;handleOption&quot;: {  //处理项
+                    &quot;apply&quot;: false,  //申请
+                    &quot;hotline&quot;: false, //客服热线
+                    &quot;cancel&quot;: false  //取消
+                }
             }
         ],
         &quot;end&quot;: true,
@@ -356,7 +334,7 @@
 
 </code></pre>
 
-<h4 id="11_1">1.1 申请售后</h4>
+<h4 id="12">1.2 申请售后</h4>
 <h5 id="_12">接口说明</h5>
 <p>申请售后</p>
 <h5 id="_13">请求说明</h5>
@@ -387,18 +365,18 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">orderId</td>
+<td align="left">goodsId</td>
 <td align="center">是</td>
 <td align="left">int</td>
 <td align="left">状态</td>
-<td align="left">订单号</td>
+<td align="left">订单商品ID</td>
 </tr>
 <tr>
 <td align="left">type</td>
 <td align="center">是</td>
 <td align="left">int</td>
 <td align="left">类型</td>
-<td align="left">0是未收货退款，1是已收货（无需退货）退款，2用户退货退款</td>
+<td align="left">2用户退货退款  3:换货</td>
 </tr>
 <tr>
 <td align="left">reason</td>
@@ -440,7 +418,7 @@
 }   
 </code></pre>
 
-<h4 id="12">1.2 取消售后</h4>
+<h4 id="12_1">1.2 取消售后</h4>
 <h5 id="_17">接口说明</h5>
 <p>取消售后</p>
 <h5 id="_18">请求说明</h5>
