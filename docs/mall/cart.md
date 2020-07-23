@@ -148,6 +148,7 @@
 |  productId      | 是|  int  |  商品ID | |
 |  number      | 是|  int  |  产品数量 | |
 |  goodsId      | 是|  int  |  产品Id | |
+|  addressId      | 否|  int  |  地址ID | |
 
 
 #####  错误说明

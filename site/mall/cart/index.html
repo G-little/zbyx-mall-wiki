@@ -511,9 +511,74 @@
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
-    &quot;d&quot;: 1  //购物车ID
+    &quot;d&quot;: {
+        &quot;addressId&quot;: 3,   //地址ID
+        &quot;couponId&quot;: 2, //优惠券ID
+        &quot;userCouponId&quot;: 5, //用户优惠券ID
+        &quot;cartId&quot;: 0, // 购物车ID
+        &quot;grouponRulesId&quot;: 0, //团购规则
+        &quot;grouponPrice&quot;: 0, //团购价
+        &quot;checkedAddress&quot;: {   //地址的选择
+            &quot;id&quot;: 3,  //地址ID
+            &quot;name&quot;: &quot;我&quot;, //地址名称
+            &quot;userId&quot;: 11445, //用户ID
+            &quot;province&quot;: &quot;北京市&quot;, //省
+            &quot;city&quot;: &quot;市辖区&quot;, //市
+            &quot;county&quot;: &quot;朝阳区&quot;, //朝阳
+            &quot;addressDetail&quot;: &quot;211&quot;, //地址详情
+            &quot;areaCode&quot;: &quot;110105&quot;, //地址编码
+            &quot;postalCode&quot;: null, //邮政编码
+            &quot;tel&quot;: &quot;15201008961&quot;, //手机号
+            &quot;isDefault&quot;: true, //是否默认
+            &quot;addTime&quot;: &quot;2020-06-29 14:46:15&quot;, //创建时间
+            &quot;updateTime&quot;: &quot;2020-06-29 14:46:15&quot;, //更新时间
+            &quot;deleted&quot;: false //是否已删除
+        },
+        &quot;availableCouponLength&quot;: 2, //可用优惠券数量
+        &quot;goodsTotalPrice&quot;: 237.00, //产品总价格
+        &quot;freightPrice&quot;: 0,  //运费
+        &quot;couponPrice&quot;: 10.00, //优惠金额
+        &quot;orderTotalPrice&quot;: 227.00, //订单总金额
+        &quot;actualPrice&quot;: 227.00, //实付金额 
+        &quot;checkedGoodsList&quot;: [  //结算商品列表
+            {
+                &quot;id&quot;: 10,  //ID
+                &quot;userId&quot;: 11445, //用户ID
+                &quot;goodsId&quot;: 1057036, //产品ID
+                &quot;goodsSn&quot;: &quot;1057036&quot;, //产品SN
+                &quot;goodsName&quot;: &quot;日式纯色水洗亚麻抱枕&quot;, //产品名称
+                &quot;productId&quot;: 71, //商品ID
+                &quot;price&quot;: 79.00, //商品价格
+                &quot;number&quot;: 3, //商品数量
+                &quot;specifications&quot;: [  //规格
+                    &quot;标准&quot;
+                ],
+                &quot;checked&quot;: true, //是否选中
+                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png&quot;, //缩略图
+                &quot;addTime&quot;: &quot;2020-07-03 23:11:14&quot;, //添加时间
+                &quot;updateTime&quot;: &quot;2020-07-03 23:35:09&quot;, //更新时间
+                &quot;deleted&quot;: false //是否已删除
+            }
+        ],
+    &quot;payTypes&quot;: [  //支付方式列表
+            {
+                &quot;typeName&quot;: &quot;balance&quot;,
+                &quot;comment&quot;: &quot;余额支付&quot;,
+                &quot;thumbnail&quot;: null
+            },
+            {
+                &quot;typeName&quot;: &quot;ALIPAYCASH&quot;,
+                &quot;comment&quot;: &quot;支付宝支付&quot;,
+                &quot;thumbnail&quot;: null
+            },
+            {
+                &quot;typeName&quot;: &quot;WX_APP&quot;,
+                &quot;comment&quot;: &quot;微信支付&quot;,
+                &quot;thumbnail&quot;: null
+            }
+        ]   
+    }
 }
-
 </code></pre>
 
 <h4 id="13">1.3 更新购物车商品信息</h4>
