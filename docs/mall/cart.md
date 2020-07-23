@@ -159,9 +159,74 @@
 {
     "c": 0,
     "m": null,
-    "d": 1  //购物车ID
+    "d": {
+        "addressId": 3,   //地址ID
+        "couponId": 2, //优惠券ID
+        "userCouponId": 5, //用户优惠券ID
+        "cartId": 0, // 购物车ID
+        "grouponRulesId": 0, //团购规则
+        "grouponPrice": 0, //团购价
+        "checkedAddress": {   //地址的选择
+            "id": 3,  //地址ID
+            "name": "我", //地址名称
+            "userId": 11445, //用户ID
+            "province": "北京市", //省
+            "city": "市辖区", //市
+            "county": "朝阳区", //朝阳
+            "addressDetail": "211", //地址详情
+            "areaCode": "110105", //地址编码
+            "postalCode": null, //邮政编码
+            "tel": "15201008961", //手机号
+            "isDefault": true, //是否默认
+            "addTime": "2020-06-29 14:46:15", //创建时间
+            "updateTime": "2020-06-29 14:46:15", //更新时间
+            "deleted": false //是否已删除
+        },
+        "availableCouponLength": 2, //可用优惠券数量
+        "goodsTotalPrice": 237.00, //产品总价格
+        "freightPrice": 0,  //运费
+        "couponPrice": 10.00, //优惠金额
+        "orderTotalPrice": 227.00, //订单总金额
+        "actualPrice": 227.00, //实付金额 
+        "checkedGoodsList": [  //结算商品列表
+            {
+                "id": 10,  //ID
+                "userId": 11445, //用户ID
+                "goodsId": 1057036, //产品ID
+                "goodsSn": "1057036", //产品SN
+                "goodsName": "日式纯色水洗亚麻抱枕", //产品名称
+                "productId": 71, //商品ID
+                "price": 79.00, //商品价格
+                "number": 3, //商品数量
+                "specifications": [  //规格
+                    "标准"
+                ],
+                "checked": true, //是否选中
+                "picUrl": "http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png", //缩略图
+                "addTime": "2020-07-03 23:11:14", //添加时间
+                "updateTime": "2020-07-03 23:35:09", //更新时间
+                "deleted": false //是否已删除
+            }
+        ],
+    "payTypes": [  //支付方式列表
+            {
+                "typeName": "balance",
+                "comment": "余额支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "ALIPAYCASH",
+                "comment": "支付宝支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "WX_APP",
+                "comment": "微信支付",
+                "thumbnail": null
+            }
+        ]   
+    }
 }
-
 ```
 
 
