@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>VIP相关接口 - Mall Docs</title>
+        <title>会员 - Mall Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -92,6 +92,10 @@
 <li>
     <a href="../aftersale/" class="dropdown-item">售后</a>
 </li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">会员</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -119,6 +123,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../aftersale/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../admin/user/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -181,6 +195,14 @@
 <li><a href="#_8">输入参数</a></li>
 <li><a href="#_9">错误说明</a></li>
 <li><a href="#_10">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#10-vip_1">1.0 vip 支付</a><ul>
+<li><a href="#_11">接口说明</a></li>
+<li><a href="#_12">请求说明</a></li>
+<li><a href="#_13">输入参数</a></li>
+<li><a href="#_14">错误说明</a></li>
+<li><a href="#_15">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -291,6 +313,68 @@
         &quot;vip&quot;: false
     }
 }    
+</code></pre>
+
+<h4 id="10-vip_1">1.0 vip 支付</h4>
+<h5 id="_11">接口说明</h5>
+<p>vip 充值首页</p>
+<h5 id="_12">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/vip/pay</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_13">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">状态</td>
+<td align="left">购物车ID</td>
+</tr>
+<tr>
+<td align="left">payType</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">支付类型</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">错误说明</h5>
+<h5 id="_15">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;payOrderId&quot;: null,
+        &quot;outPayOrderId&quot;: null,
+        &quot;callPayInfo&quot;: &quot;alipay_sdk=alipay-sdk-java-dynamicVersionNo&amp;app_id=2019021963294014&amp;biz_content=%7B%22out_trade_no%22%3A%22PRE20072323512323809B64E7981256%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22subject%22%3A%22%E4%B8%AD%E6%A0%87%E4%BC%98%E9%80%89%22%2C%22timeout_express%22%3A%2230m%22%2C%22total_amount%22%3A%222.0%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2Fxiaogang.org.cn&amp;sign=MpclAkitGsMgourGcRVj6xvbHfb%2FyFH12FIXRYiPeQr6OXR2EUGAII5nHv9bTvQwk2QId%2BMDOuKeCGl3SBPZjXzb7aYTA%2BMW%2BCHwrG3YSdfsXLxbRMTPi659W0s%2FHiGJr2q%2FUKT8YTSFtNTVovc0LulMNXQ8IW4bIvyyjPypxntaHpNr6xRCkAx4JveliZQ1y5rknI8hS8nyd985ddHHxX%2F2v5m%2B1P3bRJFvkfmVku0GHtDtaz65nTDMQasisin39eJuo%2BTHXpkPv82GMI%2F5EL%2BhSZ%2F7nkw51XMAE1sUcjyH9pNMwHmBjTpLvu1GBHWEc%2B4StyPQwb2rNxpKFKanJA%3D%3D&amp;sign_type=RSA2&amp;timestamp=2020-07-23+23%3A51%3A24&amp;version=1.0&quot;,
+        &quot;payCallbackInfo&quot;: null
+    }
+}
+
 </code></pre></div>
             </div>
         </div>
