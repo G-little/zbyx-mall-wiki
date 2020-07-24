@@ -16,6 +16,7 @@
       - 收藏: './mall/collect.md'  
       - 售后: './mall/aftersale.md'  
       - 会员: './mall/vip.md'  
+      - 充值: './mall/charge.md'  
     - 管理后台: 
       - 用户: './admin/user.md'    
       - 商品: './admin/goods.md'    
