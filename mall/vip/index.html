@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>收藏 - Mall Docs</title>
+        <title>售后 - Mall Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -86,7 +86,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">收藏</a>
+    <a href="../collect/" class="dropdown-item">收藏</a>
 </li>
                                     
 <li>
@@ -94,7 +94,7 @@
 </li>
                                     
 <li>
-    <a href="../vip/" class="dropdown-item">售后</a>
+    <a href="./" class="dropdown-item active">售后</a>
 </li>
                                 </ul>
                             </li>
@@ -124,12 +124,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../my/" class="nav-link">
+                                <a rel="prev" href="../aftersale/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../aftersale/" class="nav-link">
+                                <a rel="next" href="../../admin/user/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -151,33 +151,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">收藏相关接口</a>
+            <li class="nav-item" data-level="1"><a href="#vip" class="nav-link">VIP相关接口</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">背景</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键流程说明</a>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">产品说明</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">关键流程说明</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#_12" class="nav-link">关键流程说明</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_13" class="nav-link">接口说明</a>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">接口说明</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -188,41 +180,29 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">收藏相关接口</h1>
+<h1 id="vip">VIP相关接口</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">收藏相关接口</a><ul>
-<li><a href="#_2">修订记录</a></li>
-<li><a href="#_3">背景</a></li>
-<li><a href="#_4">产品说明</a></li>
-<li><a href="#_5">关键流程说明</a></li>
-<li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 产品收藏</a><ul>
-<li><a href="#_7">接口说明</a></li>
-<li><a href="#_8">请求说明</a></li>
-<li><a href="#_9">输入参数</a></li>
-<li><a href="#_10">错误说明</a></li>
-<li><a href="#_11">返回实例</a></li>
+<li><a href="#vip">VIP相关接口</a><ul>
+<li><a href="#_1">修订记录</a></li>
+<li><a href="#_2">背景</a></li>
+<li><a href="#_3">产品说明</a></li>
+<li><a href="#_4">关键流程说明</a></li>
+<li><a href="#_5">接口说明</a><ul>
+<li><a href="#10-vip">1.0 vip 充值</a><ul>
+<li><a href="#_6">接口说明</a></li>
+<li><a href="#_7">请求说明</a></li>
+<li><a href="#_8">输入参数</a></li>
+<li><a href="#_9">错误说明</a></li>
+<li><a href="#_10">返回实例</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#_12">关键流程说明</a></li>
-<li><a href="#_13">接口说明</a><ul>
-<li><a href="#10_1">1.0 产品收藏</a><ul>
-<li><a href="#_14">接口说明</a></li>
-<li><a href="#_15">请求说明</a></li>
-<li><a href="#_16">输入参数</a></li>
-<li><a href="#_17">错误说明</a></li>
-<li><a href="#_18">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#11">1.1 收藏列表</a><ul>
-<li><a href="#_19">接口说明</a></li>
-<li><a href="#_20">请求说明</a></li>
-<li><a href="#_21">输入参数</a></li>
-<li><a href="#_22">错误说明</a></li>
-<li><a href="#_23">返回实例</a></li>
+<li><a href="#10-vip_1">1.0 vip 支付</a><ul>
+<li><a href="#_11">接口说明</a></li>
+<li><a href="#_12">请求说明</a></li>
+<li><a href="#_13">输入参数</a></li>
+<li><a href="#_14">错误说明</a></li>
+<li><a href="#_15">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -231,7 +211,7 @@
 </li>
 </ul>
 </div>
-<h2 id="_2">修订记录</h2>
+<h2 id="_1">修订记录</h2>
 <hr />
 <table>
 <thead>
@@ -256,135 +236,15 @@
 <blockquote>
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
-<h2 id="_3">背景</h2>
-<p>产品收藏相关接口</p>
-<h2 id="_4">产品说明</h2>
-<h2 id="_5">关键流程说明</h2>
-<h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 产品收藏</h4>
-<h5 id="_7">接口说明</h5>
-<p>收藏或取消收藏</p>
-<h5 id="_8">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/collect/addordelete</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_9">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">type</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">类型</td>
-<td align="left">0:商品收藏 1:专题收藏</td>
-</tr>
-<tr>
-<td align="left">valueId</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">产品/专题 ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_10">错误说明</h5>
-<h5 id="_11">返回实例</h5>
-<pre><code class="json">
-    {
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-
-       }
-    }
-
-</code></pre>
-
-<h2 id="_12">关键流程说明</h2>
-<h2 id="_13">接口说明</h2>
-<h4 id="10_1">1.0 产品收藏</h4>
-<h5 id="_14">接口说明</h5>
-<p>收藏或取消收藏</p>
-<h5 id="_15">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/collect/addordelete</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_16">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">type</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">类型</td>
-<td align="left">0:商品收藏 1:专题收藏</td>
-</tr>
-<tr>
-<td align="left">valueId</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">产品/专题 ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_17">错误说明</h5>
-<h5 id="_18">返回实例</h5>
-<pre><code class="json">
-    {
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-
-       }
-    }
-
-</code></pre>
-
-<h4 id="11">1.1 收藏列表</h4>
-<h5 id="_19">接口说明</h5>
-<p>收藏列表</p>
-<h5 id="_20">请求说明</h5>
+<h2 id="_2">背景</h2>
+<p>vip 相关接口</p>
+<h2 id="_3">产品说明</h2>
+<h2 id="_4">关键流程说明</h2>
+<h2 id="_5">接口说明</h2>
+<h4 id="10-vip">1.0 vip 充值</h4>
+<h5 id="_6">接口说明</h5>
+<p>vip 充值首页</p>
+<h5 id="_7">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -395,11 +255,85 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/collect/list</td>
+<td align="center">/vip/my</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_21">输入参数</h5>
+<h5 id="_8">输入参数</h5>
+<p>无</p>
+<h5 id="_9">错误说明</h5>
+<h5 id="_10">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;uid&quot;: 11446,  //用户ID
+        &quot;avatar&quot;: &quot;https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqDw87BjTffT03d4T5z9ynn6bia79vWUdDzXbvvCrhbL5oBAYIOTe6iaH790uto7CTkH71oDEpzuMjQ/132&quot;,
+        &quot;name&quot;: &quot;杜京亚&quot;,
+        &quot;gender&quot;: 1,
+        &quot;birthday&quot;: null,
+        &quot;status&quot;: 0,
+        &quot;mobile&quot;: null,
+        &quot;createTime&quot;: 1593445700769,
+        &quot;updateTime&quot;: null,
+        &quot;vipStartTime&quot;: null,   //vip 开始时间
+        &quot;vipEndTime&quot;: null,  //vip 结束时间
+        &quot;userSource&quot;: null,  //用户来源
+        &quot;level&quot;: null,
+        &quot;vipTotalDays&quot;: null,  //用户vip 累计时长
+        &quot;buyTimes&quot;: null,  //累计购买次数
+        &quot;vipList&quot;: [
+            {
+                &quot;id&quot;: 1,  //ID
+                &quot;comment&quot;: &quot;一个月会员&quot;,  //描述
+                &quot;originalPrice&quot;: 300.00,  //原价
+                &quot;price&quot;: 2.00, //价格
+                &quot;timeLen&quot;: 1, //时长
+                &quot;timeType&quot;: 30, //时间类型 1:天 30:月
+                &quot;vipType&quot;: 0, // vip 类型
+                &quot;addTime&quot;: null, // 添加时间
+                &quot;delete&quot;: false, // 是否删除 
+                &quot;bgUrl&quot;: null //背景
+            }
+        ],   //vip 列表
+        &quot;payTypes&quot;: [
+            {
+                &quot;typeName&quot;: &quot;ALIPAYCASH&quot;,
+                &quot;comment&quot;: &quot;支付宝支付&quot;,
+                &quot;thumbnail&quot;: null
+            },
+            {
+                &quot;typeName&quot;: &quot;WX_APP&quot;,
+                &quot;comment&quot;: &quot;微信支付&quot;,
+                &quot;thumbnail&quot;: null
+            }
+        ],
+        &quot;remainDays&quot;: 0,
+        &quot;vip&quot;: false
+    }
+}    
+</code></pre>
+
+<h4 id="10-vip_1">1.0 vip 支付</h4>
+<h5 id="_11">接口说明</h5>
+<p>vip 充值首页</p>
+<h5 id="_12">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/vip/pay</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_13">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -412,53 +346,34 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">type</td>
-<td align="center">否</td>
+<td align="left">id</td>
+<td align="center">是</td>
 <td align="left">int</td>
-<td align="left">类型</td>
-<td align="left">0:商品收藏 1:专题收藏</td>
+<td align="left">状态</td>
+<td align="left">购物车ID</td>
 </tr>
 <tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">分页</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">单页条数</td>
+<td align="left">payType</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">支付类型</td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_22">错误说明</h5>
-<h5 id="_23">返回实例</h5>
+<h5 id="_14">错误说明</h5>
+<h5 id="_15">返回实例</h5>
 <pre><code class="json">
-{
+    {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 2,  //收藏ID
-                &quot;type&quot;: 0, //0:商品收藏 1:专题收藏
-                &quot;valueId&quot;: 1006002, //产品ID
-                &quot;name&quot;: &quot;轻奢纯棉刺绣水洗四件套&quot;, //产品名称
-                &quot;brief&quot;: &quot;设计师原款，精致绣花&quot;, //产品简介
-                &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png&quot;,  //图片
-                &quot;retailPrice&quot;: 899.00 //销售价
-            }
-        ],
-        &quot;end&quot;: true,
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0
+        &quot;payOrderId&quot;: null,
+        &quot;outPayOrderId&quot;: null,
+        &quot;callPayInfo&quot;: &quot;alipay_sdk=alipay-sdk-java-dynamicVersionNo&amp;app_id=2019021963294014&amp;biz_content=%7B%22out_trade_no%22%3A%22PRE20072323512323809B64E7981256%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22subject%22%3A%22%E4%B8%AD%E6%A0%87%E4%BC%98%E9%80%89%22%2C%22timeout_express%22%3A%2230m%22%2C%22total_amount%22%3A%222.0%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2Fxiaogang.org.cn&amp;sign=MpclAkitGsMgourGcRVj6xvbHfb%2FyFH12FIXRYiPeQr6OXR2EUGAII5nHv9bTvQwk2QId%2BMDOuKeCGl3SBPZjXzb7aYTA%2BMW%2BCHwrG3YSdfsXLxbRMTPi659W0s%2FHiGJr2q%2FUKT8YTSFtNTVovc0LulMNXQ8IW4bIvyyjPypxntaHpNr6xRCkAx4JveliZQ1y5rknI8hS8nyd985ddHHxX%2F2v5m%2B1P3bRJFvkfmVku0GHtDtaz65nTDMQasisin39eJuo%2BTHXpkPv82GMI%2F5EL%2BhSZ%2F7nkw51XMAE1sUcjyH9pNMwHmBjTpLvu1GBHWEc%2B4StyPQwb2rNxpKFKanJA%3D%3D&amp;sign_type=RSA2&amp;timestamp=2020-07-23+23%3A51%3A24&amp;version=1.0&quot;,
+        &quot;payCallbackInfo&quot;: null
     }
-}    
+}
 
 </code></pre></div>
             </div>
