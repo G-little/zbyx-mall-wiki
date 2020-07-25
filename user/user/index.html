@@ -813,46 +813,57 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/oauth2/get_mobile_weixin</td>
+<td align="center">/oauth2/login_by_weixin</td>
 </tr>
 </tbody>
 </table>
 <h5 id="_43">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">encryptedData</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">微信授权返回数据</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">iv</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">微信授权返回数据</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
+<p>{
+    "code":"xxxxx",
+    "userInfo":{
+        "nickName":"xxx",
+        "avatarUrl":"xxx",
+        "country":"xxx",
+        "province":"xxx",
+        "city":"xxx"
+    }
+}</p>
 <h5 id="_44">错误说明</h5>
+<p><strong>需要绑定手机号的情况</strong></p>
+<pre><code class="json">
+    {
+    &quot;c&quot;:30002,
+    &quot;m&quot;:&quot;需要绑定手机号&quot;,
+    &quot;d&quot;:{
+        &quot;key&quot;:&quot;xxxxxx&quot;
+    }
+
+}
+
+</code></pre>
+
 <h5 id="_45">返回实例</h5>
 <pre><code class="json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-
+        &quot;uid&quot;: 11443, //用户ID
+        &quot;accessToken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g&quot;, //登录token
+        &quot;accessExpiresIn&quot;: 1599098823065, //失效时间
+        &quot;refreshToken&quot;: &quot;fMYerhGCyudmIhLUW&quot;, //刷新token
+        &quot;refreshExpiresIn&quot;: 1604369223065, //刷新token 失效时间
+        &quot;user&quot;: { //用户信息
+            &quot;uid&quot;: 11443,  //用户ID
+            &quot;avatar&quot;: &quot;/c/d/e&quot;, //用户头像
+            &quot;name&quot;: &quot;赵六&quot;, //用户昵称
+            &quot;gender&quot;: 1, // 性别  1 男
+            &quot;birthday&quot;: 153000000, //生日
+            &quot;status&quot;: 0, //状态
+            &quot;mobile&quot;: &quot;15201008961&quot;, //手机号
+            &quot;createTime&quot;: 1590149492786, //创建时间
+            &quot;updateTime&quot;: 1590149538735 //更新时间
+        }
     }
 }
 
@@ -889,6 +900,13 @@
 </thead>
 <tbody>
 <tr>
+<td align="left">key</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">微信登录key</td>
+<td align="left"></td>
+</tr>
+<tr>
 <td align="left">encryptedData</td>
 <td align="center">是</td>
 <td align="left">string</td>
@@ -911,9 +929,25 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-
+        &quot;uid&quot;: 11443, //用户ID
+        &quot;accessToken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g&quot;, //登录token
+        &quot;accessExpiresIn&quot;: 1599098823065, //失效时间
+        &quot;refreshToken&quot;: &quot;fMYerhGCyudmIhLUW&quot;, //刷新token
+        &quot;refreshExpiresIn&quot;: 1604369223065, //刷新token 失效时间
+        &quot;user&quot;: { //用户信息
+            &quot;uid&quot;: 11443,  //用户ID
+            &quot;avatar&quot;: &quot;/c/d/e&quot;, //用户头像
+            &quot;name&quot;: &quot;赵六&quot;, //用户昵称
+            &quot;gender&quot;: 1, // 性别  1 男
+            &quot;birthday&quot;: 153000000, //生日
+            &quot;status&quot;: 0, //状态
+            &quot;mobile&quot;: &quot;15201008961&quot;, //手机号
+            &quot;createTime&quot;: 1590149492786, //创建时间
+            &quot;updateTime&quot;: 1590149538735 //更新时间
+        }
     }
 }
+
 
 </code></pre>
 
