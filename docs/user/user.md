@@ -344,17 +344,38 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 
 | http 请求方式          | post     |
 |:------------- |:---------------:|
-| url      | /oauth2/get_mobile_weixin |
+| url      | /oauth2/login_by_weixin |
 
 #####  输入参数
 
-| 参数          |必选             | 类型       | 参数说明        | 备注          |
-|:-------------|:---------------:|:-------------|:-------------|:-------------|
-| encryptedData      | 是| string  |  微信授权返回数据 |   |
-| iv      | 是| string  |  微信授权返回数据 |   |
-
+{
+    "code":"xxxxx",
+    "userInfo":{
+        "nickName":"xxx",
+        "avatarUrl":"xxx",
+        "country":"xxx",
+        "province":"xxx",
+        "city":"xxx"
+    }
+}
 
 #####  错误说明
+
+**需要绑定手机号的情况**
+
+```json 
+    
+    {
+    "c":30002,
+    "m":"需要绑定手机号",
+    "d":{
+        "key":"xxxxxx"
+    }
+    
+}
+
+```
+
 
 
 
@@ -366,7 +387,22 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
     "c": 0,
     "m": null,
     "d": {
-        
+        "uid": 11443, //用户ID
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g", //登录token
+        "accessExpiresIn": 1599098823065, //失效时间
+        "refreshToken": "fMYerhGCyudmIhLUW", //刷新token
+        "refreshExpiresIn": 1604369223065, //刷新token 失效时间
+        "user": { //用户信息
+            "uid": 11443,  //用户ID
+            "avatar": "/c/d/e", //用户头像
+            "name": "赵六", //用户昵称
+            "gender": 1, // 性别  1 男
+            "birthday": 153000000, //生日
+            "status": 0, //状态
+            "mobile": "15201008961", //手机号
+            "createTime": 1590149492786, //创建时间
+            "updateTime": 1590149538735 //更新时间
+        }
     }
 }
 
@@ -394,6 +430,7 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 
 | 参数          |必选             | 类型       | 参数说明        | 备注          |
 |:-------------|:---------------:|:-------------|:-------------|:-------------|
+| key      | 是| string  |  微信登录key |   |
 | encryptedData      | 是| string  |  微信授权返回数据 |   |
 | iv      | 是| string  |  微信授权返回数据 |   |
 
@@ -410,9 +447,25 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
     "c": 0,
     "m": null,
     "d": {
-        
+        "uid": 11443, //用户ID
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g", //登录token
+        "accessExpiresIn": 1599098823065, //失效时间
+        "refreshToken": "fMYerhGCyudmIhLUW", //刷新token
+        "refreshExpiresIn": 1604369223065, //刷新token 失效时间
+        "user": { //用户信息
+            "uid": 11443,  //用户ID
+            "avatar": "/c/d/e", //用户头像
+            "name": "赵六", //用户昵称
+            "gender": 1, // 性别  1 男
+            "birthday": 153000000, //生日
+            "status": 0, //状态
+            "mobile": "15201008961", //手机号
+            "createTime": 1590149492786, //创建时间
+            "updateTime": 1590149538735 //更新时间
+        }
     }
 }
+
 
 ```
 
