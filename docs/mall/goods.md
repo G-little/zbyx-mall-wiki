@@ -479,6 +479,79 @@
 }
 
 ```
+
+
+
+#### 1.4 根据订单ID推荐相关产品
+
+##### 接口说明
+
+相关商品推荐
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /goods/order_related |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| orderId      | 是|  int  |  产品ID  |  |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+    {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 6,
+        "total": 6,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 1057036, //产品ID
+                "name": "日式纯色水洗亚麻抱枕", //产品名称
+                "tags": null, //产品标签
+                "picUrl": "http://yanxuan.nosdn.127.net/8a9ee5ba08929cc9e40b973607d2f633.png", //产品Url
+                "unit": "件", //单位
+                "counterPrice": 99.00, //专柜价格
+                "retailPrice": 79.00, //销售价格
+                "vipPrice": 100000.00, //vip 价格
+                "brief": "水洗亚麻，透气亲肤", //运营简介
+                       "gallery":["http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png"], //图片
+                "videos":[
+                        {
+                            "url":"/xxxx",
+                            "cover":"cover",
+                            "size":"x*y"
+                        }
+                    ]
+            }
+        ],
+        "unit": "条",
+        "extInfo": null,
+        "empty": false,
+        "endIndex": 6,
+        "startIndex": 0,
+        "firstPage": true,
+        "lastPage": true,
+        "nextPage": 1,
+        "previousPage": 1,
+        "totalPages": 1
+    }
+}
+    
+```
     
    
 
