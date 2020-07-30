@@ -776,6 +776,137 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
 
 
 
+#### 1.9 订单重新支付
+
+##### 接口说明
+
+订单列表信息
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /order/repay |
+
+#####  输入参数
+
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| orderId      | 是|  int  |   订单ID  |  |
+
+
+
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+{
+    {
+    "c": 0,
+    "m": null,
+    "d": {
+        "detail":{
+                "orderInfo": {  //订单信息
+                "id": 47, //订单ID
+                "orderSn": "20200711391009", //订单sN
+                "message": "", //留言
+                "addTime": "2020-07-11 18:48:01", //添加时间
+                "payTime": "2020-07-11 18:48:01", //支付时间
+                "consignee": "string", //收货人
+                "mobile": "15201008961", //手机号
+                "address": "stringstringstring string",  //收货地址
+                "goodsPrice": 78.00,  //产品价格
+                "couponPrice": 0.00, //优惠券价格
+                "freightPrice": 8.00, //运费
+                "actualPrice": 86.00, //实际支付
+                "orderStatusText": "未付款",  //付款状态描述
+                "handleOption": {  //处理状态
+                    "cancel": true,  //是否可取消
+                    "delete": false, //是否可删除
+                    "pay": true,  //是否可支付
+                    "comment": false, //是否可评论
+                    "confirm": false,  //是否可确认收货
+                    "refund": false, //是否可退货
+                    "rebuy": false, //是否可重新购买
+                    "aftersale": false, //是否可售后
+                    "remind": false, //是否可催单
+                    "logistic": true //是否可查看物流
+                },
+                "aftersaleStatus": 0,  //售后状态，0是可申请，1是用户已申请，2是管理员审核通过，3是管理员退款成功，4是管理员审核拒绝，5是用户已取消
+                "expCode": null, //物流公司编码
+                "expName": null, //物流名称
+                "expNo": null //物流单号
+            },
+            "orderGoods": [  //订单产品信息
+                {
+                    "id": 47,  //产品ID
+                    "orderId": 47, //订单ID
+                    "goodsId": 1006014, //商品ID
+                    "goodsName": "双宫茧桑蚕丝被 子母被", //名称
+                    "goodsSn": "1006014", //SN
+                    "productId": 11, //货品ID
+                    "number": 1, //数量
+                    "price": 1399.00, //价格
+                    "specifications": [  //规格
+                        "标准"
+                    ],
+                    "picUrl": "http://yanxuan.nosdn.127.net/2b537159f0f789034bf8c4b339c43750.png",  //图片
+                    "comment": 0,  //评论数
+                    "addTime": "2020-07-11 11:39:02", //添加时间
+                    "updateTime": "2020-07-11 11:39:02", //更新时间
+                    "deleted": false //是否已删除
+                }
+            ],
+            "expressInfo": {   //物流信息
+                "state": "0",
+                "success": true,
+                "reason": "暂无轨迹信息",  //原因
+                "logisticCode": "1234561", //快递号
+                "shipperCode": "ZTO", //编码
+                "traces": [],   //轨迹
+                "ebusinessID": "1638638",  //厂商b
+                "shipperName": "中通快递",  //快递名称
+                "LogisticCode": "1234561",
+                "ShipperCode": "ZTO",
+                "Traces": [],
+                "State": "0",
+                "EBusinessID": "1638638",
+                "Success": true,
+                "Reason": "暂无轨迹信息"
+            }
+        }
+        "payTypes":[  //支付方式列表
+            {
+                "typeName": "balance",
+                "comment": "余额支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "ALIPAYCASH",
+                "comment": "支付宝支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "WX_APP",
+                "comment": "微信支付",
+                "thumbnail": null
+            }
+        ] 
+    }
+}
+
+```
+
+
+
 
 
 
