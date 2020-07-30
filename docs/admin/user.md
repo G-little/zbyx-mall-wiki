@@ -215,6 +215,82 @@
 
 
 
+#### 1.2 员工管理
+
+##### 接口说明
+
+管理中心用户列表
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /admin/employee/list |
+
+#####  输入参数
+
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| name      | 否|  strring  |  用户名  |   |
+| uid      | 否|  int  |  用户ID  |   |
+| mobile      | 否|  string  |  手机号  |   |
+| employeeType      | 否|  int  |  员工类型  |   1 中标优选 |
+| page      | 否|  int  |  分页  | 默认1  |
+| limit      | 否|  int  |  限制单页条数  | 默认10  |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+    {
+    "c": 0,
+    "m": null,
+    "d": {
+        "total": 15,
+        "list": [
+            {
+                "uid": 11462, //用户ID
+                "avatar": null, //头像
+                "name": null, // 昵称
+                "createTime": 1595935404952, //创建时间
+                "mobile": "15201008963",//手机号
+                "employeeType": "", //员工类型
+                "money": null,  //余额
+                "lastChargeMoney": null, //最后充值金额
+                "lastChargeTime": null //最后充值时间
+            }
+        ],
+        "pageNum": 1,
+        "pageSize": 10,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 0,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+    }
+}
+    
+```
+
+
+
+
+
 
 
 
