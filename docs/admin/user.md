@@ -339,7 +339,7 @@
 
 | http 请求方式          | post     |
 |:------------- |:---------------:|
-| url      | /admin/employee/create |
+| url      | /admin/employee/transfer |
 
 #####  输入参数
 
