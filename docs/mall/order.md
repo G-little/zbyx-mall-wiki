@@ -330,6 +330,7 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
                     "hotline": false, //客服热线
                     "cancel": false //取消售后
                 },
+                "aftersaleId":123,//售后ID
                 "picUrl": "http://yanxuan.nosdn.127.net/2b537159f0f789034bf8c4b339c43750.png",  //图片
                 "comment": 0,  //评论数
                 "addTime": "2020-07-11 11:39:02", //添加时间
