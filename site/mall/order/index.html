@@ -272,41 +272,41 @@
 <li><a href="#15">1.5  评价接口</a><ul>
 <li><a href="#_52">接口说明</a></li>
 <li><a href="#_53">请求说明</a></li>
-<li><a href="#_54">输入参数</a></li>
-<li><a href="#_55">错误说明</a></li>
-<li><a href="#_56">返回实例</a></li>
+<li><a href="#post-json">输入参数(post json)</a></li>
+<li><a href="#_54">错误说明</a></li>
+<li><a href="#_55">返回实例</a></li>
 </ul>
 </li>
 <li><a href="#16">1.6  待评价订单商品信息</a><ul>
-<li><a href="#_57">接口说明</a></li>
-<li><a href="#_58">请求说明</a></li>
-<li><a href="#_59">输入参数</a></li>
-<li><a href="#_60">错误说明</a></li>
-<li><a href="#_61">返回实例</a></li>
+<li><a href="#_56">接口说明</a></li>
+<li><a href="#_57">请求说明</a></li>
+<li><a href="#_58">输入参数</a></li>
+<li><a href="#_59">错误说明</a></li>
+<li><a href="#_60">返回实例</a></li>
 </ul>
 </li>
 <li><a href="#17">1.7 催单接口</a><ul>
-<li><a href="#_62">接口说明</a></li>
-<li><a href="#_63">请求说明</a></li>
-<li><a href="#_64">输入参数</a></li>
-<li><a href="#_65">错误说明</a></li>
-<li><a href="#_66">返回实例</a></li>
+<li><a href="#_61">接口说明</a></li>
+<li><a href="#_62">请求说明</a></li>
+<li><a href="#_63">输入参数</a></li>
+<li><a href="#_64">错误说明</a></li>
+<li><a href="#_65">返回实例</a></li>
 </ul>
 </li>
 <li><a href="#18">1.8 重新购买</a><ul>
-<li><a href="#_67">接口说明</a></li>
-<li><a href="#_68">请求说明</a></li>
-<li><a href="#_69">输入参数</a></li>
-<li><a href="#_70">错误说明</a></li>
-<li><a href="#_71">返回实例</a></li>
+<li><a href="#_66">接口说明</a></li>
+<li><a href="#_67">请求说明</a></li>
+<li><a href="#_68">输入参数</a></li>
+<li><a href="#_69">错误说明</a></li>
+<li><a href="#_70">返回实例</a></li>
 </ul>
 </li>
 <li><a href="#19">1.9 订单重新支付</a><ul>
-<li><a href="#_72">接口说明</a></li>
-<li><a href="#_73">请求说明</a></li>
-<li><a href="#_74">输入参数</a></li>
-<li><a href="#_75">错误说明</a></li>
-<li><a href="#_76">返回实例</a></li>
+<li><a href="#_71">接口说明</a></li>
+<li><a href="#_72">请求说明</a></li>
+<li><a href="#_73">输入参数</a></li>
+<li><a href="#_74">错误说明</a></li>
+<li><a href="#_75">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -818,6 +818,11 @@
                 &quot;specifications&quot;: [  //规格
                     &quot;标准&quot;
                 ],
+                &quot;handleOption&quot;: {  //操作按钮
+                    &quot;apply&quot;: false, //申请售后
+                    &quot;hotline&quot;: false, //客服热线
+                    &quot;cancel&quot;: false //取消售后
+                },
                 &quot;picUrl&quot;: &quot;http://yanxuan.nosdn.127.net/2b537159f0f789034bf8c4b339c43750.png&quot;,  //图片
                 &quot;comment&quot;: 0,  //评论数
                 &quot;addTime&quot;: &quot;2020-07-11 11:39:02&quot;, //添加时间
@@ -1088,7 +1093,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_54">输入参数</h5>
+<h5 id="post-json">输入参数(post json)</h5>
 <table>
 <thead>
 <tr>
@@ -1130,8 +1135,23 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_55">错误说明</h5>
-<h5 id="_56">返回实例</h5>
+<pre><code class="json">    {
+      &quot;anonymous&quot;: true,  //是否匿名
+      &quot;content&quot;: &quot;string&quot;, //内容
+      &quot;picUrls&quot;: [ //图片数组
+        {
+            &quot;url&quot;:&quot;http://www.baidu.com&quot;, //url
+            &quot;type&quot;:&quot;jpg/jpeg&quot; //内容类型(可能是视频)
+        }
+      ],
+      &quot;star&quot;: 0, //星级
+      &quot;type&quot;: 0,  //如果是0，则查询商品评论；如果是1，则查询专题
+      &quot;valueId&quot;: 0  //商品或专题ID。如果type是0，则是商品ID；如果type是1，则是专题ID
+    }
+</code></pre>
+
+<h5 id="_54">错误说明</h5>
+<h5 id="_55">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
@@ -1144,9 +1164,9 @@
 </code></pre>
 
 <h4 id="16">1.6  待评价订单商品信息</h4>
-<h5 id="_57">接口说明</h5>
+<h5 id="_56">接口说明</h5>
 <p>订单列表信息</p>
-<h5 id="_58">请求说明</h5>
+<h5 id="_57">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1161,7 +1181,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_59">输入参数</h5>
+<h5 id="_58">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1182,8 +1202,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_60">错误说明</h5>
-<h5 id="_61">返回实例</h5>
+<h5 id="_59">错误说明</h5>
+<h5 id="_60">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
@@ -1211,9 +1231,9 @@
 </code></pre>
 
 <h4 id="17">1.7 催单接口</h4>
-<h5 id="_62">接口说明</h5>
+<h5 id="_61">接口说明</h5>
 <p>催单</p>
-<h5 id="_63">请求说明</h5>
+<h5 id="_62">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1228,7 +1248,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_64">输入参数</h5>
+<h5 id="_63">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1249,8 +1269,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_65">错误说明</h5>
-<h5 id="_66">返回实例</h5>
+<h5 id="_64">错误说明</h5>
+<h5 id="_65">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
@@ -1263,9 +1283,9 @@
 </code></pre>
 
 <h4 id="18">1.8 重新购买</h4>
-<h5 id="_67">接口说明</h5>
+<h5 id="_66">接口说明</h5>
 <p>重新购买</p>
-<h5 id="_68">请求说明</h5>
+<h5 id="_67">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1280,7 +1300,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_69">输入参数</h5>
+<h5 id="_68">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1301,8 +1321,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_70">错误说明</h5>
-<h5 id="_71">返回实例</h5>
+<h5 id="_69">错误说明</h5>
+<h5 id="_70">返回实例</h5>
 <pre><code class="json">
    {
     &quot;c&quot;: 0,
@@ -1380,9 +1400,9 @@
 </code></pre>
 
 <h4 id="19">1.9 订单重新支付</h4>
-<h5 id="_72">接口说明</h5>
+<h5 id="_71">接口说明</h5>
 <p>订单列表信息</p>
-<h5 id="_73">请求说明</h5>
+<h5 id="_72">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1397,7 +1417,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_74">输入参数</h5>
+<h5 id="_73">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1418,8 +1438,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_75">错误说明</h5>
-<h5 id="_76">返回实例</h5>
+<h5 id="_74">错误说明</h5>
+<h5 id="_75">返回实例</h5>
 <pre><code class="json">
 {
     {
