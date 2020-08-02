@@ -325,6 +325,11 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
                 "specifications": [  //规格
                     "标准"
                 ],
+                "handleOption": {  //操作按钮
+                    "apply": false, //申请售后
+                    "hotline": false, //客服热线
+                    "cancel": false //取消售后
+                },
                 "picUrl": "http://yanxuan.nosdn.127.net/2b537159f0f789034bf8c4b339c43750.png",  //图片
                 "comment": 0,  //评论数
                 "addTime": "2020-07-11 11:39:02", //添加时间
@@ -543,7 +548,7 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
 |:------------- |:---------------:|
 | url      | /order/comment |
 
-#####  输入参数
+#####  输入参数(post json)
 
 
 | 参数          |必选             | 类型       | 参数说明        | 备注          |
@@ -552,6 +557,24 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
 | content      | 是|  string  |  商品内容信息  |  |
 | star      | 是|  int  |  评价星级  | 1-5  |
 | picUrls      | 是|  string[]  |  图片信息  |  |
+
+
+    
+``` json    
+    {
+      "anonymous": true,  //是否匿名
+      "content": "string", //内容
+      "picUrls": [ //图片数组
+        {
+            "url":"http://www.baidu.com", //url
+            "type":"jpg/jpeg" //内容类型(可能是视频)
+        }
+      ],
+      "star": 0, //星级
+      "type": 0,  //如果是0，则查询商品评论；如果是1，则查询专题
+      "valueId": 0  //商品或专题ID。如果type是0，则是商品ID；如果type是1，则是专题ID
+    }
+```
 
 
 
