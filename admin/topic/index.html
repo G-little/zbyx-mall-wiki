@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>活动管理 - Mall Docs</title>
+        <title>活动 - Mall Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -102,7 +102,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -117,6 +117,10 @@
 <li>
     <a href="../ad/" class="dropdown-item">推广</a>
 </li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">活动</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -127,6 +131,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../ad/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -249,18 +263,22 @@
 <h5 id="_9">输入参数</h5>
 <pre><code class="json">
 {
-  &quot;content&quot;: &quot;string&quot;,  //描述
-  &quot;deleted&quot;: true, //是否删除
-  &quot;enabled&quot;: true, //是否开启
-  &quot;extParams&quot;: {},  //附加参数
-  &quot;idValue&quot;: 0, //跳转ID
-  &quot;link&quot;: &quot;string&quot;, //跳转链接（H5）
-  &quot;name&quot;: &quot;string&quot;, //标题
-  &quot;position&quot;: 0,  // 1 首页 2 活动 3 用户 
-  &quot;type&quot;: 0, //跳转类型  0:H5 1:产品详情 2:活动
-  &quot;url&quot;: &quot;string&quot; //图片地址 //图片地址
+  &quot;content&quot;: &quot;string&quot;,
+  &quot;deleted&quot;: true,
+  &quot;enabled&quot;: true,  //是否启用
+  &quot;endTime&quot;: &quot;2020-08-02T06:34:23.358Z&quot;,  //结束时间
+  &quot;goods&quot;: [  //产品列表
+    0
+  ],
+  &quot;picUrl&quot;: &quot;string&quot;,
+  &quot;price&quot;: 0,
+  &quot;readCount&quot;: &quot;string&quot;,
+  &quot;sortOrder&quot;: 0,
+  &quot;startTime&quot;: &quot;2020-08-02T06:34:23.358Z&quot;, //开始时间
+  &quot;subtitle&quot;: &quot;string&quot;,
+  &quot;title&quot;: &quot;string&quot;,
+  &quot;updateTime&quot;: &quot;2020-08-02T06:34:23.358Z&quot;
 }
-
 </code></pre>
 
 <h5 id="_10">错误说明</h5>
