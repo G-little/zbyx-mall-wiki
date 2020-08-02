@@ -21,4 +21,5 @@
       - 用户: './admin/user.md'    
       - 商品: './admin/goods.md'    
       - 推广: './admin/ad.md'    
+      - 活动: './admin/topic.md'    
       
