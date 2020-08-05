@@ -552,6 +552,95 @@
 }
     
 ```
+
+
+
+
+
+#### 1.5 评价列表接口
+
+##### 接口说明
+
+分页拉取评价列表信息
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /comment/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| type      | 是|  int  |  类型  | 如果是0，则查询商品评论；如果是1，则查询活动评论  |
+| valueId      | 是|  int  |  商品或活动ID  | 根据type 决定 |
+| showType      | 是|  int  |  显示类型  |  如果是0 则是全部 1 有图片的 |
+| page      | 否|  int  |  分页  |  |
+| limit      | 否|  int  |  单页条数  |  |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+    {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "addTime": "2020-08-05 00:15:47",
+                "content": "？？",
+                "adminContent": "",
+                "picList": null,
+                "userInfo": {
+                    "uid": 11460,
+                    "nickname": "狂奔的蜗牛",
+                    "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoia7J3Cibw8mJ3rBT7GGrecWfr8SJFqEQKpafEWe9aPMtKhYvf2JEC01uw6ykPdwEag47QSthSSdNg/132"
+                }
+            },
+            {
+                "addTime": "2020-08-04 22:59:23",
+                "content": "12345",
+                "adminContent": "",
+                "picList": [
+                    {
+                        "url": "yj59vj7talfir8vi76gp.jpg",
+                        "type": "jpg/jpeg"
+                    },
+                    {
+                        "url": "v29c241slystgxakiodn.jpg",
+                        "type": "jpg/jpeg"
+                    }
+                ],
+                "userInfo": {
+                    "uid": 11460,
+                    "nickname": "狂奔的蜗牛",
+                    "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoia7J3Cibw8mJ3rBT7GGrecWfr8SJFqEQKpafEWe9aPMtKhYvf2JEC01uw6ykPdwEag47QSthSSdNg/132"
+                }
+            }
+         ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": 4
+    }
+}    
+```
+
+
+
+
+
+
     
    
 
