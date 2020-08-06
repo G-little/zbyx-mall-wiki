@@ -48,6 +48,8 @@ _订单信息_
 | grouponRulesId      | 否|  int  |  团购规则ID  | 预留团购，暂时用不到 |
 | grouponLinkId      | 否|  int  |  团购ID  | 预留团购，暂时用不到 |
 | payType      | 是|  string  |  支付方式  |  根据结算页拉取的支付项填写，小程序可以固定写死 WX_MP|
+| payType      | 是|  string  |  支付方式  |  根据结算页拉取的支付项填写，小程序可以固定写死 WX_MP|
+| useIntegral      | 否|  long  |  使用积分数量  | |
 
 
 _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
