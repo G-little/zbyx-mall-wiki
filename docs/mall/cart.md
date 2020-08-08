@@ -149,6 +149,8 @@
 |  number      | 是|  int  |  产品数量 | |
 |  goodsId      | 是|  int  |  产品Id | |
 |  addressId      | 否|  int  |  地址ID | |
+|  couponId      | 否|  int  |  优惠券ID | |
+|  userCouponId      | 否|  int  |  用户优惠券ID | |
 
 
 #####  错误说明
