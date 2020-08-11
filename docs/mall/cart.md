@@ -550,7 +550,8 @@
         "money": 44637.84, //余额
         "userPoints": 0 //用户积分
         }       
-    }
+    },
+    "vipDiscountAmount":22.22
 }
 
 ```
