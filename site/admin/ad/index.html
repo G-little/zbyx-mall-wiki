@@ -245,6 +245,46 @@
 <li><a href="#_36">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#160">1.6.0 分页获取今日推荐</a><ul>
+<li><a href="#_37">接口说明</a></li>
+<li><a href="#_38">请求说明</a></li>
+<li><a href="#_39">输入参数</a></li>
+<li><a href="#_40">错误说明</a></li>
+<li><a href="#_41">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#161">1.6.1 创建今日推荐</a><ul>
+<li><a href="#_42">接口说明</a></li>
+<li><a href="#_43">请求说明</a></li>
+<li><a href="#post-json">输入参数 (post json)</a></li>
+<li><a href="#_44">错误说明</a></li>
+<li><a href="#_45">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#162">1.6.2 上移/下移今日推荐</a><ul>
+<li><a href="#_46">接口说明</a></li>
+<li><a href="#_47">请求说明</a></li>
+<li><a href="#post-json_1">输入参数 (post json)</a></li>
+<li><a href="#_48">错误说明</a></li>
+<li><a href="#_49">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#163">1.6.3 更新今日推荐</a><ul>
+<li><a href="#_50">接口说明</a></li>
+<li><a href="#_51">请求说明</a></li>
+<li><a href="#post-json_2">输入参数 (post json)</a></li>
+<li><a href="#_52">错误说明</a></li>
+<li><a href="#_53">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#164">1.6.4 删除今日推荐</a><ul>
+<li><a href="#_54">接口说明</a></li>
+<li><a href="#_55">请求说明</a></li>
+<li><a href="#post-json_3">输入参数 (post json)</a></li>
+<li><a href="#_56">错误说明</a></li>
+<li><a href="#_57">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -629,6 +669,344 @@
         }
     ]
 }
+
+</code></pre>
+
+<h4 id="160">1.6.0 分页获取今日推荐</h4>
+<h5 id="_37">接口说明</h5>
+<p>添加优惠券</p>
+<h5 id="_38">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/index_day_selected/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_39">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">页码</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">商品id</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_40">错误说明</h5>
+<h5 id="_41">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 5,
+                &quot;imageUrl&quot;: &quot;https://zhbyx.oss-cn-beijing.aliyuncs.com/ctic251kj80uh6hdvqlw.png&quot;,
+                &quot;content&quot;: &quot;测试5&quot;,
+                &quot;addTime&quot;: null,
+                &quot;goodsId&quot;: 5,
+                &quot;sortOrder&quot;: null,
+                &quot;enabled&quot;: true,
+                &quot;deleted&quot;: false,
+                &quot;updateTime&quot;: null
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
+
+
+</code></pre>
+
+<h4 id="161">1.6.1 创建今日推荐</h4>
+<h5 id="_42">接口说明</h5>
+<p>添加今日推荐</p>
+<h5 id="_43">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/index_day_selected/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="post-json">输入参数 (post json)</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">imageUrl</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">图片</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">错误说明</h5>
+<h5 id="_45">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+
+</code></pre>
+
+<h4 id="162">1.6.2 上移/下移今日推荐</h4>
+<h5 id="_46">接口说明</h5>
+<p>上移/下移今日推荐</p>
+<h5 id="_47">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/index_day_selected/move</td>
+</tr>
+</tbody>
+</table>
+<h5 id="post-json_1">输入参数 (post json)</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">direction</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">方向</td>
+<td align="left">&gt;0 上移动, &lt;0 下移</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_48">错误说明</h5>
+<h5 id="_49">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+
+</code></pre>
+
+<h4 id="163">1.6.3 更新今日推荐</h4>
+<h5 id="_50">接口说明</h5>
+<p>更新今日推荐</p>
+<h5 id="_51">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/index_day_selected/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="post-json_2">输入参数 (post json)</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">imageUrl</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">图片</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_52">错误说明</h5>
+<h5 id="_53">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+
+</code></pre>
+
+<h4 id="164">1.6.4 删除今日推荐</h4>
+<h5 id="_54">接口说明</h5>
+<p>更新今日推荐</p>
+<h5 id="_55">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/index_day_selected/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="post-json_3">输入参数 (post json)</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_56">错误说明</h5>
+<h5 id="_57">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
 
 </code></pre></div>
             </div>
