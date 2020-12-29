@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>用户 - Mall Docs</title>
+        <title>PDA - Mall Docs</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -119,33 +119,33 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">用户</a>
+<li >
+    <a href="../../admin/user/">用户</a>
 </li>
                                     
 <li >
-    <a href="../goods/">商品</a>
+    <a href="../../admin/goods/">商品</a>
 </li>
                                     
 <li >
-    <a href="../ad/">推广</a>
+    <a href="../../admin/ad/">推广</a>
 </li>
                                     
 <li >
-    <a href="../topic/">活动</a>
+    <a href="../../admin/topic/">活动</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">溯源 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../trace/pda/">PDA</a>
+<li class="active">
+    <a href="./">PDA</a>
 </li>
                                 </ul>
                             </li>
@@ -158,12 +158,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../mall/live/">
+                                <a rel="next" href="../../admin/topic/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../goods/">
+                            <li class="disabled">
+                                <a rel="prev" >
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -175,71 +175,73 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">用户管理</a></li>
-            <li><a href="#_2">修订记录</a></li>
-            <li><a href="#_3">背景</a></li>
-            <li><a href="#_4">产品说明</a></li>
-            <li><a href="#_5">关键流程说明</a></li>
-            <li><a href="#_6">接口说明</a></li>
+        <li class="main active"><a href="#pda">PDA相关接口</a></li>
+            <li><a href="#_1">修订记录</a></li>
+            <li><a href="#_2">背景</a></li>
+            <li><a href="#_3">产品说明</a></li>
+            <li><a href="#_4">关键流程说明</a></li>
+            <li><a href="#_5">接口说明</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="_1">用户管理</h1>
+<h1 id="pda">PDA相关接口</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">用户管理</a><ul>
-<li><a href="#_2">修订记录</a></li>
-<li><a href="#_3">背景</a></li>
-<li><a href="#_4">产品说明</a></li>
-<li><a href="#_5">关键流程说明</a></li>
-<li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 用户列表</a><ul>
-<li><a href="#_7">接口说明</a></li>
-<li><a href="#_8">请求说明</a></li>
-<li><a href="#_9">输入参数</a></li>
-<li><a href="#_10">错误说明</a></li>
-<li><a href="#_11">返回实例</a></li>
+<li><a href="#pda">PDA相关接口</a><ul>
+<li><a href="#_1">修订记录</a></li>
+<li><a href="#_2">背景</a></li>
+<li><a href="#_3">产品说明</a></li>
+<li><a href="#_4">关键流程说明</a></li>
+<li><a href="#_5">接口说明</a><ul>
+<li><a href="#_6">登录头说明</a></li>
+<li><a href="#_7">手机号登录</a></li>
+<li><a href="#10">1.0 手机号密码登陆</a><ul>
+<li><a href="#_8">接口说明</a></li>
+<li><a href="#_9">请求说明</a></li>
+<li><a href="#_10">输入参数</a></li>
+<li><a href="#_11">错误说明</a></li>
+<li><a href="#_12">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#11">1.1 会员管理</a><ul>
-<li><a href="#_12">接口说明</a></li>
-<li><a href="#_13">请求说明</a></li>
-<li><a href="#_14">输入参数</a></li>
-<li><a href="#_15">错误说明</a></li>
-<li><a href="#_16">返回实例</a></li>
+<li><a href="#11">1.1 查询接口</a><ul>
+<li><a href="#_13">接口说明</a></li>
+<li><a href="#_14">请求说明</a></li>
+<li><a href="#_15">输入参数</a></li>
+<li><a href="#_16">错误说明</a></li>
+<li><a href="#_17">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#11_1">1.1 用户足迹</a><ul>
-<li><a href="#_17">接口说明</a></li>
-<li><a href="#_18">请求说明</a></li>
-<li><a href="#_19">输入参数</a></li>
-<li><a href="#_20">错误说明</a></li>
-<li><a href="#_21">返回实例</a></li>
+<li><a href="#12">1.2 获取产品列表信息</a><ul>
+<li><a href="#_18">接口说明</a></li>
+<li><a href="#_19">请求说明</a></li>
+<li><a href="#_20">输入参数</a></li>
+<li><a href="#_21">错误说明</a></li>
+<li><a href="#_22">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#12">1.2 员工管理</a><ul>
-<li><a href="#_22">接口说明</a></li>
-<li><a href="#_23">请求说明</a></li>
-<li><a href="#_24">输入参数</a></li>
-<li><a href="#_25">错误说明</a></li>
-<li><a href="#_26">返回实例</a></li>
+<li><a href="#13">1.3 添加批次信息</a><ul>
+<li><a href="#_23">接口说明</a></li>
+<li><a href="#_24">请求说明</a></li>
+<li><a href="#_25">输入参数</a></li>
+<li><a href="#_26">错误说明</a></li>
+<li><a href="#_27">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#13">1.3 添加员工</a><ul>
-<li><a href="#_27">接口说明</a></li>
-<li><a href="#_28">请求说明</a></li>
-<li><a href="#_29">输入参数</a></li>
-<li><a href="#_30">错误说明</a></li>
-<li><a href="#_31">返回实例</a></li>
+<li><a href="#14">1.4  仓库/经销商 列表</a><ul>
+<li><a href="#_28">接口说明</a></li>
+<li><a href="#_29">请求说明</a></li>
+<li><a href="#_30">输入参数</a></li>
+<li><a href="#_31">错误说明</a></li>
+<li><a href="#_32">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#14">1.4  员工充值</a><ul>
-<li><a href="#_32">接口说明</a></li>
-<li><a href="#_33">请求说明</a></li>
-<li><a href="#_34">输入参数</a></li>
-<li><a href="#_35">错误说明</a></li>
-<li><a href="#_36">返回实例</a></li>
+<li><a href="#15">1.5  入库接口</a><ul>
+<li><a href="#_33">接口说明</a></li>
+<li><a href="#_34">请求说明</a></li>
+<li><a href="#_35">输入参数</a></li>
+<li><a href="#_36">错误说明</a></li>
+<li><a href="#_37">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -248,7 +250,7 @@
 </li>
 </ul>
 </div>
-<h2 id="_2">修订记录</h2>
+<h2 id="_1">修订记录</h2>
 <hr />
 <table>
 <thead>
@@ -273,443 +275,22 @@
 <blockquote>
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
-<h2 id="_3">背景</h2>
-<p>后台用户管理相关接口</p>
-<h2 id="_4">产品说明</h2>
-<h2 id="_5">关键流程说明</h2>
-<h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 用户列表</h4>
-<h5 id="_7">接口说明</h5>
-<p>管理中心用户列表</p>
-<h5 id="_8">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/user/list</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_9">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">name</td>
-<td align="center">否</td>
-<td align="left">strring</td>
-<td align="left">用户名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">uid</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">用户ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">mobile</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">手机号</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">分页</td>
-<td align="left">默认1</td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">限制单页条数</td>
-<td align="left">默认10</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_10">错误说明</h5>
-<h5 id="_11">返回实例</h5>
-<pre><code class="json">    {
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;uid&quot;: 11452,
-                &quot;avatar&quot;: &quot;https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erWxMXolPylQhpDXp2ian7PBuoDRWGINpdHib4KRB1aQiahicibznMcyj7atEIw9HM98dTQW19xKAWicFog/132&quot;,
-                &quot;name&quot;: &quot;狂奔的蜗牛&quot;,
-                &quot;gender&quot;: 1,    //性别 1:男  2:女  0:保密
-                &quot;birthday&quot;: null,
-                &quot;status&quot;: 0,
-                &quot;mobile&quot;: null,
-                &quot;createTime&quot;: 1595066012848,
-                &quot;updateTime&quot;: null,
-                &quot;vipStartTime&quot;: null,
-                &quot;vipEndTime&quot;: null,
-                &quot;userSource&quot;: null, //用户来源 APP:  应用  MINI: 小程序
-                &quot;level&quot;: null, //会员等级
-                &quot;vipTotalDays&quot;: null, //会员累计天数
-                &quot;vip&quot;: false //是否vip
-            }
-        ],
-        &quot;end&quot;: true,
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0
-    }
-}  
-</code></pre>
-
-<h4 id="11">1.1 会员管理</h4>
-<h5 id="_12">接口说明</h5>
-<p>会员条件查询列表</p>
-<h5 id="_13">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/user/vip_list</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_14">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">name</td>
-<td align="center">否</td>
-<td align="left">strring</td>
-<td align="left">用户名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">uid</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">用户ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">mobile</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">手机号</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">vipStatus</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">会员状态</td>
-<td align="left">0 全部 1 vip 2 已过期</td>
-</tr>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">分页</td>
-<td align="left">默认1</td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">限制单页条数</td>
-<td align="left">默认10</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_15">错误说明</h5>
-<h5 id="_16">返回实例</h5>
-<pre><code class="json">    {
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;uid&quot;: 11452,
-                &quot;avatar&quot;: &quot;https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erWxMXolPylQhpDXp2ian7PBuoDRWGINpdHib4KRB1aQiahicibznMcyj7atEIw9HM98dTQW19xKAWicFog/132&quot;,
-                &quot;name&quot;: &quot;狂奔的蜗牛&quot;,
-                &quot;gender&quot;: 1,    //性别 1:男  2:女  0:保密
-                &quot;birthday&quot;: null,
-                &quot;status&quot;: 0,
-                &quot;mobile&quot;: null,
-                &quot;createTime&quot;: 1595066012848,
-                &quot;updateTime&quot;: null,
-                &quot;vipStartTime&quot;: null,
-                &quot;vipEndTime&quot;: null,
-                &quot;userSource&quot;: null, //用户来源 APP:  应用  MINI: 小程序
-                &quot;level&quot;: null, //会员等级
-                &quot;vipTotalDays&quot;: null, //会员累计天数
-                &quot;vip&quot;: false, //是否vip
-                &quot;buyTimes&quot;: 5 // 会员累计购买次数
-            }
-        ],
-        &quot;end&quot;: true,
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0
-    }
-}  
-</code></pre>
-
-<h4 id="11_1">1.1 用户足迹</h4>
-<h5 id="_17">接口说明</h5>
-<p>用户足迹</p>
-<h5 id="_18">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/footprint/list</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_19">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">name</td>
-<td align="center">否</td>
-<td align="left">strring</td>
-<td align="left">用户名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">uid</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">用户ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">goodsId</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">产品ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">goodsName</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">产品ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">分页</td>
-<td align="left">默认1</td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">限制单页条数</td>
-<td align="left">默认10</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_20">错误说明</h5>
-<h5 id="_21">返回实例</h5>
-<pre><code class="json">
-    {
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 766,
-                &quot;userId&quot;: 11450,
-                &quot;goodsId&quot;: 1006002,
-                &quot;goodsName&quot;: &quot;产品名称&quot;,
-                &quot;addTime&quot;: &quot;2020-07-19 15:17:59&quot;,
-                &quot;updateTime&quot;: &quot;2020-07-19 15:17:59&quot;,
-                &quot;deleted&quot;: false
-            }
-        ],
-        &quot;end&quot;: true,
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0
-    }
-}
-
-</code></pre>
-
-<h4 id="12">1.2 员工管理</h4>
-<h5 id="_22">接口说明</h5>
-<p>管理中心用户列表</p>
-<h5 id="_23">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/admin/employee/list</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_24">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">name</td>
-<td align="center">否</td>
-<td align="left">strring</td>
-<td align="left">用户名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">uid</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">用户ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">mobile</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">手机号</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">employeeType</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">员工类型</td>
-<td align="left">1 中标优选</td>
-</tr>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">分页</td>
-<td align="left">默认1</td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">限制单页条数</td>
-<td align="left">默认10</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_25">错误说明</h5>
-<h5 id="_26">返回实例</h5>
-<pre><code class="json">
-    {
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;total&quot;: 15,
-        &quot;list&quot;: [
-            {
-                &quot;uid&quot;: 11462, //用户ID
-                &quot;avatar&quot;: null, //头像
-                &quot;name&quot;: null, // 昵称
-                &quot;createTime&quot;: 1595935404952, //创建时间
-                &quot;mobile&quot;: &quot;15201008963&quot;,//手机号
-                &quot;employeeType&quot;: &quot;&quot;, //员工类型
-                &quot;money&quot;: null,  //余额
-                &quot;lastChargeMoney&quot;: null, //最后充值金额
-                &quot;lastChargeTime&quot;: null //最后充值时间
-            }
-        ],
-        &quot;pageNum&quot;: 1,
-        &quot;pageSize&quot;: 10,
-        &quot;size&quot;: 0,
-        &quot;startRow&quot;: 0,
-        &quot;endRow&quot;: 0,
-        &quot;pages&quot;: 0,
-        &quot;prePage&quot;: 0,
-        &quot;nextPage&quot;: 0,
-        &quot;isFirstPage&quot;: false,
-        &quot;isLastPage&quot;: false,
-        &quot;hasPreviousPage&quot;: false,
-        &quot;hasNextPage&quot;: false,
-        &quot;navigatePages&quot;: 0,
-        &quot;navigatepageNums&quot;: null,
-        &quot;navigateFirstPage&quot;: 0,
-        &quot;navigateLastPage&quot;: 0
-    }
-}
-
-</code></pre>
-
-<h4 id="13">1.3 添加员工</h4>
-<h5 id="_27">接口说明</h5>
-<p>管理中心用户列表</p>
-<h5 id="_28">请求说明</h5>
+<h2 id="_2">背景</h2>
+<p>PDA 出入库管理接口</p>
+<h2 id="_3">产品说明</h2>
+<h2 id="_4">关键流程说明</h2>
+<h2 id="_5">接口说明</h2>
+<h4 id="_6">登录头说明</h4>
+<p><em>将accessToken作为请求头 Authorization: 'token'  发送请求即可获取权限</em></p>
+<h4 id="_7">手机号登录</h4>
+<ol>
+<li>手机号密码登陆 /trace/employee/login</li>
+<li>将accessToken作为请求头 Authorization: 'token'  发送请求</li>
+</ol>
+<h4 id="10">1.0 手机号密码登陆</h4>
+<h5 id="_8">接口说明</h5>
+<p>后台添加企业员工，根据手机号和密码可以登陆</p>
+<h5 id="_9">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -720,11 +301,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/employee/create</td>
+<td align="center">/trace/employee/login</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_29">输入参数</h5>
+<h5 id="_10">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -737,13 +318,6 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">name</td>
-<td align="center">是</td>
-<td align="left">strring</td>
-<td align="left">用户名</td>
-<td align="left"></td>
-</tr>
-<tr>
 <td align="left">mobile</td>
 <td align="center">是</td>
 <td align="left">string</td>
@@ -751,31 +325,178 @@
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">employeeType</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">员工类型</td>
-<td align="left">1 中标优选</td>
+<td align="left">deviceId</td>
+<td align="center">是</td>
+<td align="left">设备号</td>
+<td align="left">手机imei</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">password</td>
+<td align="center">是</td>
+<td align="left">密码</td>
+<td align="left">密码</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_30">错误说明</h5>
-<h5 id="_31">返回实例</h5>
+<h5 id="_11">错误说明</h5>
+<h5 id="_12">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-       &quot;id&quot;:152 //用户ID
+        &quot;id&quot;: 2,  //员工ID
+        &quot;enterpriseId&quot;: &quot;8a2a41fa75d42fc50176643762630025&quot;, //所属企业ID
+        &quot;name&quot;: &quot;张三&quot;, //员工名称
+        &quot;employeeRole&quot;: 1, //员工角色  1 出库 2 入库  3 全部
+        &quot;accessToken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMiIsIkExNTIwMTAwODk2MSJdLCJleHAiOjE2MTQ1MjUzNzN9.ye4Hz3aDGuSr4OGYe3uR-oe5YLaypQ9YUfNC4boIjBo&quot;,
+        &quot;accessExpiresIn&quot;: 1614525373964, //过期时间
+        &quot;refreshToken&quot;: &quot;jRXTmvWiToGbjkb&quot;, //刷新token
+        &quot;refreshExpiresIn&quot;: 1619622973964 // 刷新token 过期时间
     }
 }
 
 </code></pre>
 
-<h4 id="14">1.4  员工充值</h4>
-<h5 id="_32">接口说明</h5>
-<p>管理中心用户列表</p>
-<h5 id="_33">请求说明</h5>
+<h4 id="11">1.1 查询接口</h4>
+<h5 id="_13">接口说明</h5>
+<p>根据扫码信息回显产品信息</p>
+<h5 id="_14">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trace/barcode/get</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">code</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">扫码信息</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_16">错误说明</h5>
+<h5 id="_17">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;productName&quot;: &quot;老才臣腐乳&quot;, //产品名称
+        &quot;productionBatch&quot;: null, //批次
+        &quot;picUrl&quot;: &quot;&quot;, //图片
+        &quot;enterpriseName&quot;: null, //企业名称
+        &quot;beginDate&quot;: &quot;2020-12-15 00:00:00&quot; //开始时间
+    }
+}
+
+</code></pre>
+
+<h4 id="12">1.2 获取产品列表信息</h4>
+<h5 id="_18">接口说明</h5>
+<p>产品列表信息</p>
+<h5 id="_19">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trace/product/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_20">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页条数</td>
+<td align="left">默认10</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left">默认1</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_21">错误说明</h5>
+<h5 id="_22">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;name&quot;: &quot;老才臣腐乳&quot;, //产品名称
+                &quot;productId&quot;: &quot;8a2a41fa75d4301e0176643db4ab004c&quot;, //产品ID
+                &quot;defaultPanSize&quot;: 50, //默认盘大小
+                &quot;batchList&quot;: [
+                    {
+                        &quot;batchId&quot;: &quot;xxxxxxxx&quot;,  //生产批次ID
+                        &quot;batchCode&quot;: &quot;20210101&quot; //批次码
+                    }
+                ]
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="13">1.3 添加批次信息</h4>
+<h5 id="_23">接口说明</h5>
+<p>手工添加批次信息</p>
+<h5 id="_24">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -786,11 +507,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/employee/transfer</td>
+<td align="center">/trace/batch/add</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_34">输入参数</h5>
+<h5 id="_25">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -803,30 +524,131 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">uidList</td>
-<td align="center">是</td>
-<td align="left">int[]</td>
-<td align="left">用户列表</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">money</td>
-<td align="center">是</td>
-<td align="left">double</td>
-<td align="left">转账金额</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">reason</td>
+<td align="left">productId</td>
 <td align="center">是</td>
 <td align="left">string</td>
-<td align="left">转账说明</td>
+<td align="left">产品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">batchCode</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">生产批次</td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_35">错误说明</h5>
-<h5 id="_36">返回实例</h5>
+<h5 id="_26">错误说明</h5>
+<h5 id="_27">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot; //批次ID
+    }
+}
+
+</code></pre>
+
+<h4 id="14">1.4  仓库/经销商 列表</h4>
+<h5 id="_28">接口说明</h5>
+<p>手工添加批次信息</p>
+<h5 id="_29">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trace/house/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_30">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类别</td>
+<td align="left">1仓库  2 经销商</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_31">错误说明</h5>
+<h5 id="_32">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: [
+        {
+            &quot;houseId&quot;: &quot;2c984b814cb180b5014cb1a19dcf0006&quot;, //仓库ID
+            &quot;houseCode&quot;: &quot;0002&quot;, //仓库编码
+            &quot;houseName&quot;: &quot;测试仓库&quot;, //仓库名
+            &quot;enterpriseId&quot;: &quot;8a2a41fa75d42fc50176643762630025&quot;, //所属企业
+            &quot;provincesId&quot;: 10, //省份信息
+            &quot;cityId&quot;: 1 //城市信息
+        }
+    ]
+}
+
+</code></pre>
+
+<h4 id="15">1.5  入库接口</h4>
+<h5 id="_33">接口说明</h5>
+<p>入库接口</p>
+<h5 id="_34">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trace/input</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_35">输入参数</h5>
+<p><strong>post json协议说明</strong></p>
+<pre><code class="json">
+{
+    &quot;actionType&quot;: 101, // 101:普通入库  102:调拨入库 103:退换货入库
+    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;, //批次
+    &quot;id&quot;: &quot;eae1c1e0-c17f-411f-b118-dd8cbb23c1a4&quot;, //请求ID 防止重复提交,建议uuid
+    &quot;list&quot;: [{ //盘列表,可多个
+        &quot;codes&quot;: [&quot;001H0V247S82Y70100P7&quot;],
+        &quot;size&quot;: 1
+    }],
+    &quot;productId&quot;: &quot;8a2a41fa75d4301e0176643db4ab004c&quot;, //产品ID
+    &quot;total&quot;: 1 //总数
+}
+
+
+</code></pre>
+
+<h5 id="_36">错误说明</h5>
+<h5 id="_37">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,

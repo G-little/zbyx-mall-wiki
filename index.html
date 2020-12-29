@@ -9,135 +9,161 @@
         
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Mall Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
         <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
-                <a class="navbar-brand" href=".">Mall Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">Mall Docs</a>
+                </div>
 
                 <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
+                            <li class="active">
+                                <a href=".">Home</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="user/user/" class="dropdown-item">Main</a>
+<li >
+    <a href="user/user/">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="mall/" class="dropdown-item">首页</a>
+<li >
+    <a href="mall/">首页</a>
 </li>
                                     
-<li>
-    <a href="mall/coupon/" class="dropdown-item">优惠券</a>
+<li >
+    <a href="mall/coupon/">优惠券</a>
 </li>
                                     
-<li>
-    <a href="mall/goods/" class="dropdown-item">产品</a>
+<li >
+    <a href="mall/goods/">产品</a>
 </li>
                                     
-<li>
-    <a href="mall/search/" class="dropdown-item">搜索</a>
+<li >
+    <a href="mall/search/">搜索</a>
 </li>
                                     
-<li>
-    <a href="mall/cart/" class="dropdown-item">购物车</a>
+<li >
+    <a href="mall/cart/">购物车</a>
 </li>
                                     
-<li>
-    <a href="mall/address/" class="dropdown-item">地址</a>
+<li >
+    <a href="mall/address/">地址</a>
 </li>
                                     
-<li>
-    <a href="mall/activity/" class="dropdown-item">活动</a>
+<li >
+    <a href="mall/activity/">活动</a>
 </li>
                                     
-<li>
-    <a href="mall/order/" class="dropdown-item">订单</a>
+<li >
+    <a href="mall/order/">订单</a>
 </li>
                                     
-<li>
-    <a href="mall/my/" class="dropdown-item">个人中心</a>
+<li >
+    <a href="mall/my/">个人中心</a>
 </li>
                                     
-<li>
-    <a href="mall/collect/" class="dropdown-item">收藏</a>
+<li >
+    <a href="mall/collect/">收藏</a>
 </li>
                                     
-<li>
-    <a href="mall/aftersale/" class="dropdown-item">售后</a>
+<li >
+    <a href="mall/aftersale/">售后</a>
 </li>
                                     
-<li>
-    <a href="mall/vip/" class="dropdown-item">会员</a>
+<li >
+    <a href="mall/vip/">会员</a>
 </li>
                                     
-<li>
-    <a href="mall/charge/" class="dropdown-item">充值</a>
+<li >
+    <a href="mall/charge/">充值</a>
+</li>
+                                    
+<li >
+    <a href="mall/live/">直播</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="admin/user/" class="dropdown-item">用户</a>
+<li >
+    <a href="admin/user/">用户</a>
 </li>
                                     
-<li>
-    <a href="admin/goods/" class="dropdown-item">商品</a>
+<li >
+    <a href="admin/goods/">商品</a>
 </li>
                                     
-<li>
-    <a href="admin/ad/" class="dropdown-item">推广</a>
+<li >
+    <a href="admin/ad/">推广</a>
 </li>
                                     
-<li>
-    <a href="admin/topic/" class="dropdown-item">活动</a>
+<li >
+    <a href="admin/topic/">活动</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">溯源 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="trace/pda/">PDA</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                            <li class="disabled">
+                                <a rel="next" >
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a rel="next" href="user/user/" class="nav-link">
+                            <li >
+                                <a rel="prev" href="user/user/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -147,26 +173,13 @@
         </div>
 
         <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
-
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
+            <li><a href="#_1">上传接口</a></li>
+    </ul>
 </div></div>
-                    <div class="col-md-9" role="main">
+                <div class="col-md-9" role="main">
 
 <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
 <h4 id="_1">上传接口</h4>
@@ -223,7 +236,6 @@
     }
 
 </code></pre></div>
-            </div>
         </div>
 
         <footer class="col-md-12">
@@ -232,26 +244,26 @@
         </footer>
         <script>
             var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form>
+                <form role="form">
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -260,12 +272,12 @@
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -305,6 +317,6 @@
 </html>
 
 <!--
-MkDocs version : 1.1.2
-Build Date UTC : 2020-08-17 10:06:30.289169+00:00
+MkDocs version : 1.0.4
+Build Date UTC : 2020-12-29 16:10:21
 -->

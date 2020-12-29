@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>充值 - Mall Docs</title>
+        <title>直播 - Mall Docs</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -110,12 +110,12 @@
     <a href="../vip/">会员</a>
 </li>
                                     
-<li class="active">
-    <a href="./">充值</a>
+<li >
+    <a href="../charge/">充值</a>
 </li>
                                     
-<li >
-    <a href="../live/">直播</a>
+<li class="active">
+    <a href="./">直播</a>
 </li>
                                 </ul>
                             </li>
@@ -158,12 +158,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../vip/">
+                                <a rel="next" href="../charge/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../live/">
+                                <a rel="prev" href="../../admin/user/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -175,39 +175,31 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#vip">VIP相关接口</a></li>
-            <li><a href="#_1">修订记录</a></li>
-            <li><a href="#_2">背景</a></li>
-            <li><a href="#_3">产品说明</a></li>
-            <li><a href="#_4">关键流程说明</a></li>
-            <li><a href="#_5">接口说明</a></li>
+        <li class="main active"><a href="#_1">直播相关接口</a></li>
+            <li><a href="#_2">修订记录</a></li>
+            <li><a href="#_3">背景</a></li>
+            <li><a href="#_4">产品说明</a></li>
+            <li><a href="#_5">关键流程说明</a></li>
+            <li><a href="#_6">接口说明</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="vip">VIP相关接口</h1>
+<h1 id="_1">直播相关接口</h1>
 <div class="toc">
 <ul>
-<li><a href="#vip">VIP相关接口</a><ul>
-<li><a href="#_1">修订记录</a></li>
-<li><a href="#_2">背景</a></li>
-<li><a href="#_3">产品说明</a></li>
-<li><a href="#_4">关键流程说明</a></li>
-<li><a href="#_5">接口说明</a><ul>
-<li><a href="#10-vip">1.0 vip 充值</a><ul>
-<li><a href="#_6">接口说明</a></li>
-<li><a href="#_7">请求说明</a></li>
-<li><a href="#_8">输入参数</a></li>
-<li><a href="#_9">错误说明</a></li>
-<li><a href="#_10">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#11">1.1 充值支付</a><ul>
-<li><a href="#_11">接口说明</a></li>
-<li><a href="#_12">请求说明</a></li>
-<li><a href="#_13">输入参数</a></li>
-<li><a href="#_14">错误说明</a></li>
-<li><a href="#_15">返回实例</a></li>
+<li><a href="#_1">直播相关接口</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a><ul>
+<li><a href="#10">1.0 直播列表</a><ul>
+<li><a href="#_7">接口说明</a></li>
+<li><a href="#_8">请求说明</a></li>
+<li><a href="#_9">输入参数</a></li>
+<li><a href="#_10">错误说明</a></li>
+<li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -216,7 +208,7 @@
 </li>
 </ul>
 </div>
-<h2 id="_1">修订记录</h2>
+<h2 id="_2">修订记录</h2>
 <hr />
 <table>
 <thead>
@@ -241,15 +233,15 @@
 <blockquote>
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
-<h2 id="_2">背景</h2>
-<p>vip 相关接口</p>
-<h2 id="_3">产品说明</h2>
-<h2 id="_4">关键流程说明</h2>
-<h2 id="_5">接口说明</h2>
-<h4 id="10-vip">1.0 vip 充值</h4>
-<h5 id="_6">接口说明</h5>
-<p>vip 充值首页</p>
-<h5 id="_7">请求说明</h5>
+<h2 id="_3">背景</h2>
+<p>直播 相关接口</p>
+<h2 id="_4">产品说明</h2>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h4 id="10">1.0 直播列表</h4>
+<h5 id="_7">接口说明</h5>
+<p>拉取直播列表</p>
+<h5 id="_8">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -260,68 +252,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/charge/index</td>
+<td align="center">/live/list</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_8">输入参数</h5>
-<p>无</p>
-<h5 id="_9">错误说明</h5>
-<h5 id="_10">返回实例</h5>
-<pre><code class="json">
-    {
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;payTypes&quot;: [  // 支付方式
-            {
-                &quot;typeName&quot;: &quot;ALIPAYCASH&quot;,
-                &quot;comment&quot;: &quot;支付宝支付&quot;,
-                &quot;thumbnail&quot;: null
-            },
-            {
-                &quot;typeName&quot;: &quot;WX_APP&quot;,
-                &quot;comment&quot;: &quot;微信支付&quot;,
-                &quot;thumbnail&quot;: null
-            }
-        ],
-        &quot;chargeList&quot;: [  //充值列表
-            {
-                &quot;id&quot;: 1,
-                &quot;amount&quot;: 100.00,
-                &quot;bgUrl&quot;: null,
-                &quot;comment&quot;: null,
-                &quot;givingVip&quot;: false,
-                &quot;timeType&quot;: null,
-                &quot;timeLen&quot;: null,
-                &quot;addTime&quot;: null,
-                &quot;sortOrder&quot;: null,
-                &quot;deleted&quot;: false
-            } 
-         ]
-    }
-} 
-</code></pre>
-
-<h4 id="11">1.1 充值支付</h4>
-<h5 id="_11">接口说明</h5>
-<p>vip 充值首页</p>
-<h5 id="_12">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/charge/pay</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_13">输入参数</h5>
+<h5 id="_9">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -334,34 +269,29 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">id</td>
-<td align="center">是</td>
+<td align="left">page</td>
+<td align="center">否</td>
 <td align="left">int</td>
-<td align="left">状态</td>
-<td align="left">购物车ID</td>
+<td align="left">分页</td>
+<td align="left">默认值1</td>
 </tr>
 <tr>
-<td align="left">payType</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">支付类型</td>
-<td align="left"></td>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left">默认值20</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_14">错误说明</h5>
-<h5 id="_15">返回实例</h5>
+<h5 id="_10">错误说明</h5>
+<h5 id="_11">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;payOrderId&quot;: null,
-        &quot;outPayOrderId&quot;: null,
-        &quot;callPayInfo&quot;: &quot;alipay_sdk=alipay-sdk-java-dynamicVersionNo&amp;app_id=2021001181693812&amp;biz_content=%7B%22out_trade_no%22%3A%22PRE2007242141242862121320331011%22%2C%22product_code%22%3A%22QUICK_MSECURITY_PAY%22%2C%22subject%22%3A%22%E4%B8%AD%E6%A0%87%E4%BC%98%E9%80%89%22%2C%22timeout_express%22%3A%2230m%22%2C%22total_amount%22%3A%22100.0%22%7D&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.app.pay&amp;notify_url=http%3A%2F%2Fxiaogang.org.cn&amp;sign=BZ0%2FQN7aoQlxA3A0Whw8h0ON00Wb%2BLXb0hp7w317TtTnj9U%2Fsst%2F02mvUlfbeGYaydAkGUmMoYkCJFIYPqz61voC2KpXGfnMCZSVlZmNkCV1d9Fy%2B1HH8ZMVBdBpiSXUlynGUz3UsOUEkVsOHjkno7tBv5bB0%2BmrEwxr1E3fhUWUC7LALDHMuSuUN6ukUeaWllwvrkgFWWWlz0cR1%2FRpoCyzXeR5qjrEelvLgU6%2Bjpf5jwE4OkSisIFL5ILNZwyGtMHtwgyEGSoX42sVzcAwKTRUWQlDYzR%2BX0dmqIPYM8S0hTK0uQIb6%2BzG7BEpy5WA9dWAcGTVXpMGCdPFuCj9Kg%3D%3D&amp;sign_type=RSA2&amp;timestamp=2020-07-24+21%3A41%3A28&amp;version=1.0&quot;,
-        &quot;payCallbackInfo&quot;: null
     }
-}
 
 </code></pre></div>
         </div>
