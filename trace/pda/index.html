@@ -204,7 +204,7 @@
 <li><a href="#_12">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#11">1.1 查询接口</a><ul>
+<li><a href="#111-token">1.1.1 刷新token</a><ul>
 <li><a href="#_13">接口说明</a></li>
 <li><a href="#_14">请求说明</a></li>
 <li><a href="#_15">输入参数</a></li>
@@ -212,7 +212,7 @@
 <li><a href="#_17">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#12">1.2 获取产品列表信息</a><ul>
+<li><a href="#11">1.1 查询接口</a><ul>
 <li><a href="#_18">接口说明</a></li>
 <li><a href="#_19">请求说明</a></li>
 <li><a href="#_20">输入参数</a></li>
@@ -220,7 +220,7 @@
 <li><a href="#_22">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#13">1.3 添加批次信息</a><ul>
+<li><a href="#12">1.2 获取产品列表信息</a><ul>
 <li><a href="#_23">接口说明</a></li>
 <li><a href="#_24">请求说明</a></li>
 <li><a href="#_25">输入参数</a></li>
@@ -228,7 +228,7 @@
 <li><a href="#_27">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#14">1.4  仓库/经销商 列表</a><ul>
+<li><a href="#13">1.3 添加批次信息</a><ul>
 <li><a href="#_28">接口说明</a></li>
 <li><a href="#_29">请求说明</a></li>
 <li><a href="#_30">输入参数</a></li>
@@ -236,12 +236,20 @@
 <li><a href="#_32">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#15">1.5  入库接口</a><ul>
+<li><a href="#14">1.4  仓库/经销商 列表</a><ul>
 <li><a href="#_33">接口说明</a></li>
 <li><a href="#_34">请求说明</a></li>
 <li><a href="#_35">输入参数</a></li>
 <li><a href="#_36">错误说明</a></li>
 <li><a href="#_37">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#15">1.5  入库接口</a><ul>
+<li><a href="#_38">接口说明</a></li>
+<li><a href="#_39">请求说明</a></li>
+<li><a href="#_40">输入参数</a></li>
+<li><a href="#_41">错误说明</a></li>
+<li><a href="#_42">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -360,10 +368,65 @@
 
 </code></pre>
 
-<h4 id="11">1.1 查询接口</h4>
+<h4 id="111-token">1.1.1 刷新token</h4>
 <h5 id="_13">接口说明</h5>
-<p>根据扫码信息回显产品信息</p>
+<p>刷新token</p>
 <h5 id="_14">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trace/employee/token/refresh</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">refreshToken</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">刷新token</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_16">错误说明</h5>
+<h5 id="_17">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;accessToken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMiIsIkExNTIwMTAwODk2MSJdLCJleHAiOjE2MTQ1MjUzNzN9.ye4Hz3aDGuSr4OGYe3uR-oe5YLaypQ9YUfNC4boIjBo&quot;,
+        &quot;accessExpiresIn&quot;: 1614525373964, //过期时间
+        &quot;refreshToken&quot;: &quot;jRXTmvWiToGbjkb&quot;, //刷新token
+        &quot;refreshExpiresIn&quot;: 1619622973964 // 刷新token 过期时间
+    }
+}
+
+</code></pre>
+
+<h4 id="11">1.1 查询接口</h4>
+<h5 id="_18">接口说明</h5>
+<p>根据扫码信息回显产品信息</p>
+<h5 id="_19">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -378,7 +441,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_15">输入参数</h5>
+<h5 id="_20">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -399,8 +462,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_16">错误说明</h5>
-<h5 id="_17">返回实例</h5>
+<h5 id="_21">错误说明</h5>
+<h5 id="_22">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
@@ -417,9 +480,9 @@
 </code></pre>
 
 <h4 id="12">1.2 获取产品列表信息</h4>
-<h5 id="_18">接口说明</h5>
+<h5 id="_23">接口说明</h5>
 <p>产品列表信息</p>
-<h5 id="_19">请求说明</h5>
+<h5 id="_24">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -434,7 +497,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_20">输入参数</h5>
+<h5 id="_25">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -462,8 +525,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_21">错误说明</h5>
-<h5 id="_22">返回实例</h5>
+<h5 id="_26">错误说明</h5>
+<h5 id="_27">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
@@ -494,9 +557,9 @@
 </code></pre>
 
 <h4 id="13">1.3 添加批次信息</h4>
-<h5 id="_23">接口说明</h5>
+<h5 id="_28">接口说明</h5>
 <p>手工添加批次信息</p>
-<h5 id="_24">请求说明</h5>
+<h5 id="_29">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -511,7 +574,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_25">输入参数</h5>
+<h5 id="_30">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -539,8 +602,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_26">错误说明</h5>
-<h5 id="_27">返回实例</h5>
+<h5 id="_31">错误说明</h5>
+<h5 id="_32">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
@@ -553,9 +616,9 @@
 </code></pre>
 
 <h4 id="14">1.4  仓库/经销商 列表</h4>
-<h5 id="_28">接口说明</h5>
+<h5 id="_33">接口说明</h5>
 <p>手工添加批次信息</p>
-<h5 id="_29">请求说明</h5>
+<h5 id="_34">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -570,7 +633,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_30">输入参数</h5>
+<h5 id="_35">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -591,8 +654,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_31">错误说明</h5>
-<h5 id="_32">返回实例</h5>
+<h5 id="_36">错误说明</h5>
+<h5 id="_37">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
@@ -612,9 +675,9 @@
 </code></pre>
 
 <h4 id="15">1.5  入库接口</h4>
-<h5 id="_33">接口说明</h5>
+<h5 id="_38">接口说明</h5>
 <p>入库接口</p>
-<h5 id="_34">请求说明</h5>
+<h5 id="_39">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -629,7 +692,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_35">输入参数</h5>
+<h5 id="_40">输入参数</h5>
 <p><strong>post json协议说明</strong></p>
 <pre><code class="json">
 {
@@ -647,8 +710,8 @@
 
 </code></pre>
 
-<h5 id="_36">错误说明</h5>
-<h5 id="_37">返回实例</h5>
+<h5 id="_41">错误说明</h5>
+<h5 id="_42">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
