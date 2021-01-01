@@ -81,6 +81,50 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 ```
 
 
+
+#### 1.1.1 刷新token
+
+##### 接口说明
+
+刷新token
+
+##### 请求说明
+
+| http 请求方式          | post     |
+|:------------- |:---------------:|
+| url      | /trace/employee/token/refresh |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| refreshToken      | 是|  string  |  刷新token |   |
+
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json  
+    
+    {
+    "c": 0,
+    "m": null,
+    "d": {
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMiIsIkExNTIwMTAwODk2MSJdLCJleHAiOjE2MTQ1MjUzNzN9.ye4Hz3aDGuSr4OGYe3uR-oe5YLaypQ9YUfNC4boIjBo",
+        "accessExpiresIn": 1614525373964, //过期时间
+        "refreshToken": "jRXTmvWiToGbjkb", //刷新token
+        "refreshExpiresIn": 1619622973964 // 刷新token 过期时间
+    }
+}
+        
+```
+
+
 #### 1.1 查询接口
 
 ##### 接口说明
@@ -308,6 +352,61 @@ __post json协议说明__
 
 
 ```
+
+
+
+
+##### 案例
+
+__1.普通入库__
+
+
+```json 
+
+{
+    "actionType": 101,
+    "batchId": "803a1b88-2515-4516-b1f5-d9e80d8f057c",
+    "list": [
+        {
+            "codes": [
+                "001H0V247S82Y70100P7",
+                "001K07HV0M90AZ01KCQ8"
+            ],
+            "size": 2
+        }
+    ],
+    "productId": "8a2a41fa75d4301e0176643db4ab004c",
+    "total": 2
+}
+
+
+```
+
+
+__2.普通入库__
+
+
+```json 
+
+{
+    "actionType": 101,
+    "batchId": "803a1b88-2515-4516-b1f5-d9e80d8f057c",
+    "list": [
+        {
+            "codes": [
+                "001H0V247S82Y70100P7",
+                "001K07HV0M90AZ01KCQ8"
+            ],
+            "size": 2
+        }
+    ],
+    "productId": "8a2a41fa75d4301e0176643db4ab004c",
+    "total": 2
+}
+
+
+```
+
 
 
 

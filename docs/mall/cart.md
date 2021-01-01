@@ -542,8 +542,16 @@
                 "comment": "微信支付",
                 "thumbnail": null
             }
-        ]   
-    }
+        ],
+    "wallet": {
+        "couponCount": 0, //优惠券
+        "redEnvelopCount": 0, //红包
+        "giftCardCount": 0, //礼品卡
+        "money": 44637.84, //余额
+        "userPoints": 0 //用户积分
+        }       
+    },
+    "vipDiscountAmount":22.22
 }
 
 ```

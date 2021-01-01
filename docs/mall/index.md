@@ -246,16 +246,73 @@
     {
     "c": 0,
     "m": null,
-    "d": [
-        {
-            "label": "身份唯一码",
-            "value": "2022307987285385"
+    "d": {
+        "tracingResult": [
+            {
+                "label": "身份唯一码",
+                "value": "2022307987285385"
+            },
+            {
+                "label": "产品名称",
+                "value": "庆沣祥•白莺山春古茶（2016）"
+            },
+            {
+                "label": "规格",
+                "value": "357g/片"
+            },
+            {
+                "label": "成品生产日期",
+                "value": "2016年4月1日"
+            },
+            {
+                "label": "出品公司",
+                "value": "昆明七彩云南庆沣祥茶业股份有限公司"
+            },
+            {
+                "label": "生产厂/监制人",
+                "value": "勐海七彩云南茶厂有限公司/罗翔辉"
+            },
+            {
+                "label": "仓储信息",
+                "value": "2016年6月入七彩云南陈华仓"
+            },
+            {
+                "label": "检验报告编号",
+                "value": "Y142016-WB00196"
+            },
+            {
+                "label": "检验机构",
+                "value": "国家普洱茶产品质量监督检验中心"
+            },
+            {
+                "label": "检验指标及检验情况",
+                "value": "1.重金属—合格   2.农残—合格"
+            },
+            {
+                "label": "原料来源",
+                "value": "   精选普洱茶核心产区白莺山古茶园树龄百年以上的云南大叶种晒青毛茶原料，古法精制而成。"
+            }
+        ],
+        "goods": {
+            "id": 1181000,
+            "name": "母亲节礼物-舒适安睡组合",
+            "picUrl": "http://yanxuan.nosdn.127.net/1f67b1970ee20fd572b7202da0ff705d.png",
+            "unit": "件",
+            "counterPrice": 0.09,
+            "retailPrice": 0.01,
+            "vipPrice": 0.01,
+            "brief": "安心舒适是最好的礼物",
+            "gallery": [
+                "http://yanxuan.nosdn.127.net/355efbcc32981aa3b7869ca07ee47dac.jpg",
+                "http://yanxuan.nosdn.127.net/43e283df216881037b70d8b34f8846d3.jpg",
+                "http://yanxuan.nosdn.127.net/12e41d7e5dabaf9150a8bb45c41cf422.jpg",
+                "http://yanxuan.nosdn.127.net/5c1d28e86ccb89980e6054a49571cdec.jpg"
+            ],
+            "videos": null,
+            "tags": null
         },
-        {
-            "label": "产品名称",
-            "value": "庆沣祥.白莺山春古茶（2016）"
-        }
-    ]
+        "daySelectList": null
+    }
 }
 
 ```
