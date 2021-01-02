@@ -244,13 +244,30 @@
 <li><a href="#_37">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#15">1.5  入库接口</a><ul>
+<li><a href="#141">1.4.1  城市列表</a><ul>
 <li><a href="#_38">接口说明</a></li>
 <li><a href="#_39">请求说明</a></li>
 <li><a href="#_40">输入参数</a></li>
-<li><a href="#_41">案例</a></li>
-<li><a href="#_42">错误说明</a></li>
-<li><a href="#_43">返回实例</a></li>
+<li><a href="#_41">错误说明</a></li>
+<li><a href="#_42">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#15">1.5  入库接口</a><ul>
+<li><a href="#_43">接口说明</a></li>
+<li><a href="#_44">请求说明</a></li>
+<li><a href="#_45">输入参数</a></li>
+<li><a href="#_46">案例</a></li>
+<li><a href="#_47">错误说明</a></li>
+<li><a href="#_48">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#16">1.6  出库接口</a><ul>
+<li><a href="#_49">接口说明</a></li>
+<li><a href="#_50">请求说明</a></li>
+<li><a href="#_51">输入参数</a></li>
+<li><a href="#_52">案例</a></li>
+<li><a href="#_53">错误说明</a></li>
+<li><a href="#_54">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -470,11 +487,17 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;productName&quot;: &quot;老才臣腐乳&quot;, //产品名称
-        &quot;productionBatch&quot;: null, //批次
-        &quot;picUrl&quot;: &quot;&quot;, //图片
-        &quot;enterpriseName&quot;: null, //企业名称
-        &quot;beginDate&quot;: &quot;2020-12-15 00:00:00&quot; //开始时间
+        &quot;productName&quot;: &quot;老才臣腐乳&quot;,
+        &quot;productionBatch&quot;: null,
+        &quot;picUrl&quot;: &quot;&quot;,
+        &quot;enterpriseName&quot;: null,  //企业名称
+        &quot;beginDate&quot;: &quot;2020-12-15 00:00:00&quot;,
+        &quot;bundleId&quot;: &quot;6266170d-88ed-482e-ac5c-28b045bbc151&quot;, //盘符
+        &quot;total&quot;: 2, //总数
+        &quot;list&quot;: [ //列表
+            &quot;001H0V247S82Y70100P7&quot;,
+            &quot;001K07HV0M90AZ01KCQ8&quot;
+        ]
     }
 }
 
@@ -653,6 +676,13 @@
 <td align="left">类别</td>
 <td align="left">1仓库  2 经销商</td>
 </tr>
+<tr>
+<td align="left">cityId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类别</td>
+<td align="left">城市ID</td>
+</tr>
 </tbody>
 </table>
 <h5 id="_36">错误说明</h5>
@@ -675,10 +705,66 @@
 
 </code></pre>
 
-<h4 id="15">1.5  入库接口</h4>
+<h4 id="141">1.4.1  城市列表</h4>
 <h5 id="_38">接口说明</h5>
-<p>入库接口</p>
+<p>城市列表</p>
 <h5 id="_39">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trace/house/area_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_40">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">类别</td>
+<td align="left">1仓库  2 经销商</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_41">错误说明</h5>
+<h5 id="_42">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: [
+        {
+            &quot;areaid&quot;:123, //城市ID
+            &quot;name&quot;:&quot;北京&quot;, //城市ID
+            &quot;parentid&quot;: 3, //父节点
+        }
+    ]
+}
+
+</code></pre>
+
+<h4 id="15">1.5  入库接口</h4>
+<h5 id="_43">接口说明</h5>
+<p>入库接口</p>
+<h5 id="_44">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -693,7 +779,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_40">输入参数</h5>
+<h5 id="_45">输入参数</h5>
 <p><strong>post json协议说明</strong></p>
 <pre><code class="json">
 {
@@ -711,7 +797,7 @@
 
 </code></pre>
 
-<h5 id="_41">案例</h5>
+<h5 id="_46">案例</h5>
 <p><strong>1.普通入库</strong></p>
 <pre><code class="json">
 {
@@ -733,17 +819,59 @@
 
 </code></pre>
 
-<p><strong>2.普通入库</strong></p>
+<p><strong>2.退盘</strong></p>
 <pre><code class="json">
 {
     &quot;actionType&quot;: 101,
     &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
     &quot;list&quot;: [
         {
+            &quot;bundleId&quot;:&quot;035e150e-81f1-4128-84e9-bcfa069ee9ed&quot;,
+            &quot;action&quot;:&quot;REMOVE&quot;,
             &quot;codes&quot;: [
                 &quot;001H0V247S82Y70100P7&quot;,
-                &quot;001K07HV0M90AZ01KCQ8&quot;
             ],
+            &quot;size&quot;: 1
+        }
+    ],
+    &quot;productId&quot;: &quot;8a2a41fa75d4301e0176643db4ab004c&quot;,
+    &quot;total&quot;: 1
+}
+
+
+</code></pre>
+
+<p><strong>3.补盘</strong></p>
+<pre><code class="json">
+{
+    &quot;actionType&quot;: 101,
+    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;bundleId&quot;:&quot;035e150e-81f1-4128-84e9-bcfa069ee9ed&quot;,
+            &quot;action&quot;:&quot;ADD&quot;,
+            &quot;codes&quot;: [
+                &quot;001H0V247S82Y70100P7&quot;,
+            ],
+            &quot;size&quot;: 1
+        }
+    ],
+    &quot;productId&quot;: &quot;8a2a41fa75d4301e0176643db4ab004c&quot;,
+    &quot;total&quot;: 1
+}
+
+
+</code></pre>
+
+<p><strong>4.调拨入库</strong></p>
+<pre><code class="json">
+{
+    &quot;actionType&quot;: 102,
+    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
+    &quot;from&quot;:&quot;2c984b814cb180b5014cb1a19dcf0006&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;bundleId&quot;:&quot;035e150e-81f1-4128-84e9-bcfa069ee9ed&quot;,
             &quot;size&quot;: 2
         }
     ],
@@ -754,8 +882,113 @@
 
 </code></pre>
 
-<h5 id="_42">错误说明</h5>
-<h5 id="_43">返回实例</h5>
+<h5 id="_47">错误说明</h5>
+<h5 id="_48">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="16">1.6  出库接口</h4>
+<h5 id="_49">接口说明</h5>
+<p>出库接口</p>
+<h5 id="_50">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trace/output</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_51">输入参数</h5>
+<p><strong>post json协议说明</strong></p>
+<pre><code class="json">
+{
+    &quot;actionType&quot;: 201,
+    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
+    &quot;target&quot;:&quot;2c984b814cb180b5014cb1a19dcf0006&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;bundleId&quot;:&quot;2709daaf-aa3f-4dac-a3ae-ad23637fe52d&quot;, //盘符
+            &quot;size&quot;: 1
+        },
+        {
+            &quot;action&quot;:&quot;REMOVE&quot;,  // 退盘
+            &quot;bundleId&quot;:&quot;2709daaf-aa3f-4dac-a3ae-ad23637fe52d&quot;,
+            &quot;codes&quot;:[
+                &quot;001H0V247S82Y70100P7&quot;
+            ],
+            &quot;size&quot;: 1
+        }
+    ],
+    &quot;productId&quot;: &quot;8a2a41fa75d4301e0176643db4ab004c&quot;,
+    &quot;total&quot;: 2
+}
+
+
+</code></pre>
+
+<h5 id="_52">案例</h5>
+<p><strong>1.普通出库</strong></p>
+<pre><code class="json">
+{
+    &quot;actionType&quot;: 201,
+    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
+    &quot;target&quot;:&quot;2c984b814cb180b5014cb1a19dcf0006&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;bundleId&quot;:&quot;2709daaf-aa3f-4dac-a3ae-ad23637fe52d&quot;, //盘符
+            &quot;size&quot;: 1
+        }
+    ],
+    &quot;productId&quot;: &quot;8a2a41fa75d4301e0176643db4ab004c&quot;,
+    &quot;total&quot;: 2
+}
+
+
+</code></pre>
+
+<p><strong>2.退盘出库</strong></p>
+<pre><code class="json">
+{
+    &quot;actionType&quot;: 201,
+    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
+    &quot;target&quot;:&quot;2c984b814cb180b5014cb1a19dcf0006&quot;, //仓库
+    &quot;list&quot;: [
+        {
+            &quot;bundleId&quot;:&quot;2709daaf-aa3f-4dac-a3ae-ad23637fe52d&quot;, //盘符
+            &quot;size&quot;: 1
+        },
+        {
+            &quot;action&quot;:&quot;REMOVE&quot;,  // 退盘
+            &quot;bundleId&quot;:&quot;2709daaf-aa3f-4dac-a3ae-ad23637fe52d&quot;,
+            &quot;codes&quot;:[
+                &quot;001H0V247S82Y70100P7&quot;
+            ],
+            &quot;size&quot;: 1
+        }
+    ],
+    &quot;productId&quot;: &quot;8a2a41fa75d4301e0176643db4ab004c&quot;,
+    &quot;total&quot;: 2
+}
+
+</code></pre>
+
+<h5 id="_53">错误说明</h5>
+<h5 id="_54">返回实例</h5>
 <pre><code class="json">
     {
     &quot;c&quot;: 0,
