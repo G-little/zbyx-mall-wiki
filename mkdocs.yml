@@ -19,6 +19,7 @@
       - 充值: './mall/charge.md'  
       - 直播: './mall/live.md'  
       - 官网: './www/www.md'  
+      - 邀请: './mall/invite.md'  
     - 管理后台: 
       - 用户: './admin/user.md'    
       - 商品: './admin/goods.md'    
@@ -26,5 +27,5 @@
       - 活动: './admin/topic.md'
       - 官网: './www/www-admin.md'      
     - 溯源: 
-      - PDA: './trace/pdaid.md'      
+      - PDA: './trace/pda.md'      
       
