@@ -160,6 +160,8 @@
 |  postalCode      | 否|  string  |  邮政编码| |
 |  tel      | 是|  string  |  电话 | |
 |  isDefault      | 是|  boolean  | 是否默认地址 | |
+|  location      | 是|  string  | 地理坐标（高德） | "116.464737,39.959245" |
+|  locationId      | 是|  string  | 高德ID |  |
 
 #####  错误说明
 
