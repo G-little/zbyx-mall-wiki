@@ -557,6 +557,7 @@ __post json协议说明__
     "actionType": 201,
     "batchId": "803a1b88-2515-4516-b1f5-d9e80d8f057c",
     "target":"2c984b814cb180b5014cb1a19dcf0006",
+    "carNo":"xxxx", //车牌号
     "list": [
         {
             "bundleId":"2709daaf-aa3f-4dac-a3ae-ad23637fe52d", //盘符
@@ -592,6 +593,7 @@ __1.普通出库__
     "actionType": 201,
     "batchId": "803a1b88-2515-4516-b1f5-d9e80d8f057c",
     "target":"2c984b814cb180b5014cb1a19dcf0006",
+    "carNo":"xxxx", //车牌号
     "list": [
         {
             "bundleId":"2709daaf-aa3f-4dac-a3ae-ad23637fe52d", //盘符
