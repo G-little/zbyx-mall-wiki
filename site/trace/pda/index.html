@@ -494,6 +494,13 @@
 <td align="left">扫码信息</td>
 <td align="left"></td>
 </tr>
+<tr>
+<td align="left">from</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">来源仓库</td>
+<td align="left">获取指定仓库信息</td>
+</tr>
 </tbody>
 </table>
 <h5 id="_21">错误说明</h5>
@@ -509,6 +516,8 @@
         &quot;enterpriseName&quot;: null,  //企业名称
         &quot;beginDate&quot;: &quot;2020-12-15 00:00:00&quot;,
         &quot;bundleId&quot;: &quot;6266170d-88ed-482e-ac5c-28b045bbc151&quot;, //盘符
+        &quot;houseName&quot;:&quot;所在仓库名&quot;,
+        &quot;status&quot;:0 ,//0 已入库 -1 已出库
         &quot;total&quot;: 2, //总数
         &quot;list&quot;: [ //列表
             &quot;001H0V247S82Y70100P7&quot;,
@@ -699,6 +708,13 @@
 <td align="left">类别</td>
 <td align="left">城市ID</td>
 </tr>
+<tr>
+<td align="left">keywords</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">关键字</td>
+<td align="left">关键字搜索</td>
+</tr>
 </tbody>
 </table>
 <h5 id="_36">错误说明</h5>
@@ -802,6 +818,7 @@
     &quot;actionType&quot;: 101, // 101:普通入库  102:调拨入库 103:退换货入库
     &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;, //批次
     &quot;id&quot;: &quot;eae1c1e0-c17f-411f-b118-dd8cbb23c1a4&quot;, //请求ID 防止重复提交,建议uuid
+    &quot;target&quot;:&quot;xxxxx&quot;,//仓库ID
     &quot;list&quot;: [{ //盘列表,可多个
         &quot;codes&quot;: [&quot;001H0V247S82Y70100P7&quot;],
         &quot;size&quot;: 1
@@ -819,6 +836,7 @@
 {
     &quot;actionType&quot;: 101,
     &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
+    &quot;target&quot;:&quot;xxxxx&quot;,//仓库ID
     &quot;list&quot;: [
         {
             &quot;codes&quot;: [
@@ -839,7 +857,6 @@
 <pre><code class="json">
 {
     &quot;actionType&quot;: 101,
-    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
     &quot;list&quot;: [
         {
             &quot;bundleId&quot;:&quot;035e150e-81f1-4128-84e9-bcfa069ee9ed&quot;,
@@ -861,7 +878,6 @@
 <pre><code class="json">
 {
     &quot;actionType&quot;: 101,
-    &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
     &quot;list&quot;: [
         {
             &quot;bundleId&quot;:&quot;035e150e-81f1-4128-84e9-bcfa069ee9ed&quot;,
@@ -936,6 +952,7 @@
     &quot;actionType&quot;: 201,
     &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
     &quot;target&quot;:&quot;2c984b814cb180b5014cb1a19dcf0006&quot;,
+    &quot;carNo&quot;:&quot;xxxx&quot;, //车牌号
     &quot;list&quot;: [
         {
             &quot;bundleId&quot;:&quot;2709daaf-aa3f-4dac-a3ae-ad23637fe52d&quot;, //盘符
@@ -964,6 +981,7 @@
     &quot;actionType&quot;: 201,
     &quot;batchId&quot;: &quot;803a1b88-2515-4516-b1f5-d9e80d8f057c&quot;,
     &quot;target&quot;:&quot;2c984b814cb180b5014cb1a19dcf0006&quot;,
+    &quot;carNo&quot;:&quot;xxxx&quot;, //车牌号
     &quot;list&quot;: [
         {
             &quot;bundleId&quot;:&quot;2709daaf-aa3f-4dac-a3ae-ad23637fe52d&quot;, //盘符

@@ -322,6 +322,22 @@
 <li><a href="#_75">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#20">2.0 检查新订单</a><ul>
+<li><a href="#_76">接口说明</a></li>
+<li><a href="#_77">请求说明</a></li>
+<li><a href="#_78">输入参数</a></li>
+<li><a href="#_79">错误说明</a></li>
+<li><a href="#_80">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#21">2.1 设置物流信息</a><ul>
+<li><a href="#_81">接口说明</a></li>
+<li><a href="#_82">请求说明</a></li>
+<li><a href="#_83">输入参数</a></li>
+<li><a href="#_84">错误说明</a></li>
+<li><a href="#_85">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1492,6 +1508,134 @@
                 &quot;thumbnail&quot;: null
             }
         ] 
+    }
+}
+
+</code></pre>
+
+<h4 id="20">2.0 检查新订单</h4>
+<h5 id="_76">接口说明</h5>
+<p>订单列表信息</p>
+<h5 id="_77">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/order/check_new</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_78">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">time</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">最后一次查看订单的时间戳</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_79">错误说明</h5>
+<h5 id="_80">返回实例</h5>
+<pre><code class="json">
+{
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;count&quot;:1,//新订单计数
+        &quot;time&quot;:100000,//最终查询使用时间戳
+    }
+}
+
+</code></pre>
+
+<h4 id="21">2.1 设置物流信息</h4>
+<h5 id="_81">接口说明</h5>
+<p>设置物流信息</p>
+<h5 id="_82">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post     json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/order/set_logistics</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_83">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">orderId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">订单ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">shipSn</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">物流单号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">shipChannel</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">物流平台</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">shipText</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">物流信息</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_84">错误说明</h5>
+<h5 id="_85">返回实例</h5>
+<pre><code class="json">
+{
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
