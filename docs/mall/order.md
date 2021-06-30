@@ -874,7 +874,7 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
 
 | http 请求方式          | get     |
 |:------------- |:---------------:|
-| url      | /order/check_new |
+| url      | /admin/order/check_new |
 
 #####  输入参数
 
@@ -920,7 +920,7 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
 
 | http 请求方式          | post     json  |
 |:------------- |:---------------:|
-| url      | /order/set_logistics |
+| url      | /admin/order/set_logistics |
 
 #####  输入参数
 
@@ -930,8 +930,8 @@ _地址信息_ (若上面 addressId 为空，则地址信息为必填项)
 | orderId      | 是 |  int  |  订单ID |  |
 | shipSn      | 是 |  string  |   物流单号 |  |
 | shipChannel      | 是 |  string  |   物流平台|  |
-| shipText      | 是 |  string  |   物流信息|  |
-
+| shipTime      | 是 |  string  |   送达时间 | 如 明日16点前 |
+| shipUser      | 是 |  string  |   配送员信息 | 如 小杜（1520100*****）  |
 
 
 
