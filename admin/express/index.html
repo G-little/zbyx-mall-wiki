@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>管理接口 - Mall Docs</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Mall Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../user/user/">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../mall/">首页</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/catalog/">分类</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/coupon/">优惠券</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/goods/">产品</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/search/">搜索</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/cart/">购物车</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/address/">地址</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/activity/">活动</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/order/">订单</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/my/">个人中心</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/collect/">收藏</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/aftersale/">售后</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/vip/">会员</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/charge/">充值</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/live/">直播</a>
+</li>
+                                    
+<li >
+    <a href="../../www/www/">官网</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/invite/">邀请</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../user/">用户</a>
+</li>
+                                    
+<li >
+    <a href="../goods/">商品</a>
+</li>
+                                    
+<li >
+    <a href="../ad/">推广</a>
+</li>
+                                    
+<li >
+    <a href="../topic/">活动</a>
+</li>
+                                    
+<li >
+    <a href="../../www/www-admin/">官网</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">溯源 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../trace/pda/">PDA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">快递 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../express/express/">app接口</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">管理接口</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../express/express/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">物流管理后台接口</a></li>
+            <li><a href="#_2">修订记录</a></li>
+            <li><a href="#_3">背景</a></li>
+            <li><a href="#_4">产品说明</a></li>
+            <li><a href="#_5">关键流程说明</a></li>
+            <li><a href="#_6">接口说明</a></li>
+            <li><a href="#_7">渠道管理</a></li>
+            <li><a href="#_36">订单管理</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_1">物流管理后台接口</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">物流管理后台接口</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a></li>
+<li><a href="#_7">渠道管理</a><ul>
+<li><a href="#10">1.0 渠道列表</a><ul>
+<li><a href="#_8">接口说明</a></li>
+<li><a href="#_9">请求说明</a></li>
+<li><a href="#_10">输入参数</a></li>
+<li><a href="#_11">错误说明</a></li>
+<li><a href="#_12">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#11">1.1 渠道详情</a><ul>
+<li><a href="#_13">接口说明</a></li>
+<li><a href="#_14">请求说明</a></li>
+<li><a href="#_15">输入参数</a></li>
+<li><a href="#_16">错误说明</a></li>
+<li><a href="#_17">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#12">1.2 创建渠道</a><ul>
+<li><a href="#_18">接口说明</a></li>
+<li><a href="#_19">请求说明</a></li>
+<li><a href="#_20">输入参数</a></li>
+<li><a href="#_21">请求实例</a></li>
+<li><a href="#_22">错误说明</a></li>
+<li><a href="#_23">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#13">1.3 删除渠道</a><ul>
+<li><a href="#_24">接口说明</a></li>
+<li><a href="#_25">请求说明</a></li>
+<li><a href="#_26">输入参数</a></li>
+<li><a href="#_27">请求实例</a></li>
+<li><a href="#_28">错误说明</a></li>
+<li><a href="#_29">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#14">1.4 更新渠道</a><ul>
+<li><a href="#_30">接口说明</a></li>
+<li><a href="#_31">请求说明</a></li>
+<li><a href="#_32">输入参数</a></li>
+<li><a href="#_33">请求实例</a></li>
+<li><a href="#_34">错误说明</a></li>
+<li><a href="#_35">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_36">订单管理</a><ul>
+<li><a href="#20">2.0 订单列表</a><ul>
+<li><a href="#_37">接口说明</a></li>
+<li><a href="#_38">请求说明</a></li>
+<li><a href="#_39">输入参数</a></li>
+<li><a href="#_40">错误说明</a></li>
+<li><a href="#_41">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#21">2.1 订单详情</a><ul>
+<li><a href="#_42">接口说明</a></li>
+<li><a href="#_43">请求说明</a></li>
+<li><a href="#_44">输入参数</a></li>
+<li><a href="#_45">错误说明</a></li>
+<li><a href="#_46">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#22">2.2 创建订单</a><ul>
+<li><a href="#_47">接口说明</a></li>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">请求实例</a></li>
+<li><a href="#_51">错误说明</a></li>
+<li><a href="#_52">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#23">2.3 删除订单</a><ul>
+<li><a href="#_53">接口说明</a></li>
+<li><a href="#_54">请求说明</a></li>
+<li><a href="#_55">输入参数</a></li>
+<li><a href="#_56">请求实例</a></li>
+<li><a href="#_57">错误说明</a></li>
+<li><a href="#_58">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#24">2.4 更新订单</a><ul>
+<li><a href="#_59">接口说明</a></li>
+<li><a href="#_60">请求说明</a></li>
+<li><a href="#_61">输入参数</a></li>
+<li><a href="#_62">请求实例</a></li>
+<li><a href="#_63">错误说明</a></li>
+<li><a href="#_64">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#25">2.5 分配快递员</a><ul>
+<li><a href="#_65">接口说明</a></li>
+<li><a href="#_66">请求说明</a></li>
+<li><a href="#_67">输入参数</a></li>
+<li><a href="#_68">请求实例</a></li>
+<li><a href="#_69">错误说明</a></li>
+<li><a href="#_70">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#3">3 快递员管理</a><ul>
+<li><a href="#30">3.0 快递员列表</a><ul>
+<li><a href="#_71">接口说明</a></li>
+<li><a href="#_72">请求说明</a></li>
+<li><a href="#_73">输入参数</a></li>
+<li><a href="#_74">错误说明</a></li>
+<li><a href="#_75">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#31">3.1 快递员详情</a><ul>
+<li><a href="#_76">接口说明</a></li>
+<li><a href="#_77">请求说明</a></li>
+<li><a href="#_78">输入参数</a></li>
+<li><a href="#_79">错误说明</a></li>
+<li><a href="#_80">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#32">3.2 创建快递员</a><ul>
+<li><a href="#_81">接口说明</a></li>
+<li><a href="#_82">请求说明</a></li>
+<li><a href="#_83">输入参数</a></li>
+<li><a href="#_84">请求实例</a></li>
+<li><a href="#_85">错误说明</a></li>
+<li><a href="#_86">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#33">3.3 删除快递员</a><ul>
+<li><a href="#_87">接口说明</a></li>
+<li><a href="#_88">请求说明</a></li>
+<li><a href="#_89">输入参数</a></li>
+<li><a href="#_90">请求实例</a></li>
+<li><a href="#_91">错误说明</a></li>
+<li><a href="#_92">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#34">3.4 更新快递员</a><ul>
+<li><a href="#_93">接口说明</a></li>
+<li><a href="#_94">请求说明</a></li>
+<li><a href="#_95">输入参数</a></li>
+<li><a href="#_96">请求实例</a></li>
+<li><a href="#_97">错误说明</a></li>
+<li><a href="#_98">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_2">修订记录</h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>作者</th>
+<th>修订类型</th>
+<th>修订内容</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020年07月03日</td>
+<td>冷立纲</td>
+<td>A</td>
+<td>新增设计方案</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>【修订类型：A-新增  M-修改 D-删除】</p>
+</blockquote>
+<h2 id="_3">背景</h2>
+<p>物流接口文档</p>
+<h2 id="_4">产品说明</h2>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h2 id="_7">渠道管理</h2>
+<hr />
+<h4 id="10">1.0 渠道列表</h4>
+<h5 id="_8">接口说明</h5>
+<p>扫码取件</p>
+<h5 id="_9">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/channel/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_10">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">code</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_11">错误说明</h5>
+<h5 id="_12">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1, // id
+                &quot;code&quot;: &quot;nongchuangke&quot;, //农创客
+                &quot;name&quot;: &quot;农创客&quot;, //农创客 
+                &quot;addTime&quot;: null,  //添加时间
+                &quot;deleted&quot;: false  // 删除状态
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;totalPage&quot;: 1,
+        &quot;startIndex&quot;: 0,
+        &quot;empty&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="11">1.1 渠道详情</h4>
+<h5 id="_13">接口说明</h5>
+<p>扫码取件</p>
+<h5 id="_14">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/channel/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_16">错误说明</h5>
+<h5 id="_17">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;nongchuangke&quot;, 
+        &quot;name&quot;: &quot;农创客&quot;,
+        &quot;addTime&quot;: null,
+        &quot;deleted&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="12">1.2 创建渠道</h4>
+<h5 id="_18">接口说明</h5>
+<p>创建渠道</p>
+<h5 id="_19">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/channel/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_20">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">name</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">名称</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">code</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">代号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_21">请求实例</h5>
+<pre><code class="json">{
+    &quot;name&quot;:&quot;test&quot;,
+    &quot;code&quot;:&quot;xxxxx&quot;
+}
+
+</code></pre>
+
+<h5 id="_22">错误说明</h5>
+<h5 id="_23">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="13">1.3 删除渠道</h4>
+<h5 id="_24">接口说明</h5>
+<p>创建渠道</p>
+<h5 id="_25">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/channel/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_26">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">渠道ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_27">请求实例</h5>
+<pre><code class="json">{
+    &quot;id&quot;:&quot;2&quot;
+}
+
+</code></pre>
+
+<h5 id="_28">错误说明</h5>
+<h5 id="_29">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="14">1.4 更新渠道</h4>
+<h5 id="_30">接口说明</h5>
+<p>更新渠道</p>
+<h5 id="_31">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/channel/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_32">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">渠道ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">名称</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">code</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">代号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_33">请求实例</h5>
+<pre><code class="json">{
+    &quot;id&quot;:2,
+    &quot;name&quot;:&quot;test&quot;,
+    &quot;code&quot;:&quot;xxxxx&quot;
+}
+
+</code></pre>
+
+<h5 id="_34">错误说明</h5>
+<h5 id="_35">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h2 id="_36">订单管理</h2>
+<hr />
+<h4 id="20">2.0 订单列表</h4>
+<h5 id="_37">接口说明</h5>
+<p>2.1 订单列表</p>
+<h5 id="_38">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/logistics_order/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_39">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sn</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">快递单号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">channel</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">渠道号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_40">错误说明</h5>
+<h5 id="_41">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;sn&quot;: &quot;BBB&quot;,
+                &quot;fromUser&quot;: &quot;zhangsan&quot;, //来源用户名
+                &quot;fromMobile&quot;: &quot;15201008961&quot;, //来源用户手机号
+                &quot;fromProvince&quot;: &quot;beijign&quot;, //来源省份
+                &quot;fromCity&quot;: &quot;beijing&quot;,//来源城市
+                &quot;fromArea&quot;: &quot;chaoyang&quot;, //来源地区
+                &quot;fromDetail&quot;: &quot;测试&quot;, //来源详情
+                &quot;fromLongitude&quot;: null, //来源经度
+                &quot;fromLatitude&quot;: null, //来源维度
+                &quot;fromAddr&quot;: &quot;北京市朝阳区测试&quot;, //来源详细地址
+                &quot;toUser&quot;: &quot;laoliu&quot;, //目标用户名
+                &quot;toMobile&quot;: &quot;15201008963&quot; , //目标手机号
+                &quot;toProvince&quot;: &quot;北京&quot;, //目标省份
+                &quot;toCity&quot;: &quot;北京&quot;, //目标城市
+                &quot;toArea&quot;: &quot;东城&quot;, //目标地区
+                &quot;toDetail&quot;: &quot;姚家园路&quot;, //目标详情
+                &quot;toLongitude&quot;: null, //目标经度
+                &quot;toLatitude&quot;: null, //目标维度
+                &quot;toAddr&quot;: &quot;北京市朝阳区东城测试&quot;, //目标完整地址
+                &quot;itemComment&quot;: &quot;我是测试&quot;, //包裹说明
+                &quot;weight&quot;: null, //重量 kg
+                &quot;num&quot;: 1, //数量 个
+                &quot;status&quot;: 0, //状态 0 初始 100 疑难 102 揽收  207 拒签 205 退签 200 签收 400 派件 401 转发 404 退回
+                &quot;images&quot;: null,
+                &quot;type&quot;: 0, // 0 系统 1 快递员揽收
+                &quot;xgetUid&quot;: null, // 揽收人
+                &quot;deliveryUid&quot;: null, //派件人
+                &quot;addTime&quot;: null, // 下单时间
+                &quot;xgetTime&quot;: null, // 取件时间
+                &quot;arriveTime&quot;: null, // 送达时间
+                &quot;freightFee&quot;: null, // 运费
+                &quot;payStatus&quot;: 1, // 支付状态 0 未支付 1 已支付
+                &quot;comments&quot;: &quot;测试&quot;, // 备注
+                &quot;channel&quot;: null, //渠道
+                &quot;estimateTime&quot;: null  // 预计送达时间
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;totalPage&quot;: 1,
+        &quot;startIndex&quot;: 0,
+        &quot;empty&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="21">2.1 订单详情</h4>
+<h5 id="_42">接口说明</h5>
+<p>扫码取件</p>
+<h5 id="_43">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/logistics_order/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">物流单号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_45">错误说明</h5>
+<h5 id="_46">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;sn&quot;: &quot;BBB&quot;,
+        &quot;fromUser&quot;: &quot;zhangsan&quot;, //来源用户名
+        &quot;fromMobile&quot;: &quot;15201008961&quot;, //来源用户手机号
+        &quot;fromProvince&quot;: &quot;beijign&quot;, //来源省份
+        &quot;fromCity&quot;: &quot;beijing&quot;,//来源城市
+        &quot;fromArea&quot;: &quot;chaoyang&quot;, //来源地区
+        &quot;fromDetail&quot;: &quot;测试&quot;, //来源详情
+        &quot;fromLongitude&quot;: null, //来源经度
+        &quot;fromLatitude&quot;: null, //来源维度
+        &quot;fromAddr&quot;: &quot;北京市朝阳区测试&quot;, //来源详细地址
+        &quot;toUser&quot;: &quot;laoliu&quot;, //目标用户名
+        &quot;toMobile&quot;: &quot;15201008963&quot; , //目标手机号
+        &quot;toProvince&quot;: &quot;北京&quot;, //目标省份
+        &quot;toCity&quot;: &quot;北京&quot;, //目标城市
+        &quot;toArea&quot;: &quot;东城&quot;, //目标地区
+        &quot;toDetail&quot;: &quot;姚家园路&quot;, //目标详情
+        &quot;toLongitude&quot;: null, //目标经度
+        &quot;toLatitude&quot;: null, //目标维度
+        &quot;toAddr&quot;: &quot;北京市朝阳区东城测试&quot;, //目标完整地址
+        &quot;itemComment&quot;: &quot;我是测试&quot;, //包裹说明
+        &quot;weight&quot;: null, //重量 kg
+        &quot;num&quot;: 1, //数量 个
+        &quot;status&quot;: 0, //状态 0 初始 100 疑难 102 揽收  207 拒签 205 退签 200 签收 400 派件 401 转发 404 退回
+        &quot;images&quot;: null,
+        &quot;type&quot;: 0, // 0 系统 1 快递员揽收
+        &quot;xgetUid&quot;: null, // 揽收人
+        &quot;deliveryUid&quot;: null, //派件人
+        &quot;addTime&quot;: null, // 下单时间
+        &quot;xgetTime&quot;: null, // 取件时间
+        &quot;arriveTime&quot;: null, // 送达时间
+        &quot;freightFee&quot;: null, // 运费
+        &quot;payStatus&quot;: 1, // 支付状态 0 未支付 1 已支付
+        &quot;comments&quot;: &quot;测试&quot;, // 备注
+        &quot;channel&quot;: null, //渠道
+        &quot;estimateTime&quot;: null  // 预计送达时间
+
+    }
+}
+
+</code></pre>
+
+<h4 id="22">2.2 创建订单</h4>
+<h5 id="_47">接口说明</h5>
+<p>创建渠道</p>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/logistics_order/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<h5 id="_50">请求实例</h5>
+<pre><code class="json">{
+        &quot;sn&quot;: &quot;BBB&quot;,
+        &quot;fromUser&quot;: &quot;zhangsan&quot;, //来源用户名
+        &quot;fromMobile&quot;: &quot;15201008961&quot;, //来源用户手机号
+        &quot;fromProvince&quot;: &quot;beijign&quot;, //来源省份
+        &quot;fromCity&quot;: &quot;beijing&quot;,//来源城市
+        &quot;fromArea&quot;: &quot;chaoyang&quot;, //来源地区
+        &quot;fromDetail&quot;: &quot;测试&quot;, //来源详情
+        &quot;fromLongitude&quot;: null, //来源经度
+        &quot;fromLatitude&quot;: null, //来源维度
+        &quot;fromAddr&quot;: &quot;北京市朝阳区测试&quot;, //来源详细地址
+        &quot;toUser&quot;: &quot;laoliu&quot;, //目标用户名
+        &quot;toMobile&quot;: &quot;15201008963&quot; , //目标手机号
+        &quot;toProvince&quot;: &quot;北京&quot;, //目标省份
+        &quot;toCity&quot;: &quot;北京&quot;, //目标城市
+        &quot;toArea&quot;: &quot;东城&quot;, //目标地区
+        &quot;toDetail&quot;: &quot;姚家园路&quot;, //目标详情
+        &quot;toLongitude&quot;: null, //目标经度
+        &quot;toLatitude&quot;: null, //目标维度
+        &quot;toAddr&quot;: &quot;北京市朝阳区东城测试&quot;, //目标完整地址
+        &quot;itemComment&quot;: &quot;我是测试&quot;, //包裹说明
+        &quot;weight&quot;: null, //重量 kg
+        &quot;num&quot;: 1, //数量 个
+        &quot;status&quot;: 0, //状态 0 初始 100 疑难 102 揽收  207 拒签 205 退签 200 签收 400 派件 401 转发 404 退回
+        &quot;images&quot;: null,
+        &quot;type&quot;: 0, // 0 系统 1 快递员揽收
+        &quot;xgetUid&quot;: null, // 揽收人
+        &quot;deliveryUid&quot;: null, //派件人
+        &quot;addTime&quot;: null, // 下单时间
+        &quot;xgetTime&quot;: null, // 取件时间
+        &quot;arriveTime&quot;: null, // 送达时间
+        &quot;freightFee&quot;: null, // 运费
+        &quot;payStatus&quot;: 1, // 支付状态 0 未支付 1 已支付
+        &quot;comments&quot;: &quot;测试&quot;, // 备注
+        &quot;channel&quot;: null, //渠道
+        &quot;estimateTime&quot;: null  // 预计送达时间
+
+    }
+
+</code></pre>
+
+<h5 id="_51">错误说明</h5>
+<h5 id="_52">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="23">2.3 删除订单</h4>
+<h5 id="_53">接口说明</h5>
+<p>创建渠道</p>
+<h5 id="_54">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/logistics_order/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_55">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sn</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">名称</td>
+<td align="left">快递单号</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_56">请求实例</h5>
+<pre><code class="json">{
+    &quot;sn&quot;:&quot;2&quot;
+}
+
+</code></pre>
+
+<h5 id="_57">错误说明</h5>
+<h5 id="_58">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="24">2.4 更新订单</h4>
+<h5 id="_59">接口说明</h5>
+<p>更新订单</p>
+<h5 id="_60">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/logistics_order/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_61">输入参数</h5>
+<h5 id="_62">请求实例</h5>
+<pre><code class="json">{
+        &quot;sn&quot;: &quot;BBB&quot;,
+        &quot;fromUser&quot;: &quot;zhangsan&quot;, //来源用户名
+        &quot;fromMobile&quot;: &quot;15201008961&quot;, //来源用户手机号
+        &quot;fromProvince&quot;: &quot;beijign&quot;, //来源省份
+        &quot;fromCity&quot;: &quot;beijing&quot;,//来源城市
+        &quot;fromArea&quot;: &quot;chaoyang&quot;, //来源地区
+        &quot;fromDetail&quot;: &quot;测试&quot;, //来源详情
+        &quot;fromLongitude&quot;: null, //来源经度
+        &quot;fromLatitude&quot;: null, //来源维度
+        &quot;fromAddr&quot;: &quot;北京市朝阳区测试&quot;, //来源详细地址
+        &quot;toUser&quot;: &quot;laoliu&quot;, //目标用户名
+        &quot;toMobile&quot;: &quot;15201008963&quot; , //目标手机号
+        &quot;toProvince&quot;: &quot;北京&quot;, //目标省份
+        &quot;toCity&quot;: &quot;北京&quot;, //目标城市
+        &quot;toArea&quot;: &quot;东城&quot;, //目标地区
+        &quot;toDetail&quot;: &quot;姚家园路&quot;, //目标详情
+        &quot;toLongitude&quot;: null, //目标经度
+        &quot;toLatitude&quot;: null, //目标维度
+        &quot;toAddr&quot;: &quot;北京市朝阳区东城测试&quot;, //目标完整地址
+        &quot;itemComment&quot;: &quot;我是测试&quot;, //包裹说明
+        &quot;weight&quot;: null, //重量 kg
+        &quot;num&quot;: 1, //数量 个
+        &quot;status&quot;: 0, //状态 0 初始 100 疑难 102 揽收  207 拒签 205 退签 200 签收 400 派件 401 转发 404 退回
+        &quot;images&quot;: null,
+        &quot;type&quot;: 0, // 0 系统 1 快递员揽收
+        &quot;xgetUid&quot;: null, // 揽收人
+        &quot;deliveryUid&quot;: null, //派件人
+        &quot;addTime&quot;: null, // 下单时间
+        &quot;xgetTime&quot;: null, // 取件时间
+        &quot;arriveTime&quot;: null, // 送达时间
+        &quot;freightFee&quot;: null, // 运费
+        &quot;payStatus&quot;: 1, // 支付状态 0 未支付 1 已支付
+        &quot;comments&quot;: &quot;测试&quot;, // 备注
+        &quot;channel&quot;: null, //渠道
+        &quot;estimateTime&quot;: null  // 预计送达时间
+
+    }
+
+</code></pre>
+
+<h5 id="_63">错误说明</h5>
+<h5 id="_64">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="25">2.5 分配快递员</h4>
+<h5 id="_65">接口说明</h5>
+<p>分配快递员</p>
+<h5 id="_66">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/logistics_order/assign_expressman</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_67">输入参数</h5>
+<h5 id="_68">请求实例</h5>
+<pre><code class="json">{
+        &quot;sn&quot;: &quot;BBB&quot;,
+        &quot;xgetUid&quot;: null, // 揽收人
+        &quot;estimateTime&quot;: null  // 预计送达时间 yyyy-MM-dd HH:mm:ss
+
+    }
+
+</code></pre>
+
+<h5 id="_69">错误说明</h5>
+<h5 id="_70">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h3 id="3">3 快递员管理</h3>
+<hr />
+<h4 id="30">3.0 快递员列表</h4>
+<h5 id="_71">接口说明</h5>
+<p>快递员列表</p>
+<h5 id="_72">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/expressman/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_73">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">code</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_74">错误说明</h5>
+<h5 id="_75">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;uid&quot;: 10053, // 用户ID
+                &quot;avatar&quot;: &quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIKFlBJWNvX2ibN3heYPbXou5uJBZWNoJfnOicVc958XhhjnB2YDOX1E4msicbJy92Ve5Ubd0PML2pWg/132&quot;,
+                &quot;name&quot;: &quot;郭明山&quot;, // 用户名
+                &quot;gender&quot;: 1, 
+                &quot;birthday&quot;: null,
+                &quot;status&quot;: 0,
+                &quot;mobile&quot;: &quot;18731355555&quot;, // 手机号
+                &quot;createTime&quot;: 1616144378080, //创建时间
+                &quot;updateTime&quot;: null,
+                &quot;vipStartTime&quot;: null,
+                &quot;vipEndTime&quot;: null,
+                &quot;userSource&quot;: &quot;MINI&quot;,
+                &quot;level&quot;: null,
+                &quot;vipTotalMillis&quot;: null,
+                &quot;buyTimes&quot;: null,
+                &quot;employeeType&quot;: null,
+                &quot;settleMethod&quot;: null,
+                &quot;inviteCode&quot;: null,
+                &quot;inviteUid&quot;: null,
+                &quot;groupAdmin&quot;: false,
+                &quot;employeeCode&quot;: null, // 员工码
+                &quot;vip&quot;: false,
+                &quot;vipTotalDays&quot;: 0,
+                &quot;remainDays&quot;: 0
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;totalPage&quot;: 45,
+        &quot;startIndex&quot;: 0,
+        &quot;empty&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="31">3.1 快递员详情</h4>
+<h5 id="_76">接口说明</h5>
+<p>扫码取件</p>
+<h5 id="_77">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/expressman/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_78">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_79">错误说明</h5>
+<h5 id="_80">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;uid&quot;: 10053, // 用户ID
+        &quot;avatar&quot;: &quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIKFlBJWNvX2ibN3heYPbXou5uJBZWNoJfnOicVc958XhhjnB2YDOX1E4msicbJy92Ve5Ubd0PML2pWg/132&quot;,
+        &quot;name&quot;: &quot;郭明山&quot;, // 用户名
+        &quot;gender&quot;: 1, 
+        &quot;birthday&quot;: null,
+        &quot;status&quot;: 0,
+        &quot;mobile&quot;: &quot;18731355555&quot;, // 手机号
+        &quot;createTime&quot;: 1616144378080, //创建时间
+        &quot;updateTime&quot;: null,
+        &quot;vipStartTime&quot;: null,
+        &quot;vipEndTime&quot;: null,
+        &quot;userSource&quot;: &quot;MINI&quot;,
+        &quot;level&quot;: null,
+        &quot;vipTotalMillis&quot;: null,
+        &quot;buyTimes&quot;: null,
+        &quot;employeeType&quot;: null,
+        &quot;settleMethod&quot;: null,
+        &quot;inviteCode&quot;: null,
+        &quot;inviteUid&quot;: null,
+        &quot;groupAdmin&quot;: false,
+        &quot;employeeCode&quot;: null, // 员工码
+        &quot;vip&quot;: false,
+        &quot;vipTotalDays&quot;: 0,
+        &quot;remainDays&quot;: 0
+    }
+}
+
+</code></pre>
+
+<h4 id="32">3.2 创建快递员</h4>
+<h5 id="_81">接口说明</h5>
+<p>创建渠道</p>
+<h5 id="_82">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/expressman/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_83">输入参数</h5>
+<h5 id="_84">请求实例</h5>
+<pre><code class="json">{
+    &quot;uid&quot;: 10053, // 用户ID
+    &quot;avatar&quot;: &quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIKFlBJWNvX2ibN3heYPbXou5uJBZWNoJfnOicVc958XhhjnB2YDOX1E4msicbJy92Ve5Ubd0PML2pWg/132&quot;,
+    &quot;name&quot;: &quot;郭明山&quot;, // 用户名
+    &quot;gender&quot;: 1, 
+    &quot;birthday&quot;: null,
+    &quot;status&quot;: 0,
+    &quot;mobile&quot;: &quot;18731355555&quot;, // 手机号
+    &quot;createTime&quot;: 1616144378080, //创建时间
+    &quot;updateTime&quot;: null,
+    &quot;vipStartTime&quot;: null,
+    &quot;vipEndTime&quot;: null,
+    &quot;userSource&quot;: &quot;MINI&quot;,
+    &quot;level&quot;: null,
+    &quot;vipTotalMillis&quot;: null,
+    &quot;buyTimes&quot;: null,
+    &quot;employeeType&quot;: null,
+    &quot;settleMethod&quot;: null,
+    &quot;inviteCode&quot;: null,
+    &quot;inviteUid&quot;: null,
+    &quot;groupAdmin&quot;: false,
+    &quot;employeeCode&quot;: null, // 员工码
+    &quot;vip&quot;: false,
+    &quot;vipTotalDays&quot;: 0,
+    &quot;remainDays&quot;: 0
+}
+
+</code></pre>
+
+<h5 id="_85">错误说明</h5>
+<h5 id="_86">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="33">3.3 删除快递员</h4>
+<h5 id="_87">接口说明</h5>
+<p>创建渠道</p>
+<h5 id="_88">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/expressman/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_89">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">uid</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">渠道ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_90">请求实例</h5>
+<pre><code class="json">{
+    &quot;uid&quot;:&quot;2&quot;
+}
+
+</code></pre>
+
+<h5 id="_91">错误说明</h5>
+<h5 id="_92">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="34">3.4 更新快递员</h4>
+<h5 id="_93">接口说明</h5>
+<p>更新渠道</p>
+<h5 id="_94">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/expressman/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_95">输入参数</h5>
+<h5 id="_96">请求实例</h5>
+<pre><code class="json">{
+    &quot;uid&quot;: 10053, // 用户ID
+    &quot;avatar&quot;: &quot;https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIKFlBJWNvX2ibN3heYPbXou5uJBZWNoJfnOicVc958XhhjnB2YDOX1E4msicbJy92Ve5Ubd0PML2pWg/132&quot;,
+    &quot;name&quot;: &quot;郭明山&quot;, // 用户名
+    &quot;gender&quot;: 1, 
+    &quot;birthday&quot;: null,
+    &quot;status&quot;: 0,
+    &quot;mobile&quot;: &quot;18731355555&quot;, // 手机号
+    &quot;createTime&quot;: 1616144378080, //创建时间
+    &quot;updateTime&quot;: null,
+    &quot;vipStartTime&quot;: null,
+    &quot;vipEndTime&quot;: null,
+    &quot;userSource&quot;: &quot;MINI&quot;,
+    &quot;level&quot;: null,
+    &quot;vipTotalMillis&quot;: null,
+    &quot;buyTimes&quot;: null,
+    &quot;employeeType&quot;: null,
+    &quot;settleMethod&quot;: null,
+    &quot;inviteCode&quot;: null,
+    &quot;inviteUid&quot;: null,
+    &quot;groupAdmin&quot;: false,
+    &quot;employeeCode&quot;: null, // 员工码
+    &quot;vip&quot;: false,
+    &quot;vipTotalDays&quot;: 0,
+    &quot;remainDays&quot;: 0
+}
+
+</code></pre>
+
+<h5 id="_97">错误说明</h5>
+<h5 id="_98">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
