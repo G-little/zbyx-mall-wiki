@@ -345,6 +345,7 @@
                 "images": null,
                 "type": 0, // 0 系统 1 快递员揽收
                 "xgetUid": null, // 揽收人
+                "xgetName": null, // 揽收人姓名
                 "deliveryUid": null, //派件人
                 "addTime": null, // 下单时间
                 "xgetTime": null, // 取件时间
@@ -353,6 +354,7 @@
                 "payStatus": 1, // 支付状态 0 未支付 1 已支付
                 "comments": "测试", // 备注
                 "channel": null, //渠道
+                "channelCode": null, //渠道代号
                 "estimateTime": null  // 预计送达时间
             }
         ],
