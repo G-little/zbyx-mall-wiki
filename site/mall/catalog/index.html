@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>分类 - Mall Docs</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Mall Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../user/user/">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../">首页</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">分类</a>
+</li>
+                                    
+<li >
+    <a href="../coupon/">优惠券</a>
+</li>
+                                    
+<li >
+    <a href="../goods/">产品</a>
+</li>
+                                    
+<li >
+    <a href="../search/">搜索</a>
+</li>
+                                    
+<li >
+    <a href="../cart/">购物车</a>
+</li>
+                                    
+<li >
+    <a href="../address/">地址</a>
+</li>
+                                    
+<li >
+    <a href="../activity/">活动</a>
+</li>
+                                    
+<li >
+    <a href="../order/">订单</a>
+</li>
+                                    
+<li >
+    <a href="../my/">个人中心</a>
+</li>
+                                    
+<li >
+    <a href="../collect/">收藏</a>
+</li>
+                                    
+<li >
+    <a href="../aftersale/">售后</a>
+</li>
+                                    
+<li >
+    <a href="../vip/">会员</a>
+</li>
+                                    
+<li >
+    <a href="../charge/">充值</a>
+</li>
+                                    
+<li >
+    <a href="../live/">直播</a>
+</li>
+                                    
+<li >
+    <a href="../../www/www/">官网</a>
+</li>
+                                    
+<li >
+    <a href="../invite/">邀请</a>
+</li>
+                                    
+<li >
+    <a href="../../feed/feed/">圈子</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../admin/user/">用户</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/goods/">商品</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/ad/">推广</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/topic/">活动</a>
+</li>
+                                    
+<li >
+    <a href="../../www/www-admin/">官网</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">溯源 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../trace/pda/">PDA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">快递 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../express/express/">app接口</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/express/">管理接口</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../coupon/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">分类接口</a></li>
+            <li><a href="#_2">修订记录</a></li>
+            <li><a href="#_3">背景</a></li>
+            <li><a href="#_4">产品说明</a></li>
+            <li><a href="#_5">关键流程说明</a></li>
+            <li><a href="#_6">接口说明</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_1">分类接口</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">分类接口</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a><ul>
+<li><a href="#11">1.1 分类首页接口</a><ul>
+<li><a href="#_7">接口说明</a></li>
+<li><a href="#_8">请求说明</a></li>
+<li><a href="#_9">输入参数</a></li>
+<li><a href="#_10">错误说明</a></li>
+<li><a href="#_11">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#12">1.2 分类分页获取商品接口</a><ul>
+<li><a href="#_12">接口说明</a></li>
+<li><a href="#_13">请求说明</a></li>
+<li><a href="#_14">输入参数</a></li>
+<li><a href="#_15">错误说明</a></li>
+<li><a href="#_16">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_2">修订记录</h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>作者</th>
+<th>修订类型</th>
+<th>修订内容</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020年07月03日</td>
+<td>冷立纲</td>
+<td>A</td>
+<td>新增设计方案</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>【修订类型：A-新增  M-修改 D-删除】</p>
+</blockquote>
+<h2 id="_3">背景</h2>
+<p>分类相关接口</p>
+<h2 id="_4">产品说明</h2>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h4 id="11">1.1 分类首页接口</h4>
+<h5 id="_7">接口说明</h5>
+<p>首页数据</p>
+<h5 id="_8">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/catalog/index</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_9">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分类ID</td>
+<td align="left">默认 取第一个分类</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_10">错误说明</h5>
+<h5 id="_11">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;:0,
+    &quot;m&quot;:null,
+    &quot;d&quot;:{
+        &quot;categoryList&quot;:[ //分类列表
+            {
+                &quot;id&quot;:34,
+                &quot;name&quot;:&quot;♥“吃了吗？”&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;外卖店铺&quot;,
+                &quot;pid&quot;:0,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L1&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-03-21 11:48:40&quot;,
+                &quot;updateTime&quot;:&quot;2021-04-26 10:46:11&quot;,
+                &quot;deleted&quot;:false
+            },
+            {
+                &quot;id&quot;:35,
+                &quot;name&quot;:&quot;新鲜果蔬&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;新鲜果蔬&quot;,
+                &quot;pid&quot;:0,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L1&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-03-22 10:57:13&quot;,
+                &quot;updateTime&quot;:&quot;2021-04-29 10:07:07&quot;,
+                &quot;deleted&quot;:false
+            },
+            {
+                &quot;id&quot;:36,
+                &quot;name&quot;:&quot;肉蛋水产豆制品&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;肉蛋水产&quot;,
+                &quot;pid&quot;:0,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L1&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-03-22 10:57:42&quot;,
+                &quot;updateTime&quot;:&quot;2021-04-29 10:07:31&quot;,
+                &quot;deleted&quot;:false
+            },
+            {
+                &quot;id&quot;:37,
+                &quot;name&quot;:&quot;粮油调味&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;粮油调味&quot;,
+                &quot;pid&quot;:0,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L1&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-03-22 10:58:16&quot;,
+                &quot;updateTime&quot;:&quot;2021-03-22 16:12:23&quot;,
+                &quot;deleted&quot;:false
+            },
+            {
+                &quot;id&quot;:38,
+                &quot;name&quot;:&quot;零食酒水&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;零食酒水&quot;,
+                &quot;pid&quot;:0,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L1&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-03-22 10:58:37&quot;,
+                &quot;updateTime&quot;:&quot;2021-03-22 16:12:30&quot;,
+                &quot;deleted&quot;:false
+            },
+            {
+                &quot;id&quot;:39,
+                &quot;name&quot;:&quot;家居百货&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;家居百货&quot;,
+                &quot;pid&quot;:0,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L1&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-03-22 10:58:56&quot;,
+                &quot;updateTime&quot;:&quot;2021-03-22 16:12:48&quot;,
+                &quot;deleted&quot;:false
+            }
+        ],
+        &quot;currentCategory&quot;:{  //当前分类
+            &quot;id&quot;:35,
+            &quot;name&quot;:&quot;新鲜果蔬&quot;,
+            &quot;keywords&quot;:&quot;&quot;,
+            &quot;desc&quot;:&quot;新鲜果蔬&quot;,
+            &quot;pid&quot;:0,
+            &quot;iconUrl&quot;:&quot;&quot;,
+            &quot;picUrl&quot;:&quot;&quot;,
+            &quot;level&quot;:&quot;L1&quot;,
+            &quot;sortOrder&quot;:50,
+            &quot;addTime&quot;:&quot;2021-03-22 10:57:13&quot;,
+            &quot;updateTime&quot;:&quot;2021-04-29 10:07:07&quot;,
+            &quot;deleted&quot;:false
+        },
+        &quot;currentSubCategory&quot;:[ //子分类列表
+            {
+                &quot;id&quot;:41,
+                &quot;name&quot;:&quot;水果&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;&quot;,
+                &quot;pid&quot;:35,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L2&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-04-29 10:07:55&quot;,
+                &quot;updateTime&quot;:&quot;2021-04-29 10:07:55&quot;,
+                &quot;deleted&quot;:false
+            },
+            {
+                &quot;id&quot;:42,
+                &quot;name&quot;:&quot;蔬菜&quot;,
+                &quot;keywords&quot;:&quot;&quot;,
+                &quot;desc&quot;:&quot;&quot;,
+                &quot;pid&quot;:35,
+                &quot;iconUrl&quot;:&quot;&quot;,
+                &quot;picUrl&quot;:&quot;&quot;,
+                &quot;level&quot;:&quot;L2&quot;,
+                &quot;sortOrder&quot;:50,
+                &quot;addTime&quot;:&quot;2021-04-29 10:08:04&quot;,
+                &quot;updateTime&quot;:&quot;2021-04-29 10:08:04&quot;,
+                &quot;deleted&quot;:false
+            }
+        ],
+        &quot;categoryGoodsMap&quot;:{ //子分类对应商品数据
+            &quot;42&quot;:{
+                &quot;pageSize&quot;:10,
+                &quot;currentPage&quot;:1,
+                &quot;list&quot;:null,
+                &quot;end&quot;:true,
+                &quot;totalPage&quot;:null,
+                &quot;startIndex&quot;:0,
+                &quot;empty&quot;:true
+            },
+            &quot;41&quot;:{
+                &quot;pageSize&quot;:10,
+                &quot;currentPage&quot;:1,
+                &quot;list&quot;:[
+                    {
+                        &quot;id&quot;:313,
+                        &quot;name&quot;:&quot;【同城配送】☺新西兰加力果1斤3颗&quot;,
+                        &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/kewclilvgoy6d6e4vzhr.jpg&quot;,
+                        &quot;unit&quot;:&quot;组&quot;,
+                        &quot;counterPrice&quot;:10,
+                        &quot;retailPrice&quot;:10,
+                        &quot;vipPrice&quot;:10,
+                        &quot;brief&quot;:&quot;姬娜果，又称“加力果”、“皇家加力果”，原产于新西兰。&quot;,
+                        &quot;gallery&quot;:[
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/454mm22b8a8cifb32qsh.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/bsam8hbd1wsfin3wq1ih.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/gsjjg7m63tyja23g5hdf.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/nrryvvgxxdjnbw7s34ut.jpg&quot;
+                        ],
+                        &quot;videos&quot;:null,
+                        &quot;tags&quot;:null
+                    },
+                    {
+                        &quot;id&quot;:319,
+                        &quot;name&quot;:&quot;【同城配送】☺冰淇淋西瓜（黄壤）一颗&quot;,
+                        &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/gfzt15yb5u92iha4tb1y.jpg&quot;,
+                        &quot;unit&quot;:&quot;颗&quot;,
+                        &quot;counterPrice&quot;:20,
+                        &quot;retailPrice&quot;:20,
+                        &quot;vipPrice&quot;:20,
+                        &quot;brief&quot;:&quot;&quot;,
+                        &quot;gallery&quot;:[
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/ojvnn4vio8rm022cpzce.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/95z0umdeygswdwl4r2k9.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/vpaia5o1ks91ujr8itvi.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/fuyxaub2kgu0mxmkn3jj.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/i7tgbbn0jssl4bhcnoss.jpg&quot;
+                        ],
+                        &quot;videos&quot;:null,
+                        &quot;tags&quot;:null
+                    },
+                    {
+                        &quot;id&quot;:321,
+                        &quot;name&quot;:&quot;【同城配送】☺月萝哈密瓜一颗&quot;,
+                        &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/zzgl4vpytzcwk5xu4xpc.jpg&quot;,
+                        &quot;unit&quot;:&quot;颗&quot;,
+                        &quot;counterPrice&quot;:29.9,
+                        &quot;retailPrice&quot;:29.9,
+                        &quot;vipPrice&quot;:29.9,
+                        &quot;brief&quot;:&quot;&quot;,
+                        &quot;gallery&quot;:[
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/c646376tkaaz33w6qz3t.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/hfacgsx2njzkd8tf0r4j.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/0fmnsqk1wkuxn3kxg2k5.jpg&quot;,
+                            &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/m5bf735p2u281hsturq1.jpg&quot;
+                        ],
+                        &quot;videos&quot;:null,
+                        &quot;tags&quot;:null
+                    }
+                ],
+                &quot;end&quot;:true,
+                &quot;totalPage&quot;:null,
+                &quot;startIndex&quot;:0,
+                &quot;empty&quot;:false
+            }
+        }
+    }
+}
+</code></pre>
+
+<h4 id="12">1.2 分类分页获取商品接口</h4>
+<h5 id="_12">接口说明</h5>
+<p>分页获取分类商品数据接口</p>
+<h5 id="_13">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/catalog/goods_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分类ID</td>
+<td align="left">默认 取第一个分类</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">错误说明</h5>
+<h5 id="_16">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;:0,
+    &quot;m&quot;:null,
+    &quot;d&quot;:{
+        &quot;pageSize&quot;:10,
+        &quot;currentPage&quot;:1,
+        &quot;list&quot;:[
+            {
+                &quot;id&quot;:4,
+                &quot;name&quot;:&quot;【同城配送】塞外明珠张家口甜糯玉米 200g*10&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/0xawx5lqsrpxo88knpgm.jpg&quot;,
+                &quot;unit&quot;:&quot;箱&quot;,
+                &quot;counterPrice&quot;:49.9,
+                &quot;retailPrice&quot;:39.9,
+                &quot;vipPrice&quot;:39.9,
+                &quot;brief&quot;:&quot;颗粒饱满 软糯鲜香&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/ku5qf8mx89a0m5bz7ng8.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/e2kwyi7ymtl7h9yreqfj.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/49s8xdaipmvqkaq4rcwu.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/olbkouv5gfx3bebz9dqp.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:193,
+                &quot;name&quot;:&quot;【同城配送】混合沙拉蔬菜组合装&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/1u4lfujghx35ripjcnim.jpg&quot;,
+                &quot;unit&quot;:&quot;套&quot;,
+                &quot;counterPrice&quot;:29.9,
+                &quot;retailPrice&quot;:29.9,
+                &quot;vipPrice&quot;:29.9,
+                &quot;brief&quot;:&quot;每种蔬菜450g±50g，送柠檬2颗&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/yqaar9cgnpaf6x3cazst.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/xxp5llk3ht5hq5drkbyk.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/lbp0xhx7fo3wa29p6mpx.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/dfreq99ce09cnekxb1xe.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/puuskx3umlf0kqwmnk66.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:194,
+                &quot;name&quot;:&quot;【同城配送】混合火锅蔬菜组合装&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/cr4qq94nl4uon2el51h2.jpg&quot;,
+                &quot;unit&quot;:&quot;套&quot;,
+                &quot;counterPrice&quot;:49.9,
+                &quot;retailPrice&quot;:49.9,
+                &quot;vipPrice&quot;:49.9,
+                &quot;brief&quot;:&quot;精选15种菜品，火锅必备&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/t2arprcbcrk2v4spbk1p.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/16rcnlt5uy99tbvaz3k4.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/rfpxhafefih29e1uiwjd.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/2ev783sjr9ea63lpqos6.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:213,
+                &quot;name&quot;:&quot;【同城配送】农创客优选冬瓜约800g&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/2o0slbeou88vo2m6fbeb.jpg&quot;,
+                &quot;unit&quot;:&quot;克&quot;,
+                &quot;counterPrice&quot;:8.9,
+                &quot;retailPrice&quot;:8.9,
+                &quot;vipPrice&quot;:8.9,
+                &quot;brief&quot;:&quot;&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/xivwz5k94sjzkpjr6nhs.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/i07va4srk4jo6j8ad0q4.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/4ndhi5ur5xev8kjipx0x.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:214,
+                &quot;name&quot;:&quot;【同城配送】农创客优选大葱450±50g&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/8p972dlp5w03t0i7bpgo.jpg&quot;,
+                &quot;unit&quot;:&quot;g&quot;,
+                &quot;counterPrice&quot;:7.9,
+                &quot;retailPrice&quot;:7.9,
+                &quot;vipPrice&quot;:7.9,
+                &quot;brief&quot;:&quot;&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/14yb1s1viwbd3alav6fb.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/1idtto7hl0wguu86urql.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/z20kutsqu5bf0hl5hari.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/zgu3sglvcdlzc27pn826.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/i1ruz7ex0e3xupf73mln.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:215,
+                &quot;name&quot;:&quot;【同城配送】农创客优选土豆450±50g&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/j5m18kw869qdmnoxv7la.jpg&quot;,
+                &quot;unit&quot;:&quot;克&quot;,
+                &quot;counterPrice&quot;:3.9,
+                &quot;retailPrice&quot;:3.9,
+                &quot;vipPrice&quot;:3.9,
+                &quot;brief&quot;:&quot;&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/a5ttedshqnxx9vp1t1j1.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/3b213lf6169v9f23ukey.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/ngjeauqzpdjmxrnf90my.png&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:216,
+                &quot;name&quot;:&quot;【同城配送】农创客优选白葱头800±50g&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/xwh5paydkzmu57p1rg6h.jpg&quot;,
+                &quot;unit&quot;:&quot;g&quot;,
+                &quot;counterPrice&quot;:3.5,
+                &quot;retailPrice&quot;:3.5,
+                &quot;vipPrice&quot;:3.5,
+                &quot;brief&quot;:&quot;&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/bcjvh4ow9gyoqul0xe3i.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/x9mj2dyytw8ec7ds3hrg.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/4ws8kaz45h6dgf1t01rm.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/kxrldjwcqanrzcrwc294.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/wm0skdfd6twrpqocykjr.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:217,
+                &quot;name&quot;:&quot;【同城配送】农创客优选紫葱头900±50g&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/fd4qe6jlrd0purrlei24.jpg&quot;,
+                &quot;unit&quot;:&quot;克&quot;,
+                &quot;counterPrice&quot;:6.9,
+                &quot;retailPrice&quot;:6.9,
+                &quot;vipPrice&quot;:6.9,
+                &quot;brief&quot;:&quot;&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/1wci6dbdu16grc2wwon4.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/fyvbszk479jshmvhgfhd.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/cp238g3riwgbv3srnu6e.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:218,
+                &quot;name&quot;:&quot;【同城配送】农创客优选铁棍山药450±50g&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/u0ur3zf1x3jtvwly7n0g.jpg&quot;,
+                &quot;unit&quot;:&quot;g&quot;,
+                &quot;counterPrice&quot;:7.9,
+                &quot;retailPrice&quot;:7.9,
+                &quot;vipPrice&quot;:7.9,
+                &quot;brief&quot;:&quot;&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/k388uzxizhtjy77p98th.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/yf4xbuley1f8i8n528d5.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/k9nycr9cyd7jsi9dyrba.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            },
+            {
+                &quot;id&quot;:219,
+                &quot;name&quot;:&quot;【同城配送】农创客优选鲜藕400±50g&quot;,
+                &quot;picUrl&quot;:&quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/cefuy71r80s7dnl1j0uy.jpg&quot;,
+                &quot;unit&quot;:&quot;克&quot;,
+                &quot;counterPrice&quot;:6.9,
+                &quot;retailPrice&quot;:6.9,
+                &quot;vipPrice&quot;:6.9,
+                &quot;brief&quot;:&quot;&quot;,
+                &quot;gallery&quot;:[
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/v2cms3drlk7xc018xxtl.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/w6c4c98wt88zf7ln74jj.jpg&quot;,
+                    &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/29r632mw0rk7vuqm323h.jpg&quot;
+                ],
+                &quot;videos&quot;:null,
+                &quot;tags&quot;:null
+            }
+        ],
+        &quot;end&quot;:false,
+        &quot;totalPage&quot;:null,
+        &quot;startIndex&quot;:0,
+        &quot;empty&quot;:false
+    }
+}
+
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
