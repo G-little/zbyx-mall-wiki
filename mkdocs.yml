@@ -21,6 +21,7 @@
       - 直播: './mall/live.md'  
       - 官网: './www/www.md'  
       - 邀请: './mall/invite.md'  
+      - 圈子: './feed/feed.md'  
     - 管理后台: 
       - 用户: './admin/user.md'    
       - 商品: './admin/goods.md'    
