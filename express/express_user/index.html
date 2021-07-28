@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>圈子 - Mall Docs</title>
+        <title>用户app接口 - Mall Docs</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -118,7 +118,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">圈子</a>
+    <a href="../../feed/feed/" class="dropdown-item">圈子</a>
 </li>
                                 </ul>
                             </li>
@@ -156,16 +156,16 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">快递 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../express/express/" class="dropdown-item">app接口</a>
+    <a href="../express/" class="dropdown-item">app接口</a>
 </li>
                                     
 <li>
-    <a href="../../express/express_user/" class="dropdown-item">用户app接口</a>
+    <a href="./" class="dropdown-item active">用户app接口</a>
 </li>
                                     
 <li>
@@ -182,12 +182,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../../mall/invite/" class="nav-link">
+                                <a rel="prev" href="../express/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../admin/user/" class="nav-link">
+                                <a rel="next" href="../../admin/express/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -209,7 +209,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">圈子接口文档</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">物流用户端接口文档</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
@@ -238,60 +238,71 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">圈子接口文档</h1>
+<h1 id="_1">物流用户端接口文档</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">圈子接口文档</a><ul>
+<li><a href="#_1">物流用户端接口文档</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 圈子分页列表</a><ul>
-<li><a href="#_7">接口说明</a></li>
-<li><a href="#_8">请求说明</a></li>
-<li><a href="#_9">输入参数</a></li>
-<li><a href="#_10">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#11">1.1 添加圈子动态</a><ul>
+<li><a href="#_7">登录流程说明</a><ul>
+<li><a href="#_8">登录头说明</a></li>
+<li><a href="#_9">手机号登录</a></li>
+<li><a href="#_10">微信登录</a></li>
+<li><a href="#10">1.0 地址列表接口</a><ul>
 <li><a href="#_11">接口说明</a></li>
 <li><a href="#_12">请求说明</a></li>
 <li><a href="#_13">输入参数</a></li>
-<li><a href="#_14">错误说明</a></li>
-<li><a href="#_15">返回实例</a></li>
+<li><a href="#_14">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#12">1.2 点赞接口</a><ul>
-<li><a href="#_16">接口说明</a></li>
-<li><a href="#_17">请求说明</a></li>
-<li><a href="#_18">输入参数</a></li>
-<li><a href="#_19">错误说明</a></li>
-<li><a href="#_20">返回实例</a></li>
+<li><a href="#11">1.1 智能地址识别</a><ul>
+<li><a href="#_15">接口说明</a></li>
+<li><a href="#_16">请求说明</a></li>
+<li><a href="#_17">输入参数</a></li>
+<li><a href="#_18">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#13">1.3 评论接口</a><ul>
-<li><a href="#_21">接口说明</a></li>
-<li><a href="#_22">请求说明</a></li>
-<li><a href="#_23">输入参数</a></li>
-<li><a href="#_24">错误说明</a></li>
-<li><a href="#_25">返回实例</a></li>
+<li><a href="#12">1.2 快递费预估</a><ul>
+<li><a href="#_19">接口说明</a></li>
+<li><a href="#_20">请求说明</a></li>
+<li><a href="#_21">输入参数</a></li>
+<li><a href="#_22">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#14">1.4 详情接口</a><ul>
-<li><a href="#_26">接口说明</a></li>
-<li><a href="#_27">请求说明</a></li>
-<li><a href="#_28">输入参数</a></li>
-<li><a href="#_29">错误说明</a></li>
-<li><a href="#_30">返回实例</a></li>
+<li><a href="#13">1.3 创建订单</a><ul>
+<li><a href="#_23">接口说明</a></li>
+<li><a href="#_24">请求说明</a></li>
+<li><a href="#_25">输入参数</a></li>
+<li><a href="#_26">错误说明</a></li>
+<li><a href="#_27">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#15">1.5 分页拉取评论列表</a><ul>
-<li><a href="#_31">接口说明</a></li>
-<li><a href="#_32">请求说明</a></li>
-<li><a href="#_33">输入参数</a></li>
-<li><a href="#_34">错误说明</a></li>
-<li><a href="#_35">返回实例</a></li>
+<li><a href="#14">1.4 取消订单</a><ul>
+<li><a href="#_28">接口说明</a></li>
+<li><a href="#_29">请求说明</a></li>
+<li><a href="#_30">输入参数</a></li>
+<li><a href="#_31">错误说明</a></li>
+<li><a href="#_32">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#15">1.5 重新支付</a><ul>
+<li><a href="#_33">接口说明</a></li>
+<li><a href="#_34">请求说明</a></li>
+<li><a href="#_35">输入参数</a></li>
+<li><a href="#_36">错误说明</a></li>
+<li><a href="#_37">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#16">1.6 订单列表</a><ul>
+<li><a href="#_38">接口说明</a></li>
+<li><a href="#_39">请求说明</a></li>
+<li><a href="#_40">输入参数</a></li>
+<li><a href="#_41">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -326,13 +337,27 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
-<p>圈子接口文档</p>
+<p>物流用户端接口文档</p>
 <h2 id="_4">产品说明</h2>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 圈子分页列表</h4>
-<h5 id="_7">接口说明</h5>
-<h5 id="_8">请求说明</h5>
+<h3 id="_7">登录流程说明</h3>
+<h4 id="_8">登录头说明</h4>
+<p><em>将accessToken作为请求头 Authorization: 'token'  发送请求即可获取权限</em></p>
+<h4 id="_9">手机号登录</h4>
+<ol>
+<li>调用短信发送接口发送短信验证 /user/sendsms </li>
+<li>手机号注册登录获取token /user/joinin </li>
+<li>将accessToken作为请求头 Authorization: 'token'  发送请求</li>
+</ol>
+<h4 id="_10">微信登录</h4>
+<ol>
+<li>微信授权回调接口 /oauth2/weixin/callback 获取登录token</li>
+<li>将accessToken作为请求头 Authorization: 'token'  发送请求</li>
+</ol>
+<h4 id="10">1.0 地址列表接口</h4>
+<h5 id="_11">接口说明</h5>
+<h5 id="_12">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -343,11 +368,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/feed/list</td>
+<td align="center">/u/address/list</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_9">输入参数</h5>
+<h5 id="_13">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -374,18 +399,78 @@
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">keyword</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">搜索关键字</td>
+<td align="left">#####  错误说明</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
 <td align="left"></td>
 </tr>
+</tbody>
+</table>
+<h5 id="_14">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 8,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;user&quot;: &quot;zhangsan&quot;, //姓名
+                &quot;mobile&quot;: &quot;15201008961&quot;, //手机号
+                &quot;province&quot;: &quot;beijign&quot;, //省份
+                &quot;city&quot;: &quot;beijing&quot;, //城市
+                &quot;area&quot;: &quot;chaoyang&quot;, // 区
+                &quot;detail&quot;: &quot;测试&quot;, //详细地址
+                &quot;longitude&quot;: null, //经度
+                &quot;latitude&quot;: null, //纬度
+                &quot;addr&quot;: &quot;北京市朝阳区测试&quot; //完整地址
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
+</code></pre>
+
+<h4 id="11">1.1 智能地址识别</h4>
+<h5 id="_15">接口说明</h5>
+<h5 id="_16">请求说明</h5>
+<table>
+<thead>
 <tr>
-<td align="left">feedType</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">圈子类型</td>
-<td align="left">1 动态 2 求购 3 出货  空则全部</td>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/u/address/extract</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_17">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">text</td>
+<td align="center">市</td>
+<td align="left">string</td>
+<td align="left">地址文本</td>
+<td align="left"></td>
 </tr>
 <tr>
 <td align="left">#####  错误说明</td>
@@ -396,251 +481,28 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_10">返回实例</h5>
-<pre><code class="json">
-
-{
+<h5 id="_18">返回实例</h5>
+<pre><code class="json">{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 1,  //id
-                &quot;uid&quot;: 10060, // 用户id
-                &quot;name&quot;: &quot;微信用户&quot;, //用户昵称
-                &quot;avatar&quot;: &quot;https://thirdwx.qlogo.cn/mmopen/vi_32/ POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132&quot;, //用户头像
-                &quot;feedType&quot;: 1, //圈子类型 1 动态 2 求购 3 出货
-                &quot;addr&quot;: &quot;test&quot;, //地址
-                &quot;content&quot;: &quot;test&quot;, //内容
-                &quot;phoneNum&quot;: null, //手机号
-                &quot;bid&quot;: null, //价格
-                &quot;images&quot;: [ //图片列表
-                    &quot;xxxxx&quot;
-                ],
-                &quot;addTime&quot;: &quot;2021-07-18 16:01:38&quot;, //添加时间
-                &quot;deleted&quot;: false, //是否删除
-                &quot;thumbCount&quot;: 0, //点赞数
-                &quot;commentCount&quot;: 0, //评论数
-                &quot;readCount&quot;: 0 //阅读数
-            }
-        ],
-        &quot;end&quot;: true,
-        &quot;totalPage&quot;: null,
-        &quot;startIndex&quot;: 0,
-        &quot;empty&quot;: false
+        &quot;house&quot;: &quot;6栋&quot;,  //楼号
+        &quot;poi&quot;: &quot;规划路罗西住宅区9组团&quot;, //poi 信息
+        &quot;town&quot;: &quot;状元街道&quot;, //街道
+        &quot;city&quot;: &quot;温州市&quot;, //城市
+        &quot;area&quot;: &quot;龙湾区&quot;, //区
+        &quot;mobile&quot;: &quot;18170371112&quot;, //手机号
+        &quot;detail&quot;: &quot;规划路罗西住宅区9组团6栋&quot;, //详情
+        &quot;user&quot;: &quot;吴鸿&quot;, //用户名
+        &quot;provice&quot;: &quot;浙江省&quot; //省份
     }
 }
 
 </code></pre>
 
-<h4 id="11">1.1 添加圈子动态</h4>
-<h5 id="_11">接口说明</h5>
-<h5 id="_12">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/feed/add</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_13">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">feedType</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">圈子类型</td>
-<td align="left">1 动态 2 求购 3 出货</td>
-</tr>
-<tr>
-<td align="left">addr</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">地址</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">content</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">内容</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">phoneNum</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">手机号</td>
-<td align="left">求购/出货必填</td>
-</tr>
-<tr>
-<td align="left">bid</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">价格</td>
-<td align="left">求购/出货必填</td>
-</tr>
-<tr>
-<td align="left">images</td>
-<td align="center">否</td>
-<td align="left">string</td>
-<td align="left">图片数组字符串</td>
-<td align="left">例如 ['a','b']</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_14">错误说明</h5>
-<h5 id="_15">返回实例</h5>
-<pre><code class="json">
-
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;id&quot;:1  //ID
-    }
-}
-
-</code></pre>
-
-<h4 id="12">1.2 点赞接口</h4>
-<h5 id="_16">接口说明</h5>
-<h5 id="_17">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/feed/interact/thumb</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_18">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">圈子ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">value</td>
-<td align="center">是</td>
-<td align="left">boolean</td>
-<td align="left">点赞值</td>
-<td align="left">true 点赞 false 取消</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_19">错误说明</h5>
-<h5 id="_20">返回实例</h5>
-<pre><code class="json">
-
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;status&quot;: true  //点赞状态 true 点赞  false 取消
-    }
-}
-</code></pre>
-
-<h4 id="13">1.3 评论接口</h4>
-<h5 id="_21">接口说明</h5>
-<h5 id="_22">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/feed/interact/comment</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_23">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">圈子ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">content</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">评论内容</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_24">错误说明</h5>
-<h5 id="_25">返回实例</h5>
-<pre><code class="json">
-
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;id&quot;: 1  //评论id
-    }
-}
-</code></pre>
-
-<h4 id="14">1.4 详情接口</h4>
-<h5 id="_26">接口说明</h5>
-<h5 id="_27">请求说明</h5>
+<h4 id="12">1.2 快递费预估</h4>
+<h5 id="_19">接口说明</h5>
+<h5 id="_20">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -651,11 +513,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/feed/detail</td>
+<td align="center">/u/order/evaluation</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_28">输入参数</h5>
+<h5 id="_21">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -668,65 +530,392 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">id</td>
+<td align="left">fromLongitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">来源经度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromLatitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">来源纬度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toLongitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">目的经度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toLatitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">目的纬度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">weight</td>
 <td align="center">是</td>
 <td align="left">int</td>
-<td align="left">圈子ID</td>
+<td align="left">重量</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">#####  错误说明</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_29">错误说明</h5>
-<h5 id="_30">返回实例</h5>
-<pre><code class="json">
+<h5 id="_22">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: 48.0 // 估价 元
+}
 
-{
+</code></pre>
+
+<h4 id="13">1.3 创建订单</h4>
+<h5 id="_23">接口说明</h5>
+<h5 id="_24">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/u/order/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_25">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">fromLongitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">来源经度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromLatitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">来源纬度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toLongitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">目的经度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toLatitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">目的纬度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromUser</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">发件人</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromMobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">发件人手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toUser</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">收件人</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toMobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">收件人手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">itemComment</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">物品信息</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromProvince</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">来源省份</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromCity</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">来源城市</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromArea</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">来源地区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromDetail</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">来源详细地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">fromAddr</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">来源完整地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toProvince</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">目的省份</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toCity</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">目的城市</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toArea</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">目的地区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toDetail</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">目的详细地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toAddr</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">目的完整地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">num</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">物品数量</td>
+<td align="left">最小值1</td>
+</tr>
+<tr>
+<td align="left">comments</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">备注</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">expressType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">1 取件 0 送件</td>
+<td align="left">默认 送件</td>
+</tr>
+<tr>
+<td align="left">getMinTime</td>
+<td align="center">否</td>
+<td align="left">long</td>
+<td align="left">最早取件时间</td>
+<td align="left">0 立刻</td>
+</tr>
+<tr>
+<td align="left">getMaxTime</td>
+<td align="center">否</td>
+<td align="left">long</td>
+<td align="left">最晚取件时间</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_26">错误说明</h5>
+<h5 id="_27">返回实例</h5>
+<pre><code class="json">{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;id&quot;: 1,  //id
-        &quot;uid&quot;: 10060, // 用户id
-        &quot;name&quot;: &quot;微信用户&quot;, //用户昵称
-        &quot;avatar&quot;: &quot;https://thirdwx.qlogo.cn/mmopen/vi_32/ POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132&quot;, //用户头像
-        &quot;feedType&quot;: 1, //圈子类型 1 动态 2 求购 3 出货
-        &quot;addr&quot;: &quot;test&quot;, //地址
-        &quot;content&quot;: &quot;test&quot;, //内容
-        &quot;phoneNum&quot;: null, //手机号
-        &quot;bid&quot;: null, //价格
-        &quot;images&quot;: [ //图片列表
-            &quot;xxxxx&quot;
-        ],
-        &quot;addTime&quot;: &quot;2021-07-18 16:01:38&quot;, //添加时间
-        &quot;deleted&quot;: false, //是否删除
-        &quot;thumbCount&quot;: 0, //点赞数
-        &quot;commentCount&quot;: 0, //评论数
-        &quot;readCount&quot;: 0 //阅读数
-        &quot;commentList&quot;: {
-            &quot;pageSize&quot;: 10,
-            &quot;currentPage&quot;: 1,
-            &quot;list&quot;: [
-                {
-                    &quot;id&quot;: 2,
-                    &quot;feedId&quot;: 1,
-                    &quot;uid&quot;: 10060,
-                    &quot;type&quot;: 2,
-                    &quot;addTime&quot;: &quot;2021-07-18 16:23:43&quot;,
-                    &quot;content&quot;: &quot;test&quot;  // 评论内容
-                }
-            ],
-            &quot;end&quot;: true,
-            &quot;totalPage&quot;: 1,
-            &quot;startIndex&quot;: 0,
-            &quot;empty&quot;: false
-        }
+        &quot;payOrderId&quot;: &quot;210728160628475131003&quot;,  //订单号
+        &quot;outPayOrderId&quot;:  &quot;prepay_id=wx28160647996790677d5b39e4077bfa0000&quot;,
+        &quot;callPayInfo&quot;: &quot;{\&quot;appId\&quot;:\&quot;wx10becc5288b64881\&quot;,\&quot;nonceStr\&quot;:\&quot;xhHtKgBx1OXSQQ1g\&quot;,\&quot;packageValue\&quot;:\&quot;prepay_id=wx28160647996790677d5b39e4077bfa0000\&quot;,\&quot;paySign\&quot;:\&quot;5CF39FC472949B7E5FF0BF409156D12F\&quot;,\&quot;signType\&quot;:\&quot;MD5\&quot;,\&quot;timeStamp\&quot;:\&quot;1627459608\&quot;}&quot;,  //支付参数
+        &quot;payCallbackInfo&quot;: null
     }
 }
 
 </code></pre>
 
-<h4 id="15">1.5 分页拉取评论列表</h4>
-<h5 id="_31">接口说明</h5>
-<h5 id="_32">请求说明</h5>
+<h4 id="14">1.4 取消订单</h4>
+<h5 id="_28">接口说明</h5>
+<h5 id="_29">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/u/order/cancel</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_30">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sn</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">物流单号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_31">错误说明</h5>
+<h5 id="_32">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="15">1.5 重新支付</h4>
+<h5 id="_33">接口说明</h5>
+<h5 id="_34">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/u/order/prepay</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_35">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sn</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">物流单号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">payType</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">支付方式</td>
+<td align="left">固定值 WX_MP</td>
+</tr>
+<tr>
+<td align="left">openId</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">微信openId</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_36">错误说明</h5>
+<h5 id="_37">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;:  {
+        &quot;payOrderId&quot;: &quot;210728160628475131003&quot;,  //订单号
+        &quot;outPayOrderId&quot;:  &quot;prepay_id=wx28160647996790677d5b39e4077bfa0000&quot;,
+        &quot;callPayInfo&quot;: &quot;{\&quot;appId\&quot;:\&quot;wx10becc5288b64881\&quot;,\&quot;nonceStr\&quot;:\&quot;xhHtKgBx1OXSQQ1g\&quot;,\&quot;packageValue\&quot;:\&quot;prepay_id=wx28160647996790677d5b39e4077bfa0000\&quot;,\&quot;paySign\&quot;:\&quot;5CF39FC472949B7E5FF0BF409156D12F\&quot;,\&quot;signType\&quot;:\&quot;MD5\&quot;,\&quot;timeStamp\&quot;:\&quot;1627459608\&quot;}&quot;,  //支付参数
+        &quot;payCallbackInfo&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="16">1.6 订单列表</h4>
+<h5 id="_38">接口说明</h5>
+<h5 id="_39">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -737,11 +926,11 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/feed/comment/list</td>
+<td align="center">/u/order/list</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_33">输入参数</h5>
+<h5 id="_40">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -754,41 +943,88 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">id</td>
-<td align="center">是</td>
+<td align="left">page</td>
+<td align="center">否</td>
 <td align="left">int</td>
-<td align="left">圈子ID</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">status</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">状态</td>
+<td align="left">//状态 0 初始 100 疑难 102 揽收  207 拒签 205 退签 200 签收 400 派件 401 转发 404 退回</td>
+</tr>
+<tr>
+<td align="left">#####  错误说明</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
-<h5 id="_34">错误说明</h5>
-<h5 id="_35">返回实例</h5>
-<pre><code class="json">
-
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
+<h5 id="_41">返回实例</h5>
+<p>```json</p>
+<p>{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
             {
-                &quot;id&quot;: 2,
-                &quot;feedId&quot;: 1,  //圈子ID
-                &quot;uid&quot;: 10060, //用户ID
-                &quot;type&quot;: 2, //类型  0 点赞 1 浏览 2评论
-                &quot;addTime&quot;: &quot;2021-07-18 16:23:43&quot;, //发表时间
-                &quot;content&quot;: &quot;test&quot; //评论内容
+                "sn": "BBB",
+                "fromUser": "zhangsan", //来源用户名
+                "fromMobile": "15201008961", //来源用户手机号
+                "fromProvince": "beijign", //来源省份
+                "fromCity": "beijing",//来源城市
+                "fromArea": "chaoyang", //来源地区
+                "fromDetail": "测试", //来源详情
+                "fromLongitude": null, //来源经度
+                "fromLatitude": null, //来源维度
+                "fromAddr": "北京市朝阳区测试", //来源详细地址
+                "toUser": "laoliu", //目标用户名
+                "toMobile": "15201008963" , //目标手机号
+                "toProvince": "北京", //目标省份
+                "toCity": "北京", //目标城市
+                "toArea": "东城", //目标地区
+                "toDetail": "姚家园路", //目标详情
+                "toLongitude": null, //目标经度
+                "toLatitude": null, //目标维度
+                "toAddr": "北京市朝阳区东城测试", //目标完整地址
+                "itemComment": "我是测试", //包裹说明
+                "weight": null, //重量 kg
+                "num": 1, //数量 个
+                "status": 0, //状态 0 初始 100 疑难 102 揽收  207 拒签 205 退签 200 签收 400 派件 401 转发 404 退回
+                "images": null,
+                "type": 0, // 0 系统 1 快递员揽收
+                "xgetUid": null, // 揽收人
+                "deliveryUid": null, //派件人
+                "addTime": null, // 下单时间
+                "xgetTime": null, // 取件时间
+                "arriveTime": null, // 送达时间
+                "freightFee": null, // 运费
+                "payStatus": 1, // 支付状态 0 未支付 1 已支付
+                "comments": "测试", // 备注
+                "channel": null, //渠道
+                "estimateTime": null  // 预计送达时间
             }
         ],
-        &quot;end&quot;: true,
-        &quot;totalPage&quot;: 1,
-        &quot;startIndex&quot;: 0,
-        &quot;empty&quot;: false
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
     }
-}
-</code></pre></div>
+}</p></div>
             </div>
         </div>
 
