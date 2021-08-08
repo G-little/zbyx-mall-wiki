@@ -288,6 +288,14 @@
 <li><a href="#_35">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#115">1.1.5 商品详情</a><ul>
+<li><a href="#_36">接口说明</a></li>
+<li><a href="#_37">请求说明</a></li>
+<li><a href="#_38">输入参数</a></li>
+<li><a href="#_39">错误说明</a></li>
+<li><a href="#_40">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -979,6 +987,197 @@
         }
     }
 }
+</code></pre>
+
+<h4 id="115">1.1.5 商品详情</h4>
+<h5 id="_36">接口说明</h5>
+<h5 id="_37">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/goods/detail</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_38">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">商品ID （代理商商品ID productId）</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_39">错误说明</h5>
+<h5 id="_40">返回实例</h5>
+<pre><code class="json">
+  {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;defaultAddress&quot;: null,
+        &quot;couponList&quot;: [],
+        &quot;info&quot;: {
+            &quot;id&quot;: 371,
+            &quot;goodsSn&quot;: &quot;00353&quot;,
+            &quot;name&quot;: &quot;【同城配送】黄冰糖 调料300g&quot;,
+            &quot;categoryId&quot;: 37,
+            &quot;brandId&quot;: 0,
+            &quot;gallery&quot;: [
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/dokso7lipj2kkd864ce6.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/2shb0hrftwp17nivfkuu.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/jb7w8ja1cuueq03gd43c.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/1fih05qeou0tc9144btt.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/z4we6hmtfkqvi86gwglv.jpg&quot;
+            ],
+            &quot;keywords&quot;: &quot;&quot;,
+            &quot;brief&quot;: &quot;&quot;,
+            &quot;isOnSale&quot;: true,
+            &quot;sortOrder&quot;: 100,
+            &quot;picUrl&quot;: &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/gs9mzpl9dii61cp2az3c.jpg&quot;,
+            &quot;shareUrl&quot;: &quot;&quot;,
+            &quot;isNew&quot;: true,
+            &quot;isHot&quot;: true,
+            &quot;unit&quot;: &quot;g&quot;,
+            &quot;counterPrice&quot;: 3.30,
+            &quot;retailPrice&quot;: 3.30,
+            &quot;vipPrice&quot;: 3.30,
+            &quot;addTime&quot;: &quot;2021-07-04 14:31:19&quot;,
+            &quot;updateTime&quot;: &quot;2021-07-05 08:06:50&quot;,
+            &quot;deleted&quot;: false,
+            &quot;tags&quot;: null,
+            &quot;videos&quot;: null,
+            &quot;testReports&quot;: null,
+            &quot;goodsType&quot;: 0,
+            &quot;expressType&quot;: 0,
+            &quot;area&quot;: &quot;2019年&quot;,
+            &quot;year&quot;: &quot;2019&quot;,
+            &quot;unitType&quot;: null,
+            &quot;weight&quot;: null,
+            &quot;detail&quot;: [
+                {
+                    &quot;url&quot;: &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/tyxjmlhltbjx1vuhczuv.jpg&quot;,
+                    &quot;size&quot;: &quot;2168*5446&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/fdkcytldeidxpfwr7s0h.png&quot;,
+                    &quot;size&quot;: &quot;607*839&quot;
+                }
+            ]
+        },
+        &quot;userHasCollect&quot;: 0,
+        &quot;issue&quot;: {
+            &quot;total&quot;: 0,
+            &quot;list&quot;: null,
+            &quot;pageNum&quot;: 0,
+            &quot;pageSize&quot;: 0,
+            &quot;size&quot;: 0,
+            &quot;startRow&quot;: 0,
+            &quot;endRow&quot;: 0,
+            &quot;pages&quot;: 0,
+            &quot;prePage&quot;: 0,
+            &quot;nextPage&quot;: 0,
+            &quot;isFirstPage&quot;: false,
+            &quot;isLastPage&quot;: false,
+            &quot;hasPreviousPage&quot;: false,
+            &quot;hasNextPage&quot;: false,
+            &quot;navigatePages&quot;: 0,
+            &quot;navigatepageNums&quot;: null,
+            &quot;navigateFirstPage&quot;: 0,
+            &quot;navigateLastPage&quot;: 0
+        },
+        &quot;comment&quot;: {
+            &quot;count&quot;: 0,
+            &quot;favorableRating&quot;: null,
+            &quot;data&quot;: []
+        },
+        &quot;specificationList&quot;: [
+            {
+                &quot;name&quot;: &quot;规格&quot;,
+                &quot;valueList&quot;: [
+                    {
+                        &quot;id&quot;: 443,
+                        &quot;goodsId&quot;: 371,
+                        &quot;specification&quot;: &quot;规格&quot;,
+                        &quot;value&quot;: &quot;300g&quot;,
+                        &quot;picUrl&quot;: &quot;&quot;,
+                        &quot;addTime&quot;: &quot;2021-07-04 14:31:19&quot;,
+                        &quot;updateTime&quot;: &quot;2021-07-05 08:06:50&quot;,
+                        &quot;deleted&quot;: false
+                    }
+                ]
+            }
+        ],
+        &quot;productList&quot;: [
+            {
+                &quot;id&quot;: 476,
+                &quot;goodsId&quot;: 371,
+                &quot;specifications&quot;: [
+                    &quot;标准&quot;
+                ],
+                &quot;price&quot;: 3.30,
+                &quot;number&quot;: 1000,
+                &quot;url&quot;: &quot;&quot;,
+                &quot;addTime&quot;: &quot;2021-07-04 14:31:19&quot;,
+                &quot;updateTime&quot;: &quot;2021-07-05 08:06:50&quot;,
+                &quot;vipPrice&quot;: 3.30,
+                &quot;counterPrice&quot;: 0.00,
+                &quot;deleted&quot;: false,
+                &quot;year&quot;: &quot;2019&quot;,
+                &quot;area&quot;: &quot;beijing&quot;,
+                &quot;agentId&quot;: 1,
+                &quot;sourceType&quot;: null,
+                &quot;sourceId&quot;: null,
+                &quot;unitPrice&quot;: null,
+                &quot;saleCount&quot;: 0
+            }
+        ],
+        &quot;attribute&quot;: [],
+        &quot;keyIndicators&quot;: [],
+        &quot;brand&quot;: {
+            &quot;id&quot;: null,
+            &quot;name&quot;: null,
+            &quot;desc&quot;: null,
+            &quot;picUrl&quot;: null,
+            &quot;sortOrder&quot;: null,
+            &quot;floorPrice&quot;: null,
+            &quot;addTime&quot;: null,
+            &quot;updateTime&quot;: null,
+            &quot;deleted&quot;: null
+        },
+        &quot;groupon&quot;: [],
+        &quot;share&quot;: false,
+        &quot;shareImage&quot;: &quot;&quot;,
+        &quot;agent&quot;: {  //代理商信息
+            &quot;id&quot;: 1,  //代理商ID
+            &quot;name&quot;: &quot;xiaogang&quot;,  //名称
+            &quot;addr&quot;: &quot;wangjing&quot;, //地址
+            &quot;logoUrl&quot;: &quot;/logo&quot;, //logo
+            &quot;deleted&quot;: false, // 是否已删除
+            &quot;addTime&quot;: null
+        }
+    }
+}  
+
 </code></pre></div>
         </div>
 
