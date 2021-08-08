@@ -30,6 +30,10 @@
       - 官网: './www/www-admin.md'      
     - 溯源: 
       - PDA: './trace/pda.md'      
+
+    - 中优: 
+      - 指数: './zhongyou/trading_index.md'      
+      
     - 快递: 
       - app接口: './express/express.md'      
       - 管理接口: './admin/express.md'      
