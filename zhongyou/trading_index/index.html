@@ -272,6 +272,22 @@
 <li><a href="#_25">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#114">1.1.4 历史价格数据</a><ul>
+<li><a href="#_26">接口说明</a></li>
+<li><a href="#_27">请求说明</a></li>
+<li><a href="#_28">输入参数</a></li>
+<li><a href="#_29">错误说明</a></li>
+<li><a href="#_30">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#114_1">1.1.4 商品行情</a><ul>
+<li><a href="#_31">接口说明</a></li>
+<li><a href="#_32">请求说明</a></li>
+<li><a href="#_33">输入参数</a></li>
+<li><a href="#_34">错误说明</a></li>
+<li><a href="#_35">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -765,6 +781,202 @@
         &quot;startIndex&quot;: 0,
         &quot;totalPage&quot;: null,
         &quot;empty&quot;: false
+    }
+}
+</code></pre>
+
+<h4 id="114">1.1.4 历史价格数据</h4>
+<h5 id="_26">接口说明</h5>
+<h5 id="_27">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trading/price_history</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_28">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">startTime</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left"></td>
+<td align="left">开始时间  yyyy-MM-dd</td>
+</tr>
+<tr>
+<td align="left">endTime</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left"></td>
+<td align="left">结束时间  yyyy-MM-dd</td>
+</tr>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">商品ID</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">页码</td>
+<td align="left">默认值 1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left">默认值 10</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_29">错误说明</h5>
+<h5 id="_30">返回实例</h5>
+<pre><code class="json">
+   {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;name&quot;: &quot;【同城配送】黄冰糖 调料300g&quot;,  // 名称
+                &quot;unit&quot;: &quot;g&quot;,  //单位
+                &quot;unitType&quot;: null,  //单位类型
+                &quot;weight&quot;: null, //重量
+                &quot;counterPrice&quot;: 3.30, //专柜价
+                &quot;retailPrice&quot;: 3.30, //销售价
+                &quot;vipPrice&quot;: 3.30, //vip 价格
+                &quot;changeVal&quot;: 0.00, // 价格变更
+                &quot;changePercent&quot;: &quot;.00%&quot; //变更百分比
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+</code></pre>
+
+<h4 id="114_1">1.1.4 商品行情</h4>
+<h5 id="_31">接口说明</h5>
+<h5 id="_32">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trading/goods_index</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_33">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">商品ID</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_34">错误说明</h5>
+<h5 id="_35">返回实例</h5>
+<pre><code class="json">
+   {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;goods&quot;: { //商品信息 
+            &quot;id&quot;: 371,
+            &quot;name&quot;: &quot;【同城配送】黄冰糖 调料300g&quot;,  //名称
+            &quot;picUrl&quot;: &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/ gs9mzpl9dii61cp2az3c.jpg&quot;,  //图片
+            &quot;unit&quot;: &quot;g&quot;,  //单位
+            &quot;unitType&quot;: null,  //单位类型 0 散装 1 盒装
+            &quot;weight&quot;: null, //重量
+            &quot;counterPrice&quot;: 3.30,  //专柜价
+            &quot;retailPrice&quot;: 3.30, //售价
+            &quot;vipPrice&quot;: 3.30, //vip 价格
+            &quot;brief&quot;: &quot;&quot;, //简介
+            &quot;gallery&quot;: [
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/dokso7lipj2kkd864ce6.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/2shb0hrftwp17nivfkuu.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/jb7w8ja1cuueq03gd43c.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/1fih05qeou0tc9144btt.jpg&quot;,
+                &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/z4we6hmtfkqvi86gwglv.jpg&quot;
+            ],
+            &quot;videos&quot;: null,
+            &quot;tags&quot;: null,
+            &quot;area&quot;: &quot;beijing&quot;,  //地区
+            &quot;year&quot;: &quot;2019&quot; //年份
+        },
+        &quot;rates&quot;: {  //波动比率
+            &quot;addDay&quot;: null,
+            &quot;yetedayRate&quot;: 0, //昨天比率
+            &quot;weekRate&quot;: 0, //周比率
+            &quot;monthRate&quot;: 0, //月比率
+            &quot;yearRate&quot;: 0 //年比率
+        },
+        &quot;agentProducts&quot;: {  //代理商
+            &quot;pageSize&quot;: 10,
+            &quot;currentPage&quot;: 1,
+            &quot;list&quot;: [
+                {
+                    &quot;goodsId&quot;: 371,   //产品ID
+                    &quot;agentId&quot;: 1, //代理商ID
+                    &quot;productId&quot;: 476, //商品ID
+                    &quot;name&quot;: &quot;xiaogang&quot;,  //代理商名称
+                    &quot;addr&quot;: &quot;wangjing&quot;, //代理商地址
+                    &quot;logoUrl&quot;: &quot;/logo&quot;, //代理商logo
+                    &quot;number&quot;: 1000, //库存
+                    &quot;saleCount&quot;: 0, //已售
+                    &quot;price&quot;: 3.30 //价格
+                }
+            ],
+            &quot;end&quot;: true,
+            &quot;startIndex&quot;: 0,
+            &quot;totalPage&quot;: null,
+            &quot;empty&quot;: false
+        }
     }
 }
 </code></pre></div>
