@@ -345,6 +345,155 @@
 
 
 
+#### 1.1.4 历史价格数据
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /trading/price_history |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| startTime      | 否|  string  |   | 开始时间  yyyy-MM-dd |
+| endTime      | 否|  string  |   | 结束时间  yyyy-MM-dd |
+| goodsId      | 否|  int  |   | 商品ID  |
+| page      | 否|  int  |  页码  | 默认值 1 |
+| limit      | 否|  int  |  单页条数  | 默认值 10 |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+   {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "name": "【同城配送】黄冰糖 调料300g",  // 名称
+                "unit": "g",  //单位
+                "unitType": null,  //单位类型
+                "weight": null, //重量
+                "counterPrice": 3.30, //专柜价
+                "retailPrice": 3.30, //销售价
+                "vipPrice": 3.30, //vip 价格
+                "changeVal": 0.00, // 价格变更
+                "changePercent": ".00%" //变更百分比
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+```
+
+
+
+
+
+
+#### 1.1.4 商品行情
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /trading/goods_index |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| goodsId      | 是 |  int  |   | 商品ID  |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+   {
+    "c": 0,
+    "m": null,
+    "d": {
+        "goods": { //商品信息 
+            "id": 371,
+            "name": "【同城配送】黄冰糖 调料300g",  //名称
+            "picUrl": "https://saiwai.oss-cn-huhehaote.aliyuncs.com/ gs9mzpl9dii61cp2az3c.jpg",  //图片
+            "unit": "g",  //单位
+            "unitType": null,  //单位类型 0 散装 1 盒装
+            "weight": null, //重量
+            "counterPrice": 3.30,  //专柜价
+            "retailPrice": 3.30, //售价
+            "vipPrice": 3.30, //vip 价格
+            "brief": "", //简介
+            "gallery": [
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/dokso7lipj2kkd864ce6.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/2shb0hrftwp17nivfkuu.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/jb7w8ja1cuueq03gd43c.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/1fih05qeou0tc9144btt.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/z4we6hmtfkqvi86gwglv.jpg"
+            ],
+            "videos": null,
+            "tags": null,
+            "area": "beijing",  //地区
+            "year": "2019" //年份
+        },
+        "rates": {  //波动比率
+            "addDay": null,
+            "yetedayRate": 0, //昨天比率
+            "weekRate": 0, //周比率
+            "monthRate": 0, //月比率
+            "yearRate": 0 //年比率
+        },
+        "agentProducts": {  //代理商
+            "pageSize": 10,
+            "currentPage": 1,
+            "list": [
+                {
+                    "goodsId": 371,   //产品ID
+                    "agentId": 1, //代理商ID
+                    "productId": 476, //商品ID
+                    "name": "xiaogang",  //代理商名称
+                    "addr": "wangjing", //代理商地址
+                    "logoUrl": "/logo", //代理商logo
+                    "number": 1000, //库存
+                    "saleCount": 0, //已售
+                    "price": 3.30 //价格
+                }
+            ],
+            "end": true,
+            "startIndex": 0,
+            "totalPage": null,
+            "empty": false
+        }
+    }
+}
+```
+
 
 
 
