@@ -296,6 +296,30 @@
 <li><a href="#_40">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#115_1">1.1.5 商户报价列表</a><ul>
+<li><a href="#_41">接口说明</a></li>
+<li><a href="#_42">请求说明</a></li>
+<li><a href="#_43">输入参数</a></li>
+<li><a href="#_44">错误说明</a></li>
+<li><a href="#_45">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#115_2">1.1.5 商户售卖商品列表</a><ul>
+<li><a href="#_46">接口说明</a></li>
+<li><a href="#_47">请求说明</a></li>
+<li><a href="#_48">输入参数</a></li>
+<li><a href="#_49">错误说明</a></li>
+<li><a href="#_50">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#116">1.1.6 商城及搜索接口</a><ul>
+<li><a href="#_51">接口说明</a></li>
+<li><a href="#_52">请求说明</a></li>
+<li><a href="#_53">输入参数</a></li>
+<li><a href="#_54">错误说明</a></li>
+<li><a href="#_55">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1177,6 +1201,326 @@
         }
     }
 }  
+
+</code></pre>
+
+<h4 id="115_1">1.1.5 商户报价列表</h4>
+<h5 id="_41">接口说明</h5>
+<h5 id="_42">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/agent/agent_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_43">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">商品ID</td>
+</tr>
+<tr>
+<td align="left">agentId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">代理商ID</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">页码</td>
+<td align="left">默认值 1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left">默认值 10</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">错误说明</h5>
+<h5 id="_45">返回实例</h5>
+<pre><code class="json">
+  {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;goodsId&quot;: 10, //产品Id
+                &quot;agentId&quot;: 1,  //代理商ID
+                &quot;productId&quot;: 10,  // 商品ID 
+                &quot;name&quot;: &quot;xiaogang&quot;, //名称
+                &quot;addr&quot;: &quot;wangjing&quot;, //地址
+                &quot;logoUrl&quot;: &quot;/logo&quot;, // logo 地址
+                &quot;number&quot;: 100, //库存数量
+                &quot;saleCount&quot;: 0, //销量
+                &quot;price&quot;: 49.90 //价格
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="115_2">1.1.5 商户售卖商品列表</h4>
+<h5 id="_46">接口说明</h5>
+<p>⚠️注意: 只有第一页返回代理商信息</p>
+<h5 id="_47">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/agent/product_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_48">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">商品ID</td>
+</tr>
+<tr>
+<td align="left">agentId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">代理商ID</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">页码</td>
+<td align="left">默认值 1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left">默认值 10</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">错误说明</h5>
+<h5 id="_50">返回实例</h5>
+<pre><code class="json">
+  {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 5,
+        &quot;currentPage&quot;: 50,
+        &quot;list&quot;: [
+
+            {
+                &quot;id&quot;: 182,
+                &quot;name&quot;: &quot;【同城配送】澳大利亚原装进口OzCow奶粉1kg&quot;,
+                &quot;picUrl&quot;: &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/fpm9kj7b4q2ucoy66x2s.jpg&quot;,
+                &quot;unit&quot;: &quot;袋&quot;,
+                &quot;unitType&quot;: null,
+                &quot;weight&quot;: null,
+                &quot;counterPrice&quot;: 198.00,
+                &quot;retailPrice&quot;: 198.00,
+                &quot;vipPrice&quot;: 198.00,
+                &quot;brief&quot;: &quot;奶粉198返券60元（外卖食品不可用）&quot;,
+                &quot;gallery&quot;: null,
+                &quot;videos&quot;: null,
+                &quot;tags&quot;: null,
+                &quot;area&quot;: null,
+                &quot;year&quot;: null,
+                &quot;productId&quot;: 270
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;agent&quot;: {  //第一页返回代理商信息
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;xiaogang&quot;,
+            &quot;addr&quot;: &quot;wangjing&quot;,
+            &quot;logoUrl&quot;: &quot;/logo&quot;,
+            &quot;deleted&quot;: false,
+            &quot;addTime&quot;: null
+        },
+        &quot;startIndex&quot;: 245,
+        &quot;totalPage&quot;: null,
+        &quot;empty&quot;: false
+    }
+}  
+</code></pre>
+
+<h4 id="116">1.1.6 商城及搜索接口</h4>
+<h5 id="_51">接口说明</h5>
+<p>⚠️注意: 只有第一页返回代理商信息</p>
+<h5 id="_52">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/store/index</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_53">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">keyword</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left"></td>
+<td align="left">关键字</td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">0 散件 1 成品 2 代理商</td>
+<td align="left">默认 0</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">页码</td>
+<td align="left">默认值 1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left">默认值 10</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">错误说明</h5>
+<h5 id="_55">返回实例</h5>
+<p><strong>type=0/1</strong></p>
+<pre><code class="json">
+  {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 371,
+                &quot;name&quot;: &quot;【同城配送】黄冰糖 调料300g&quot;,
+                &quot;picUrl&quot;: &quot;https://saiwai.oss-cn-huhehaote.aliyuncs.com/gs9mzpl9dii61cp2az3c.jpg&quot;,
+                &quot;unit&quot;: &quot;g&quot;,
+                &quot;unitType&quot;: null,
+                &quot;weight&quot;: null,
+                &quot;counterPrice&quot;: 3.30,
+                &quot;retailPrice&quot;: 3.30,
+                &quot;vipPrice&quot;: 3.30,
+                &quot;brief&quot;: &quot;&quot;,
+                &quot;gallery&quot;: null,
+                &quot;videos&quot;: null,
+                &quot;tags&quot;: null,
+                &quot;area&quot;: null,
+                &quot;year&quot;: null
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;totalPage&quot;: 84,
+        &quot;startIndex&quot;: 0,
+        &quot;empty&quot;: false
+    }
+}
+
+</code></pre>
+
+<p><strong>type=2</strong></p>
+<pre><code class="json">
+  {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;xiaogang&quot;,
+                &quot;addr&quot;: &quot;wangjing&quot;,
+                &quot;logoUrl&quot;: &quot;/logo&quot;,
+                &quot;totalSale&quot;: 0
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;totalPage&quot;: null,
+        &quot;startIndex&quot;: 0,
+        &quot;empty&quot;: false
+    }
+}
 
 </code></pre></div>
         </div>
