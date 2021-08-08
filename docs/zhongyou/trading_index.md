@@ -676,6 +676,64 @@
 
 
 
+#### 1.1.5 商户报价列表
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /agent/agent_list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| goodsId      | 否 |  int  |   | 商品ID  |
+| agentId      | 否 |  int  |   | 代理商ID  |
+| page      | 否|  int  |  页码  | 默认值 1 |
+| limit      | 否|  int  |  单页条数  | 默认值 10 |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+  
+  {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "goodsId": 10, //产品Id
+                "agentId": 1,  //代理商ID
+                "productId": 10,  // 商品ID 
+                "name": "xiaogang", //名称
+                "addr": "wangjing", //地址
+                "logoUrl": "/logo", // logo 地址
+                "number": 100, //库存数量
+                "saleCount": 0, //销量
+                "price": 49.90 //价格
+            }
+        ],
+        "end": false,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+  
+```
 
 
 
@@ -683,15 +741,183 @@
 
 
 
+#### 1.1.5 商户售卖商品列表
+
+##### 接口说明
+
+⚠️注意: 只有第一页返回代理商信息
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /agent/product_list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| goodsId      | 否 |  int  |   | 商品ID  |
+| agentId      | 否 |  int  |   | 代理商ID  |
+| page      | 否|  int  |  页码  | 默认值 1 |
+| limit      | 否|  int  |  单页条数  | 默认值 10 |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+  
+  {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 5,
+        "currentPage": 50,
+        "list": [
+           
+            {
+                "id": 182,
+                "name": "【同城配送】澳大利亚原装进口OzCow奶粉1kg",
+                "picUrl": "https://saiwai.oss-cn-huhehaote.aliyuncs.com/fpm9kj7b4q2ucoy66x2s.jpg",
+                "unit": "袋",
+                "unitType": null,
+                "weight": null,
+                "counterPrice": 198.00,
+                "retailPrice": 198.00,
+                "vipPrice": 198.00,
+                "brief": "奶粉198返券60元（外卖食品不可用）",
+                "gallery": null,
+                "videos": null,
+                "tags": null,
+                "area": null,
+                "year": null,
+                "productId": 270
+            }
+        ],
+        "end": false,
+        "agent": {  //第一页返回代理商信息
+            "id": 1,
+            "name": "xiaogang",
+            "addr": "wangjing",
+            "logoUrl": "/logo",
+            "deleted": false,
+            "addTime": null
+        },
+        "startIndex": 245,
+        "totalPage": null,
+        "empty": false
+    }
+}  
+```
 
 
 
 
 
+#### 1.1.6 商城及搜索接口
+
+##### 接口说明
+
+⚠️注意: 只有第一页返回代理商信息
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /store/index |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| keyword      | 否 |  string  |   | 关键字  |
+| type      | 否 |  int  | 0 散件 1 成品 2 代理商   | 默认 0  |
+| page      | 否|  int  |  页码  | 默认值 1 |
+| limit      | 否|  int  |  单页条数  | 默认值 10 |
+
+
+
+#####  错误说明
 
 
 
 
+#####  返回实例
+
+**type=0/1**
+
+```json
+  
+  {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 1,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 371,
+                "name": "【同城配送】黄冰糖 调料300g",
+                "picUrl": "https://saiwai.oss-cn-huhehaote.aliyuncs.com/gs9mzpl9dii61cp2az3c.jpg",
+                "unit": "g",
+                "unitType": null,
+                "weight": null,
+                "counterPrice": 3.30,
+                "retailPrice": 3.30,
+                "vipPrice": 3.30,
+                "brief": "",
+                "gallery": null,
+                "videos": null,
+                "tags": null,
+                "area": null,
+                "year": null
+            }
+        ],
+        "end": false,
+        "totalPage": 84,
+        "startIndex": 0,
+        "empty": false
+    }
+}
+ 
+```
+
+
+
+
+
+**type=2**
+
+```json
+  
+  {
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 1,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 1,
+                "name": "xiaogang",
+                "addr": "wangjing",
+                "logoUrl": "/logo",
+                "totalSale": 0
+            }
+        ],
+        "end": false,
+        "totalPage": null,
+        "startIndex": 0,
+        "empty": false
+    }
+}
+ 
+```
 
 
 
