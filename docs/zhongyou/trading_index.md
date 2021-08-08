@@ -497,6 +497,186 @@
 
 
 
+#### 1.1.5 商品详情
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /goods/detail |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 是 |  int  |   | 商品ID （代理商商品ID productId） |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+  
+  {
+    "c": 0,
+    "m": null,
+    "d": {
+        "defaultAddress": null,
+        "couponList": [],
+        "info": {
+            "id": 371,
+            "goodsSn": "00353",
+            "name": "【同城配送】黄冰糖 调料300g",
+            "categoryId": 37,
+            "brandId": 0,
+            "gallery": [
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/dokso7lipj2kkd864ce6.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/2shb0hrftwp17nivfkuu.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/jb7w8ja1cuueq03gd43c.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/1fih05qeou0tc9144btt.jpg",
+                "https://saiwai.oss-cn-huhehaote.aliyuncs.com/z4we6hmtfkqvi86gwglv.jpg"
+            ],
+            "keywords": "",
+            "brief": "",
+            "isOnSale": true,
+            "sortOrder": 100,
+            "picUrl": "https://saiwai.oss-cn-huhehaote.aliyuncs.com/gs9mzpl9dii61cp2az3c.jpg",
+            "shareUrl": "",
+            "isNew": true,
+            "isHot": true,
+            "unit": "g",
+            "counterPrice": 3.30,
+            "retailPrice": 3.30,
+            "vipPrice": 3.30,
+            "addTime": "2021-07-04 14:31:19",
+            "updateTime": "2021-07-05 08:06:50",
+            "deleted": false,
+            "tags": null,
+            "videos": null,
+            "testReports": null,
+            "goodsType": 0,
+            "expressType": 0,
+            "area": "2019年",
+            "year": "2019",
+            "unitType": null,
+            "weight": null,
+            "detail": [
+                {
+                    "url": "https://saiwai.oss-cn-huhehaote.aliyuncs.com/tyxjmlhltbjx1vuhczuv.jpg",
+                    "size": "2168*5446"
+                },
+                {
+                    "url": "https://saiwai.oss-cn-huhehaote.aliyuncs.com/fdkcytldeidxpfwr7s0h.png",
+                    "size": "607*839"
+                }
+            ]
+        },
+        "userHasCollect": 0,
+        "issue": {
+            "total": 0,
+            "list": null,
+            "pageNum": 0,
+            "pageSize": 0,
+            "size": 0,
+            "startRow": 0,
+            "endRow": 0,
+            "pages": 0,
+            "prePage": 0,
+            "nextPage": 0,
+            "isFirstPage": false,
+            "isLastPage": false,
+            "hasPreviousPage": false,
+            "hasNextPage": false,
+            "navigatePages": 0,
+            "navigatepageNums": null,
+            "navigateFirstPage": 0,
+            "navigateLastPage": 0
+        },
+        "comment": {
+            "count": 0,
+            "favorableRating": null,
+            "data": []
+        },
+        "specificationList": [
+            {
+                "name": "规格",
+                "valueList": [
+                    {
+                        "id": 443,
+                        "goodsId": 371,
+                        "specification": "规格",
+                        "value": "300g",
+                        "picUrl": "",
+                        "addTime": "2021-07-04 14:31:19",
+                        "updateTime": "2021-07-05 08:06:50",
+                        "deleted": false
+                    }
+                ]
+            }
+        ],
+        "productList": [
+            {
+                "id": 476,
+                "goodsId": 371,
+                "specifications": [
+                    "标准"
+                ],
+                "price": 3.30,
+                "number": 1000,
+                "url": "",
+                "addTime": "2021-07-04 14:31:19",
+                "updateTime": "2021-07-05 08:06:50",
+                "vipPrice": 3.30,
+                "counterPrice": 0.00,
+                "deleted": false,
+                "year": "2019",
+                "area": "beijing",
+                "agentId": 1,
+                "sourceType": null,
+                "sourceId": null,
+                "unitPrice": null,
+                "saleCount": 0
+            }
+        ],
+        "attribute": [],
+        "keyIndicators": [],
+        "brand": {
+            "id": null,
+            "name": null,
+            "desc": null,
+            "picUrl": null,
+            "sortOrder": null,
+            "floorPrice": null,
+            "addTime": null,
+            "updateTime": null,
+            "deleted": null
+        },
+        "groupon": [],
+        "share": false,
+        "shareImage": "",
+        "agent": {  //代理商信息
+            "id": 1,  //代理商ID
+            "name": "xiaogang",  //名称
+            "addr": "wangjing", //地址
+            "logoUrl": "/logo", //logo
+            "deleted": false, // 是否已删除
+            "addTime": null
+        }
+    }
+}  
+  
+```
+
+
+
+
 
 
 
