@@ -256,6 +256,14 @@
 <li><a href="#_15">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#112">1.1.2 大盘指数</a><ul>
+<li><a href="#_16">接口说明</a></li>
+<li><a href="#_17">请求说明</a></li>
+<li><a href="#_18">输入参数</a></li>
+<li><a href="#_19">错误说明</a></li>
+<li><a href="#_20">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -597,6 +605,67 @@
         &quot;previousPage&quot;: 1,
         &quot;totalPages&quot;: 1,
         &quot;empty&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="112">1.1.2 大盘指数</h4>
+<h5 id="_16">接口说明</h5>
+<p>按商品类别分页拉取商品列表信息</p>
+<h5 id="_17">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/trading/big_index</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_18">输入参数</h5>
+<p>无</p>
+<h5 id="_19">错误说明</h5>
+<h5 id="_20">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;indexData&quot;: {  
+             &quot;value&quot;: 66867,  //指数值
+            &quot;yesterdayRate&quot;: 0.3104091727168805103787008192739449441432952880859375,  //昨日涨幅
+            &quot;weekRate&quot;: 0.4402313041648742153455486914026550948619842529296875, //周涨幅
+            &quot;monthRate&quot;: 0.00987847956402188032143385498784482479095458984375, //月涨幅
+            &quot;yearRate&quot;: 0.671523432892886518175146193243563175201416015625, //年涨幅
+            &quot;riseCount&quot;: 661,  //上涨数
+            &quot;holdCount&quot;: 569, // 持平数
+            &quot;fallCount&quot;: 800, // 下跌数
+            &quot;hot&quot;: 89522 //热度
+        },
+        &quot;years&quot;: [  //年份
+            {
+                &quot;code&quot;: &quot;2021&quot;,
+                &quot;name&quot;: &quot;2021年&quot;
+            },
+            {
+                &quot;code&quot;: &quot;2020&quot;,
+                &quot;name&quot;: &quot;2020年&quot;
+            },
+            {
+                &quot;code&quot;: &quot;2019&quot;,
+                &quot;name&quot;: &quot;2019年&quot;
+            },
+            {
+                &quot;code&quot;: &quot;2018&quot;,
+                &quot;name&quot;: &quot;2018年&quot;
+            }
+        ]
     }
 }
 
