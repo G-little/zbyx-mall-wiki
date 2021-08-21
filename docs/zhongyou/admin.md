@@ -37,6 +37,7 @@
 | addr | string | 商户地址 |  |
 | logoUrl | string | 头像 |  |
 | mobile | string | 手机号 |  |
+| type | byte | 商户类型 | 0 默认 1   |
 
 
 
@@ -61,6 +62,7 @@
 | name      | 否| string  |  名字 | |
 | id      | 否| int  |  代理商名字 | |
 | mobile      | 否| string  |  手机号 | |
+| type      | 否| string  |  类型 | |
 
 #####  错误说明
 
@@ -119,6 +121,7 @@
 | addr      | 否 |  string  |   |  |
 | logoUrl      | 是 |  string  |  商户头像  |  |
 | mobile      | 是 |  string  |  手机号 |  |
+| type      | 否| string  |  类型 | |
 
 
 #####  请求实例
