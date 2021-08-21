@@ -268,6 +268,12 @@
 <li><a href="#_21">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#12">1.2 更新代理商商品</a><ul>
+<li><a href="#_22">接口说明</a></li>
+<li><a href="#_23">请求说明</a></li>
+<li><a href="#_24">输入参数</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -672,6 +678,47 @@
     &quot;d&quot;: {
     }
 }  
+</code></pre>
+
+<h4 id="12">1.2 更新代理商商品</h4>
+<h5 id="_22">接口说明</h5>
+<p>管理中心用户列表</p>
+<h5 id="_23">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/agent_goods/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_24">输入参数</h5>
+<pre><code class="json">
+{
+  &quot;goodsId&quot;:1, //商品ID
+  &quot;products&quot;: [   //货品信息
+    {
+      &quot;deleted&quot;: true,   //删除
+      &quot;goodsId&quot;: 0, //产品ID
+      &quot;id&quot;: 0, //货品ID
+      &quot;number&quot;: 0,  //库存
+      &quot;counterPrice&quot;: 0, // 标价
+      &quot;price&quot;: 0, // 售价（非必填，没填，则取商品售价，若两个都未填则报参数错误）
+      &quot;vipPrice&quot;: 0,  //会员价（非必填，没填，则取商品会员价，若两个都未填则报参数错误
+      &quot;specifications&quot;: [ //规格对应值
+        &quot;string&quot;
+      ],
+      &quot;url&quot;: &quot;string&quot;   //规格对应商品图片
+    }
+  ]
+}
+
 </code></pre></div>
         </div>
 
