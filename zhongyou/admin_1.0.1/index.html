@@ -309,6 +309,27 @@
 </li>
 </ul>
 </li>
+<li><a href="#4">4. 银行账户设置</a><ul>
+<li><a href="#_41">字段说明</a></li>
+<li><a href="#410">4.1.0 银行账户详情</a><ul>
+<li><a href="#_42">接口说明</a></li>
+<li><a href="#_43">请求说明</a></li>
+<li><a href="#_44">输入参数</a></li>
+<li><a href="#_45">错误说明</a></li>
+<li><a href="#_46">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#411">4.1.1 更新银行账户信息</a><ul>
+<li><a href="#_47">接口说明</a></li>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">请求实例</a></li>
+<li><a href="#_51">错误说明</a></li>
+<li><a href="#_52">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1051,6 +1072,147 @@
             }
         ],
         &quot;agingFee&quot;: &quot;0.00&quot;
+    }
+}
+
+</code></pre>
+
+<h3 id="4">4. 银行账户设置</h3>
+<hr />
+<h4 id="_41">字段说明</h4>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>配置ID</td>
+<td></td>
+</tr>
+<tr>
+<td>bankName</td>
+<td>string</td>
+<td>银行账户</td>
+<td></td>
+</tr>
+<tr>
+<td>bankAccount</td>
+<td>string</td>
+<td>银行账户</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="410">4.1.0 银行账户详情</h4>
+<h5 id="_42">接口说明</h5>
+<p>账户详情</p>
+<h5 id="_43">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bank_account/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">输入参数</h5>
+<p>无</p>
+<h5 id="_45">错误说明</h5>
+<h5 id="_46">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;bankName&quot;: &quot;银行名&quot;,
+        &quot;bankAccount&quot;: &quot;银行账户&quot;,
+        &quot;addTime&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="411">4.1.1 更新银行账户信息</h4>
+<h5 id="_47">接口说明</h5>
+<p>更新商户</p>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post  json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bank_account/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">bankName</td>
+<td align="center">string</td>
+<td align="left">银行名</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">bankAccount</td>
+<td align="center">String</td>
+<td align="left">银行账户</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;bankName&quot;: &quot;银行&quot;,
+    &quot;bankAccount&quot;: &quot;xxxxx&quot;
+
+}
+
+</code></pre>
+
+<h5 id="_51">错误说明</h5>
+<h5 id="_52">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;bankName&quot;: &quot;银行名&quot;,
+        &quot;bankAccount&quot;: &quot;银行账户&quot;,
+        &quot;addTime&quot;: null
     }
 }
 
