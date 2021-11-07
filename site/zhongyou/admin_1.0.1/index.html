@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>后台-1.01 - Mall Docs</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Mall Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../user/user/">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../mall/">首页</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/catalog/">分类</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/coupon/">优惠券</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/goods/">产品</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/search/">搜索</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/cart/">购物车</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/address/">地址</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/activity/">活动</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/order/">订单</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/my/">个人中心</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/collect/">收藏</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/aftersale/">售后</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/vip/">会员</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/charge/">充值</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/live/">直播</a>
+</li>
+                                    
+<li >
+    <a href="../../www/www/">官网</a>
+</li>
+                                    
+<li >
+    <a href="../../mall/invite/">邀请</a>
+</li>
+                                    
+<li >
+    <a href="../../feed/feed/">圈子</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../admin/user/">用户</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/goods/">商品</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/ad/">推广</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/topic/">活动</a>
+</li>
+                                    
+<li >
+    <a href="../../www/www-admin/">官网</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">溯源 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../trace/pda/">PDA</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">中优 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../trading_index/">指数</a>
+</li>
+                                    
+<li >
+    <a href="../admin/">后台</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">后台-1.01</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">快递 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../express/express/">app接口</a>
+</li>
+                                    
+<li >
+    <a href="../../express/express_user/">用户app接口</a>
+</li>
+                                    
+<li >
+    <a href="../../admin/express/">管理接口</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../admin/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../express/express/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">中优商城管理后台接口</a></li>
+            <li><a href="#_2">修订记录</a></li>
+            <li><a href="#_3">背景</a></li>
+            <li><a href="#_4">产品说明</a></li>
+            <li><a href="#_5">关键流程说明</a></li>
+            <li><a href="#_6">接口说明</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_1">中优商城管理后台接口</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">中优商城管理后台接口</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a><ul>
+<li><a href="#1">1. 酿化设置</a><ul>
+<li><a href="#_7">字段说明</a></li>
+<li><a href="#110">1.1.0 获取酿化设置信息</a><ul>
+<li><a href="#_8">接口说明</a></li>
+<li><a href="#_9">请求说明</a></li>
+<li><a href="#_10">输入参数</a></li>
+<li><a href="#_11">错误说明</a></li>
+<li><a href="#_12">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#112">1.1.2 更新酿化设置信息</a><ul>
+<li><a href="#_13">接口说明</a></li>
+<li><a href="#_14">请求说明</a></li>
+<li><a href="#_15">输入参数</a></li>
+<li><a href="#_16">请求实例</a></li>
+<li><a href="#_17">错误说明</a></li>
+<li><a href="#_18">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2">2. 酿化管理</a><ul>
+<li><a href="#_19">字段说明</a></li>
+<li><a href="#210">2.1.0 酿化管理列表</a><ul>
+<li><a href="#_20">接口说明</a></li>
+<li><a href="#_21">请求说明</a></li>
+<li><a href="#_22">输入参数</a></li>
+<li><a href="#_23">错误说明</a></li>
+<li><a href="#_24">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#212">2.1.2 酿化详情</a><ul>
+<li><a href="#_25">接口说明</a></li>
+<li><a href="#_26">请求说明</a></li>
+<li><a href="#_27">输入参数</a></li>
+<li><a href="#_28">错误说明</a></li>
+<li><a href="#_29">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3">3. 出仓管理</a><ul>
+<li><a href="#_30">字段说明</a></li>
+<li><a href="#310">3.1.0 出仓管理列表</a><ul>
+<li><a href="#_31">接口说明</a></li>
+<li><a href="#_32">请求说明</a></li>
+<li><a href="#_33">输入参数</a></li>
+<li><a href="#_34">错误说明</a></li>
+<li><a href="#_35">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#312">3.1.2 出仓详情</a><ul>
+<li><a href="#_36">接口说明</a></li>
+<li><a href="#_37">请求说明</a></li>
+<li><a href="#_38">输入参数</a></li>
+<li><a href="#_39">错误说明</a></li>
+<li><a href="#_40">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#4">4. 银行账户设置</a><ul>
+<li><a href="#_41">字段说明</a></li>
+<li><a href="#410">4.1.0 银行账户详情</a><ul>
+<li><a href="#_42">接口说明</a></li>
+<li><a href="#_43">请求说明</a></li>
+<li><a href="#_44">输入参数</a></li>
+<li><a href="#_45">错误说明</a></li>
+<li><a href="#_46">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#411">4.1.1 更新银行账户信息</a><ul>
+<li><a href="#_47">接口说明</a></li>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">请求实例</a></li>
+<li><a href="#_51">错误说明</a></li>
+<li><a href="#_52">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_2">修订记录</h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>作者</th>
+<th>修订类型</th>
+<th>修订内容</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021年11月06日</td>
+<td>冷立纲</td>
+<td>A</td>
+<td>新增设计方案</td>
+<td>1.0.1</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>【修订类型：A-新增  M-修改 D-删除】</p>
+</blockquote>
+<h2 id="_3">背景</h2>
+<p>中优商城管理后台接口</p>
+<h2 id="_4">产品说明</h2>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h3 id="1">1. 酿化设置</h3>
+<hr />
+<h4 id="_7">字段说明</h4>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>配置ID</td>
+<td></td>
+</tr>
+<tr>
+<td>yearFee</td>
+<td>double</td>
+<td>每年费用</td>
+<td></td>
+</tr>
+<tr>
+<td>limitYear</td>
+<td>int</td>
+<td>最低年限</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="110">1.1.0 获取酿化设置信息</h4>
+<h5 id="_8">接口说明</h5>
+<p>商户详情</p>
+<h5 id="_9">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/aging_setting/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_10">输入参数</h5>
+<p>无</p>
+<h5 id="_11">错误说明</h5>
+<h5 id="_12">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;yearFee&quot;: &quot;每年费用&quot;,
+        &quot;limitYear&quot;: 2,
+        &quot;addTime&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="112">1.1.2 更新酿化设置信息</h4>
+<h5 id="_13">接口说明</h5>
+<p>更新商户</p>
+<h5 id="_14">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post  json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/aging_setting/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">yearFee</td>
+<td align="center">double</td>
+<td align="left">每年费用</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limitYear</td>
+<td align="center">int</td>
+<td align="left">最低年限</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_16">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;yearFee&quot;: &quot;每年费用&quot;,
+    &quot;limitYear&quot;: 2
+
+}
+
+</code></pre>
+
+<h5 id="_17">错误说明</h5>
+<h5 id="_18">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: null,
+        &quot;yearFee&quot;: &quot;2.00&quot;,
+        &quot;limitYear&quot;: 2,
+        &quot;addTime&quot;: &quot;2021-11-07 08:00:35&quot;
+    }
+}
+
+</code></pre>
+
+<h3 id="2">2. 酿化管理</h3>
+<hr />
+<h4 id="_19">字段说明</h4>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>订单ID</td>
+<td></td>
+</tr>
+<tr>
+<td>user</td>
+<td>json</td>
+<td>用户信息</td>
+<td></td>
+</tr>
+<tr>
+<td>addTime</td>
+<td>string</td>
+<td>添加时间</td>
+<td></td>
+</tr>
+<tr>
+<td>agingFee</td>
+<td>double</td>
+<td>酿化费用</td>
+<td></td>
+</tr>
+<tr>
+<td>agingEndtime</td>
+<td>string</td>
+<td>酿化截止时间</td>
+<td></td>
+</tr>
+<tr>
+<td>goodsList</td>
+<td>json array</td>
+<td>商品信息列表</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="210">2.1.0 酿化管理列表</h4>
+<h5 id="_20">接口说明</h5>
+<h5 id="_21">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/aging/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_22">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">userId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">名字</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">mobile</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">orderSn</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">订单流水号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">类型</td>
+<td align="left">0 全部  -1 欠费 1 付费</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_23">错误说明</h5>
+<h5 id="_24">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 208,
+                &quot;orderSn&quot;: &quot;20210831520371&quot;,
+                &quot;user&quot;: {
+                    &quot;uid&quot;: 10070,
+                    &quot;name&quot;: &quot;青翼&quot;,
+                    &quot;mobile&quot;: &quot;13810163978&quot;
+                }, //用户信息
+                &quot;addTime&quot;: &quot;2021-08-31 17:11:28&quot;, //添加时间
+                &quot;agingFee&quot;: &quot;0.00&quot;, //费用
+                &quot;agingEndtime&quot;: null, //酿化截止时间
+                &quot;goodsList&quot;: [ //商品信息
+                    {
+                        &quot;id&quot;: 216,
+                        &quot;orderId&quot;: null,
+                        &quot;goodsId&quot;: null,
+                        &quot;goodsName&quot;: &quot;侨宝 2020年七月果200g深色罐装 新会小青柑&quot;,
+                        &quot;goodsSn&quot;: null,
+                        &quot;productId&quot;: null,
+                        &quot;number&quot;: 1,
+                        &quot;price&quot;: &quot;15.00&quot;,
+                        &quot;specifications&quot;: [
+                            &quot;标准&quot;
+                        ],
+                        &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/mx6zwyej8b40rejjnord.jpg&quot;,
+                        &quot;comment&quot;: null,
+                        &quot;addTime&quot;: null,
+                        &quot;updateTime&quot;: null,
+                        &quot;brief&quot;: null,
+                        &quot;gallery&quot;: null,
+                        &quot;videos&quot;: null,
+                        &quot;tags&quot;: null,
+                        &quot;aftersaleId&quot;: null,
+                        &quot;handleOption&quot;: null
+                    }
+                ]
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 158
+    }
+}
+
+
+</code></pre>
+
+<h4 id="212">2.1.2 酿化详情</h4>
+<h5 id="_25">接口说明</h5>
+<p>商户详情</p>
+<h5 id="_26">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/aging/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_27">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">订单ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_28">错误说明</h5>
+<h5 id="_29">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 208,
+        &quot;orderSn&quot;: &quot;20210831520371&quot;,
+        &quot;user&quot;: {
+            &quot;uid&quot;: 10070,
+            &quot;name&quot;: &quot;青翼&quot;,
+            &quot;mobile&quot;: &quot;13810163978&quot;
+        },
+        &quot;addTime&quot;: &quot;2021-08-31 17:11:28&quot;,
+        &quot;agingFee&quot;: &quot;0.00&quot;,
+        &quot;agingEndtime&quot;: null,
+        &quot;goodsList&quot;: [
+            {
+                &quot;id&quot;: 216,
+                &quot;orderId&quot;: null,
+                &quot;goodsId&quot;: null,
+                &quot;goodsName&quot;: &quot;侨宝 2020年七月果200g深色罐装 新会小青柑&quot;,
+                &quot;goodsSn&quot;: null,
+                &quot;productId&quot;: null,
+                &quot;number&quot;: 1,
+                &quot;price&quot;: &quot;15.00&quot;,
+                &quot;specifications&quot;: [
+                    &quot;标准&quot;
+                ],
+                &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/mx6zwyej8b40rejjnord.jpg&quot;,
+                &quot;comment&quot;: null,
+                &quot;addTime&quot;: null,
+                &quot;updateTime&quot;: null,
+                &quot;brief&quot;: null,
+                &quot;gallery&quot;: null,
+                &quot;videos&quot;: null,
+                &quot;tags&quot;: null,
+                &quot;aftersaleId&quot;: null,
+                &quot;handleOption&quot;: null
+            }
+        ]
+    }
+}
+
+</code></pre>
+
+<h3 id="3">3. 出仓管理</h3>
+<hr />
+<h4 id="_30">字段说明</h4>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orderId</td>
+<td>int</td>
+<td>订单ID</td>
+<td></td>
+</tr>
+<tr>
+<td>user</td>
+<td>json</td>
+<td>用户信息</td>
+<td></td>
+</tr>
+<tr>
+<td>addTime</td>
+<td>string</td>
+<td>添加时间</td>
+<td></td>
+</tr>
+<tr>
+<td>requestTime</td>
+<td>string</td>
+<td>申请时间</td>
+<td></td>
+</tr>
+<tr>
+<td>agingEndtime</td>
+<td>string</td>
+<td>酿化截止时间</td>
+<td></td>
+</tr>
+<tr>
+<td>orderStatus</td>
+<td>int</td>
+<td>订单状态</td>
+<td></td>
+</tr>
+<tr>
+<td>orderStatusText</td>
+<td>string</td>
+<td>订单状态描述</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="310">3.1.0 出仓管理列表</h4>
+<h5 id="_31">接口说明</h5>
+<h5 id="_32">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/out_request/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_33">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">userId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">名字</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">mobile</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">orderSn</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">订单流水号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">类型</td>
+<td align="left">0 全部  -1 欠费 1 付费</td>
+</tr>
+<tr>
+<td align="left">orderStatusArray</td>
+<td align="center">否</td>
+<td align="left">订单状态数组</td>
+<td align="left">订单状态列表</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_34">错误说明</h5>
+<h5 id="_35">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;user&quot;: { //用户信息
+                    &quot;uid&quot;: 10070,
+                    &quot;name&quot;: &quot;青翼&quot;,
+                    &quot;mobile&quot;: &quot;13810163978&quot;
+                },
+                &quot;orderId&quot;: 208, //订单号
+                &quot;addTime&quot;: &quot;2021-08-31 17:11:28&quot;, //添加时间 
+                &quot;requestTime&quot;: &quot;2021-10-15 10:00:00&quot;, //申请时间
+                &quot;orderStatus&quot;: 103,
+                &quot;orderStatusText&quot;: &quot;已取消(系统)&quot; //订单状态
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="312">3.1.2 出仓详情</h4>
+<h5 id="_36">接口说明</h5>
+<p>商户详情</p>
+<h5 id="_37">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/out_request/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_38">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">订单ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_39">错误说明</h5>
+<h5 id="_40">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;user&quot;: { //用户信息
+            &quot;uid&quot;: 10070,
+            &quot;name&quot;: &quot;青翼&quot;,
+            &quot;mobile&quot;: &quot;13810163978&quot;
+        },
+        &quot;order&quot;: { //订单信息
+            &quot;id&quot;: 208,
+            &quot;userId&quot;: 10070,
+            &quot;orderSn&quot;: &quot;20210831520371&quot;,
+            &quot;orderStatus&quot;: 103,
+            &quot;aftersaleStatus&quot;: 0,
+            &quot;consignee&quot;: &quot;李青&quot;,
+            &quot;mobile&quot;: &quot;13810163978&quot;,
+            &quot;address&quot;: &quot;北京市市辖区丰台区 请输入地址六里桥&quot;,
+            &quot;message&quot;: &quot;&quot;,
+            &quot;goodsPrice&quot;: &quot;15.00&quot;,
+            &quot;freightPrice&quot;: &quot;0.00&quot;,
+            &quot;couponPrice&quot;: &quot;0.00&quot;,
+            &quot;integralPrice&quot;: &quot;0.00&quot;,
+            &quot;grouponPrice&quot;: &quot;0.00&quot;,
+            &quot;orderPrice&quot;: &quot;15.00&quot;,
+            &quot;actualPrice&quot;: &quot;15.00&quot;,
+            &quot;payId&quot;: null,
+            &quot;payTime&quot;: null,
+            &quot;shipSn&quot;: null,
+            &quot;shipChannel&quot;: null,
+            &quot;shipTime&quot;: null,
+            &quot;refundAmount&quot;: null,
+            &quot;refundType&quot;: null,
+            &quot;refundContent&quot;: null,
+            &quot;refundTime&quot;: null,
+            &quot;confirmTime&quot;: null,
+            &quot;comments&quot;: 0,
+            &quot;endTime&quot;: &quot;2021-08-31 17:41:28&quot;,
+            &quot;addTime&quot;: &quot;2021-08-31 17:11:28&quot;,
+            &quot;updateTime&quot;: &quot;2021-08-31 17:41:28&quot;,
+            &quot;deleted&quot;: false,
+            &quot;payType&quot;: &quot;WX_MP&quot;,
+            &quot;agingEndtime&quot;: null,
+            &quot;offlinePayId&quot;: null,
+            &quot;offlinePayStatus&quot;: null
+        },
+        &quot;goodsList&quot;: [ //商品信息
+            {
+                &quot;id&quot;: 216,
+                &quot;orderId&quot;: null,
+                &quot;goodsId&quot;: null,
+                &quot;goodsName&quot;: &quot;侨宝 2020年七月果200g深色罐装 新会小青柑&quot;,
+                &quot;goodsSn&quot;: null,
+                &quot;productId&quot;: null,
+                &quot;number&quot;: 1,
+                &quot;price&quot;: &quot;15.00&quot;,
+                &quot;specifications&quot;: [
+                    &quot;标准&quot;
+                ],
+                &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/mx6zwyej8b40rejjnord.jpg&quot;,
+                &quot;comment&quot;: null,
+                &quot;addTime&quot;: null,
+                &quot;updateTime&quot;: null,
+                &quot;brief&quot;: null,
+                &quot;gallery&quot;: null,
+                &quot;videos&quot;: null,
+                &quot;tags&quot;: null,
+                &quot;aftersaleId&quot;: null,
+                &quot;handleOption&quot;: null
+            }
+        ],
+        &quot;agingFee&quot;: &quot;0.00&quot;
+    }
+}
+
+</code></pre>
+
+<h3 id="4">4. 银行账户设置</h3>
+<hr />
+<h4 id="_41">字段说明</h4>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>配置ID</td>
+<td></td>
+</tr>
+<tr>
+<td>bankName</td>
+<td>string</td>
+<td>银行账户</td>
+<td></td>
+</tr>
+<tr>
+<td>bankAccount</td>
+<td>string</td>
+<td>银行账户</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="410">4.1.0 银行账户详情</h4>
+<h5 id="_42">接口说明</h5>
+<p>账户详情</p>
+<h5 id="_43">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bank_account/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">输入参数</h5>
+<p>无</p>
+<h5 id="_45">错误说明</h5>
+<h5 id="_46">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;bankName&quot;: &quot;银行名&quot;,
+        &quot;bankAccount&quot;: &quot;银行账户&quot;,
+        &quot;addTime&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="411">4.1.1 更新银行账户信息</h4>
+<h5 id="_47">接口说明</h5>
+<p>更新商户</p>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post  json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bank_account/update</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">bankName</td>
+<td align="center">string</td>
+<td align="left">银行名</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">bankAccount</td>
+<td align="center">String</td>
+<td align="left">银行账户</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">请求实例</h5>
+<pre><code class="json">
+{
+    &quot;bankName&quot;: &quot;银行&quot;,
+    &quot;bankAccount&quot;: &quot;xxxxx&quot;
+
+}
+
+</code></pre>
+
+<h5 id="_51">错误说明</h5>
+<h5 id="_52">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;bankName&quot;: &quot;银行名&quot;,
+        &quot;bankAccount&quot;: &quot;银行账户&quot;,
+        &quot;addTime&quot;: null
+    }
+}
+
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
