@@ -4,6 +4,7 @@
     - User: 
       - Main: './user/user.md'
     - Mall: 
+      - 酿化: './mall/aging.md'    
       - 首页: './mall/index.md'    
       - 分类: './mall/catalog.md'    
       - 优惠券: './mall/coupon.md'    
