@@ -305,6 +305,22 @@
 <li><a href="#_35">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#116">1.1.6 我的出售(库存管理)</a><ul>
+<li><a href="#_36">接口说明</a></li>
+<li><a href="#_37">请求说明</a></li>
+<li><a href="#_38">输入参数</a></li>
+<li><a href="#_39">错误说明</a></li>
+<li><a href="#_40">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#117">1.1.7 我的求购</a><ul>
+<li><a href="#_41">接口说明</a></li>
+<li><a href="#_42">请求说明</a></li>
+<li><a href="#_43">输入参数</a></li>
+<li><a href="#_44">错误说明</a></li>
+<li><a href="#_45">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1020,6 +1036,197 @@
             &quot;area&quot;: &quot;天马&quot;,
             &quot;year&quot;: &quot;2017&quot;
         },
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="116">1.1.6 我的出售(库存管理)</h4>
+<h5 id="_36">接口说明</h5>
+<h5 id="_37">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/stock/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_38">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_39">错误说明</h5>
+<h5 id="_40">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;goods&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;侨宝2017年酿化陈皮&quot;,
+                    &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png&quot;,
+                    &quot;unit&quot;: &quot;箱&quot;,
+                    &quot;unitType&quot;: 1,
+                    &quot;weight&quot;: null,
+                    &quot;counterPrice&quot;: &quot;2298.00&quot;,
+                    &quot;retailPrice&quot;: &quot;2298.00&quot;,
+                    &quot;vipPrice&quot;: &quot;2298.00&quot;,
+                    &quot;brief&quot;: &quot;&quot;,
+                    &quot;gallery&quot;: null,
+                    &quot;videos&quot;: null,
+                    &quot;tags&quot;: null,
+                    &quot;area&quot;: &quot;天马&quot;,
+                    &quot;year&quot;: &quot;2017年&quot;
+                },
+                &quot;buyPrice&quot;: &quot;0.00&quot;,
+                &quot;amount&quot;: 9,
+                &quot;freezeAmount&quot;: null
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="117">1.1.7 我的求购</h4>
+<h5 id="_41">接口说明</h5>
+<h5 id="_42">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/buy/my_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_43">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">错误说明</h5>
+<h5 id="_45">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;goods&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;侨宝2017年酿化陈皮&quot;,
+                    &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png&quot;,
+                    &quot;unit&quot;: &quot;箱&quot;,
+                    &quot;unitType&quot;: 1,
+                    &quot;weight&quot;: null,
+                    &quot;counterPrice&quot;: &quot;2298.00&quot;,
+                    &quot;retailPrice&quot;: &quot;2298.00&quot;,
+                    &quot;vipPrice&quot;: &quot;2298.00&quot;,
+                    &quot;brief&quot;: &quot;&quot;,
+                    &quot;gallery&quot;: null,
+                    &quot;videos&quot;: null,
+                    &quot;tags&quot;: null,
+                    &quot;area&quot;: &quot;天马&quot;,
+                    &quot;year&quot;: &quot;2017年&quot;
+                },
+                &quot;buyList&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;uid&quot;: 10075,
+                        &quot;goodsId&quot;: 1,
+                        &quot;count&quot;: 5,
+                        &quot;addTime&quot;: &quot;2021-09-09 12:33:33&quot;,
+                        &quot;price&quot;: &quot;22.00&quot;,
+                        &quot;saleList&quot;: null
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;uid&quot;: 10075,
+                        &quot;goodsId&quot;: 1,
+                        &quot;count&quot;: 1,
+                        &quot;addTime&quot;: &quot;2021-12-25 18:33:03&quot;,
+                        &quot;price&quot;: &quot;2000.00&quot;,
+                        &quot;saleList&quot;: null
+                    }
+                ]
+            }
+        ],
+        &quot;end&quot;: true,
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
         &quot;totalPage&quot;: null
