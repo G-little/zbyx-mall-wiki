@@ -379,4 +379,137 @@
 
 
 
+#### 1.1.3 立即出售
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | post    |
+|:------------- |:---------------:|
+| url      |/sale/at_once |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| count      | 是 | int  |  求购数量 |   |
+| buyId      | 是 | int  |  求购ID |   |
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+
+```json
+
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "id": 2
+    }
+}
+
+```
+
+
+
+#### 1.1.4 出售列表
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/sale/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| goodsId      | 是 | int  |  商品ID |   |
+| page      | 否 | int  |  分页 |   |
+| limit      | 否 | int  |  每页条数 |   |
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+
+```json
+
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 2,
+                "uid": 10075,
+                "employeeType": null,
+                "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/ajNVdqHZLLCR0RRpv80XgfKgjiaunf4KGpPXIubQe63k94icYGayDOKe28xEdQyVwZ63iaAKunbp5Gw5jdsia6iaS5w/132",
+                "name": "gåga💪🏼",
+                "goodsId": 1,
+                "count": 1,
+                "addTime": null,
+                "price": "2000.00"
+            },
+            {
+                "id": 1,
+                "uid": 10075,
+                "employeeType": null,
+                "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/ajNVdqHZLLCR0RRpv80XgfKgjiaunf4KGpPXIubQe63k94icYGayDOKe28xEdQyVwZ63iaAKunbp5Gw5jdsia6iaS5w/132",
+                "name": "gåga💪🏼",
+                "goodsId": 1,
+                "count": 1,
+                "addTime": "2021-09-09 12:33:33",
+                "price": "222.00"
+            }
+        ],
+        "end": true,
+        "goods": {
+            "id": 1,
+            "name": "侨宝2017年酿化陈皮",
+            "picUrl": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png",
+            "unit": "箱",
+            "unitType": 1,
+            "weight": null,
+            "counterPrice": "2298.00",
+            "retailPrice": "2298.00",
+            "vipPrice": "2298.00",
+            "brief": "",
+            "gallery": [
+                "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/1h3xlxlboyzxzu6wn4yt.png"
+            ],
+            "videos": null,
+            "tags": null,
+            "area": "天马",
+            "year": "2017"
+        },
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
+
+
+
 
