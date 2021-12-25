@@ -601,6 +601,343 @@
 ```
 
 
+#### 1.1.6 我的出售(库存管理)
+
+##### 接口说明
 
 
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/stock/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否 | int  |  分页 |   |
+| limit      | 否 | int  |  每页条数 |   |
+
+#####  错误说明
+
+#####  返回实例
+
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "goods": {
+                    "id": 1,
+                    "name": "侨宝2017年酿化陈皮",
+                    "picUrl": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png",
+                    "unit": "箱",
+                    "unitType": 1,
+                    "weight": null,
+                    "counterPrice": "2298.00",
+                    "retailPrice": "2298.00",
+                    "vipPrice": "2298.00",
+                    "brief": "",
+                    "gallery": null,
+                    "videos": null,
+                    "tags": null,
+                    "area": "天马",
+                    "year": "2017年"
+                },
+                "buyPrice": "0.00",
+                "amount": 9,
+                "freezeAmount": null
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
+
+
+#### 1.1.7 我的求购
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/buy/my_list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否 | int  |  分页 |   |
+| limit      | 否 | int  |  每页条数 |   |
+
+#####  错误说明
+
+#####  返回实例
+
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "goods": {
+                    "id": 1,
+                    "name": "侨宝2017年酿化陈皮",
+                    "picUrl": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png",
+                    "unit": "箱",
+                    "unitType": 1,
+                    "weight": null,
+                    "counterPrice": "2298.00",
+                    "retailPrice": "2298.00",
+                    "vipPrice": "2298.00",
+                    "brief": "",
+                    "gallery": null,
+                    "videos": null,
+                    "tags": null,
+                    "area": "天马",
+                    "year": "2017年"
+                },
+                "buyList": [
+                    {
+                        "id": 1,
+                        "uid": 10075,
+                        "goodsId": 1,
+                        "count": 5,
+                        "addTime": "2021-09-09 12:33:33",
+                        "price": "22.00",
+                        "saleList": null
+                    },
+                    {
+                        "id": 2,
+                        "uid": 10075,
+                        "goodsId": 1,
+                        "count": 1,
+                        "addTime": "2021-12-25 18:33:03",
+                        "price": "2000.00",
+                        "saleList": null
+                    }
+                ]
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
+
+
+
+### 2. 圈子
+
+
+-------
+
+
+#### 2.0.1 圈子-求购
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/buy/list_all |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否 | int  |  分页 |   |
+| limit      | 否 | int  |  每页条数 |   |
+
+#####  错误说明
+
+#####  返回实例
+
+
+
+```json
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "pageSize": 20,
+                "currentPage": 1,
+                "list": [
+                    {
+                        "id": 1,
+                        "uid": 10075,
+                        "employeeType": 1,
+                        "avatar": null,
+                        "name": "gåga💪🏼",
+                        "goodsId": 1,
+                        "count": 5,
+                        "addTime": "2021-09-09 12:33:33",
+                        "price": "22.00"
+                    },
+                    {
+                        "id": 2,
+                        "uid": 10075,
+                        "employeeType": null,
+                        "avatar": null,
+                        "name": "gåga💪🏼",
+                        "goodsId": 1,
+                        "count": 1,
+                        "addTime": "2021-12-25 18:33:03",
+                        "price": "2000.00"
+                    }
+                ],
+                "end": true,
+                "goods": {
+                    "id": 1,
+                    "name": "侨宝2017年酿化陈皮",
+                    "picUrl": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png",
+                    "unit": "箱",
+                    "unitType": 1,
+                    "weight": null,
+                    "counterPrice": "2298.00",
+                    "retailPrice": "2298.00",
+                    "vipPrice": "2298.00",
+                    "brief": "",
+                    "gallery": null,
+                    "videos": null,
+                    "tags": null,
+                    "area": "天马",
+                    "year": "2017年"
+                },
+                "empty": false,
+                "startIndex": 0,
+                "totalPage": null
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
+
+
+#### 2.0.2 圈子-出售
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/sale/list_all |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否 | int  |  分页 |   |
+| limit      | 否 | int  |  每页条数 |   |
+
+#####  错误说明
+
+#####  返回实例
+
+
+
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "pageSize": 20,
+                "currentPage": 1,
+                "list": [
+                    {
+                        "id": 1,
+                        "uid": 10075,
+                        "employeeType": 1,
+                        "avatar": null,
+                        "name": "gåga💪🏼",
+                        "goodsId": 1,
+                        "count": 1,
+                        "addTime": "2021-09-09 12:33:33",
+                        "price": "222.00"
+                    },
+                    {
+                        "id": 2,
+                        "uid": 10075,
+                        "employeeType": null,
+                        "avatar": null,
+                        "name": "gåga💪🏼",
+                        "goodsId": 1,
+                        "count": 1,
+                        "addTime": null,
+                        "price": "2000.00"
+                    }
+                ],
+                "end": true,
+                "goods": {
+                    "id": 1,
+                    "name": "侨宝2017年酿化陈皮",
+                    "picUrl": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png",
+                    "unit": "箱",
+                    "unitType": 1,
+                    "weight": null,
+                    "counterPrice": "2298.00",
+                    "retailPrice": "2298.00",
+                    "vipPrice": "2298.00",
+                    "brief": "",
+                    "gallery": null,
+                    "videos": null,
+                    "tags": null,
+                    "area": "天马",
+                    "year": "2017年"
+                },
+                "empty": false,
+                "startIndex": 0,
+                "totalPage": null
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
 
