@@ -323,6 +323,25 @@
 </li>
 </ul>
 </li>
+<li><a href="#2">2. 圈子</a><ul>
+<li><a href="#201-">2.0.1 圈子-求购</a><ul>
+<li><a href="#_46">接口说明</a></li>
+<li><a href="#_47">请求说明</a></li>
+<li><a href="#_48">输入参数</a></li>
+<li><a href="#_49">错误说明</a></li>
+<li><a href="#_50">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#202-">2.0.2 圈子-出售</a><ul>
+<li><a href="#_51">接口说明</a></li>
+<li><a href="#_52">请求说明</a></li>
+<li><a href="#_53">输入参数</a></li>
+<li><a href="#_54">错误说明</a></li>
+<li><a href="#_55">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1224,6 +1243,235 @@
                         &quot;saleList&quot;: null
                     }
                 ]
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h3 id="2">2. 圈子</h3>
+<hr />
+<h4 id="201-">2.0.1 圈子-求购</h4>
+<h5 id="_46">接口说明</h5>
+<h5 id="_47">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/buy/list_all</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_48">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">错误说明</h5>
+<h5 id="_50">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;pageSize&quot;: 20,
+                &quot;currentPage&quot;: 1,
+                &quot;list&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;uid&quot;: 10075,
+                        &quot;employeeType&quot;: 1,
+                        &quot;avatar&quot;: null,
+                        &quot;name&quot;: &quot;gåga💪🏼&quot;,
+                        &quot;goodsId&quot;: 1,
+                        &quot;count&quot;: 5,
+                        &quot;addTime&quot;: &quot;2021-09-09 12:33:33&quot;,
+                        &quot;price&quot;: &quot;22.00&quot;
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;uid&quot;: 10075,
+                        &quot;employeeType&quot;: null,
+                        &quot;avatar&quot;: null,
+                        &quot;name&quot;: &quot;gåga💪🏼&quot;,
+                        &quot;goodsId&quot;: 1,
+                        &quot;count&quot;: 1,
+                        &quot;addTime&quot;: &quot;2021-12-25 18:33:03&quot;,
+                        &quot;price&quot;: &quot;2000.00&quot;
+                    }
+                ],
+                &quot;end&quot;: true,
+                &quot;goods&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;侨宝2017年酿化陈皮&quot;,
+                    &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png&quot;,
+                    &quot;unit&quot;: &quot;箱&quot;,
+                    &quot;unitType&quot;: 1,
+                    &quot;weight&quot;: null,
+                    &quot;counterPrice&quot;: &quot;2298.00&quot;,
+                    &quot;retailPrice&quot;: &quot;2298.00&quot;,
+                    &quot;vipPrice&quot;: &quot;2298.00&quot;,
+                    &quot;brief&quot;: &quot;&quot;,
+                    &quot;gallery&quot;: null,
+                    &quot;videos&quot;: null,
+                    &quot;tags&quot;: null,
+                    &quot;area&quot;: &quot;天马&quot;,
+                    &quot;year&quot;: &quot;2017年&quot;
+                },
+                &quot;empty&quot;: false,
+                &quot;startIndex&quot;: 0,
+                &quot;totalPage&quot;: null
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="202-">2.0.2 圈子-出售</h4>
+<h5 id="_51">接口说明</h5>
+<h5 id="_52">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/sale/list_all</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_53">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">错误说明</h5>
+<h5 id="_55">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;pageSize&quot;: 20,
+                &quot;currentPage&quot;: 1,
+                &quot;list&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;uid&quot;: 10075,
+                        &quot;employeeType&quot;: 1,
+                        &quot;avatar&quot;: null,
+                        &quot;name&quot;: &quot;gåga💪🏼&quot;,
+                        &quot;goodsId&quot;: 1,
+                        &quot;count&quot;: 1,
+                        &quot;addTime&quot;: &quot;2021-09-09 12:33:33&quot;,
+                        &quot;price&quot;: &quot;222.00&quot;
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;uid&quot;: 10075,
+                        &quot;employeeType&quot;: null,
+                        &quot;avatar&quot;: null,
+                        &quot;name&quot;: &quot;gåga💪🏼&quot;,
+                        &quot;goodsId&quot;: 1,
+                        &quot;count&quot;: 1,
+                        &quot;addTime&quot;: null,
+                        &quot;price&quot;: &quot;2000.00&quot;
+                    }
+                ],
+                &quot;end&quot;: true,
+                &quot;goods&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;侨宝2017年酿化陈皮&quot;,
+                    &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png&quot;,
+                    &quot;unit&quot;: &quot;箱&quot;,
+                    &quot;unitType&quot;: 1,
+                    &quot;weight&quot;: null,
+                    &quot;counterPrice&quot;: &quot;2298.00&quot;,
+                    &quot;retailPrice&quot;: &quot;2298.00&quot;,
+                    &quot;vipPrice&quot;: &quot;2298.00&quot;,
+                    &quot;brief&quot;: &quot;&quot;,
+                    &quot;gallery&quot;: null,
+                    &quot;videos&quot;: null,
+                    &quot;tags&quot;: null,
+                    &quot;area&quot;: &quot;天马&quot;,
+                    &quot;year&quot;: &quot;2017年&quot;
+                },
+                &quot;empty&quot;: false,
+                &quot;startIndex&quot;: 0,
+                &quot;totalPage&quot;: null
             }
         ],
         &quot;end&quot;: true,
