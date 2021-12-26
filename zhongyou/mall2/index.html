@@ -321,10 +321,7 @@
 <li><a href="#_45">返回实例</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#2">2. 圈子</a><ul>
-<li><a href="#201-">2.0.1 圈子-求购</a><ul>
+<li><a href="#118">1.1.8 下架求购</a><ul>
 <li><a href="#_46">接口说明</a></li>
 <li><a href="#_47">请求说明</a></li>
 <li><a href="#_48">输入参数</a></li>
@@ -332,12 +329,31 @@
 <li><a href="#_50">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#202-">2.0.2 圈子-出售</a><ul>
+<li><a href="#119">1.1.9 下架出售</a><ul>
 <li><a href="#_51">接口说明</a></li>
 <li><a href="#_52">请求说明</a></li>
 <li><a href="#_53">输入参数</a></li>
 <li><a href="#_54">错误说明</a></li>
 <li><a href="#_55">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2">2. 圈子</a><ul>
+<li><a href="#201-">2.0.1 圈子-求购</a><ul>
+<li><a href="#_56">接口说明</a></li>
+<li><a href="#_57">请求说明</a></li>
+<li><a href="#_58">输入参数</a></li>
+<li><a href="#_59">错误说明</a></li>
+<li><a href="#_60">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#202-">2.0.2 圈子-出售</a><ul>
+<li><a href="#_61">接口说明</a></li>
+<li><a href="#_62">请求说明</a></li>
+<li><a href="#_63">输入参数</a></li>
+<li><a href="#_64">错误说明</a></li>
+<li><a href="#_65">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -1268,11 +1284,111 @@
 
 </code></pre>
 
+<h4 id="118">1.1.8 下架求购</h4>
+<h5 id="_46">接口说明</h5>
+<h5 id="_47">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/buy/cancel</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_48">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">buyId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">求购ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">错误说明</h5>
+<h5 id="_50">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+    }
+}
+
+</code></pre>
+
+<h4 id="119">1.1.9 下架出售</h4>
+<h5 id="_51">接口说明</h5>
+<h5 id="_52">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/sale/cancel</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_53">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">saleId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">求购ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">错误说明</h5>
+<h5 id="_55">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+    }
+}
+
+</code></pre>
+
 <h3 id="2">2. 圈子</h3>
 <hr />
 <h4 id="201-">2.0.1 圈子-求购</h4>
-<h5 id="_46">接口说明</h5>
-<h5 id="_47">请求说明</h5>
+<h5 id="_56">接口说明</h5>
+<h5 id="_57">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1287,7 +1403,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_48">输入参数</h5>
+<h5 id="_58">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1315,8 +1431,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_49">错误说明</h5>
-<h5 id="_50">返回实例</h5>
+<h5 id="_59">错误说明</h5>
+<h5 id="_60">返回实例</h5>
 <pre><code class="json">{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1384,8 +1500,8 @@
 </code></pre>
 
 <h4 id="202-">2.0.2 圈子-出售</h4>
-<h5 id="_51">接口说明</h5>
-<h5 id="_52">请求说明</h5>
+<h5 id="_61">接口说明</h5>
+<h5 id="_62">请求说明</h5>
 <table>
 <thead>
 <tr>
@@ -1400,7 +1516,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_53">输入参数</h5>
+<h5 id="_63">输入参数</h5>
 <table>
 <thead>
 <tr>
@@ -1428,8 +1544,8 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_54">错误说明</h5>
-<h5 id="_55">返回实例</h5>
+<h5 id="_64">错误说明</h5>
+<h5 id="_65">返回实例</h5>
 <pre><code class="json">
 {
     &quot;c&quot;: 0,
