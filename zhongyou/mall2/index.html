@@ -370,6 +370,24 @@
 </li>
 </ul>
 </li>
+<li><a href="#3">3. 酿化</a><ul>
+<li><a href="#301">3.0.1 酿化管理</a><ul>
+<li><a href="#_71">接口说明</a></li>
+<li><a href="#_72">请求说明</a></li>
+<li><a href="#_73">输入参数</a></li>
+<li><a href="#_74">错误说明</a></li>
+<li><a href="#_75">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#302">3.0.2 酿化详情</a><ul>
+<li><a href="#_76">接口说明</a></li>
+<li><a href="#_77">请求说明</a></li>
+<li><a href="#_78">输入参数</a></li>
+<li><a href="#_79">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1696,6 +1714,179 @@
     }
 }
 
+</code></pre>
+
+<h3 id="3">3. 酿化</h3>
+<hr />
+<h4 id="301">3.0.1 酿化管理</h4>
+<h5 id="_71">接口说明</h5>
+<h5 id="_72">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/aging/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_73">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_74">错误说明</h5>
+<h5 id="_75">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;goods&quot;: {  //商品信息
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;侨宝2017年酿化陈皮&quot;,
+                    &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png&quot;,
+                    &quot;unit&quot;: &quot;箱&quot;,
+                    &quot;unitType&quot;: 1,
+                    &quot;weight&quot;: null,
+                    &quot;counterPrice&quot;: &quot;2298.00&quot;,
+                    &quot;retailPrice&quot;: &quot;2298.00&quot;,
+                    &quot;vipPrice&quot;: &quot;2298.00&quot;,
+                    &quot;brief&quot;: &quot;&quot;,
+                    &quot;gallery&quot;: null,
+                    &quot;videos&quot;: null,
+                    &quot;tags&quot;: null,
+                    &quot;area&quot;: &quot;天马&quot;,
+                    &quot;year&quot;: &quot;2017年&quot;
+                },
+                &quot;id&quot;: 2,  //库存ID
+                &quot;orderId&quot;: null,  //订单ID
+                &quot;goodsId&quot;: 1 // 商品ID
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="302">3.0.2 酿化详情</h4>
+<h5 id="_76">接口说明</h5>
+<h5 id="_77">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/aging/detail</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_78">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">库存ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">#####  错误说明</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_79">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 2,
+                &quot;stockId&quot;: 2,
+                &quot;serviceId&quot;: 1,
+                &quot;addTime&quot;: &quot;2022-01-05 23:08:44&quot;,
+                &quot;serviceName&quot;: &quot;阳光杀虫&quot;
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
 </code></pre></div>
         </div>
 
