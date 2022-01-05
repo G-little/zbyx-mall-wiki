@@ -1055,3 +1055,129 @@
 
 ```
 
+
+### 3. 酿化
+
+
+-------
+
+
+#### 3.0.1 酿化管理
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/aging/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否 | int  |  分页 |   |
+| limit      | 否 | int  |  每页条数 |   |
+
+#####  错误说明
+
+#####  返回实例
+
+
+
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "goods": {  //商品信息
+                    "id": 1,
+                    "name": "侨宝2017年酿化陈皮",
+                    "picUrl": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png",
+                    "unit": "箱",
+                    "unitType": 1,
+                    "weight": null,
+                    "counterPrice": "2298.00",
+                    "retailPrice": "2298.00",
+                    "vipPrice": "2298.00",
+                    "brief": "",
+                    "gallery": null,
+                    "videos": null,
+                    "tags": null,
+                    "area": "天马",
+                    "year": "2017年"
+                },
+                "id": 2,  //库存ID
+                "orderId": null,  //订单ID
+                "goodsId": 1 // 商品ID
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
+
+
+#### 3.0.2 酿化详情
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/aging/detail |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 是 | int  |  库存ID |   |
+| page      | 否 | int  |  分页 |   |
+| limit      | 否 | int  |  单页条数 |   |
+#####  错误说明
+
+#####  返回实例
+
+
+
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 2,
+                "stockId": 2,
+                "serviceId": 1,
+                "addTime": "2022-01-05 23:08:44",
+                "serviceName": "阳光杀虫"
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": 1
+    }
+}
+```
+
+
+
