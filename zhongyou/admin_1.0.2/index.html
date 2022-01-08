@@ -307,6 +307,48 @@
 </li>
 </ul>
 </li>
+<li><a href="#2">2. 发票管理</a><ul>
+<li><a href="#201">2.0.1 发票列表</a><ul>
+<li><a href="#_36">接口说明</a></li>
+<li><a href="#_37">请求说明</a></li>
+<li><a href="#_38">输入参数</a></li>
+<li><a href="#_39">错误说明</a></li>
+<li><a href="#_40">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#202">2.0.2 添加发票</a><ul>
+<li><a href="#_41">接口说明</a></li>
+<li><a href="#_42">请求说明</a></li>
+<li><a href="#_43">输入参数</a></li>
+<li><a href="#_44">错误说明</a></li>
+<li><a href="#_45">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#203">2.0.3 更新发票</a><ul>
+<li><a href="#_46">接口说明</a></li>
+<li><a href="#_47">请求说明</a></li>
+<li><a href="#_48">输入参数</a></li>
+<li><a href="#_49">错误说明</a></li>
+<li><a href="#_50">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#204">2.0.4 发票详情</a><ul>
+<li><a href="#_51">接口说明</a></li>
+<li><a href="#_52">请求说明</a></li>
+<li><a href="#_53">输入参数</a></li>
+<li><a href="#_54">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#205">2.0.5 删除发票</a><ul>
+<li><a href="#_55">接口说明</a></li>
+<li><a href="#_56">请求说明</a></li>
+<li><a href="#_57">输入参数</a></li>
+<li><a href="#_58">请求实例</a></li>
+<li><a href="#_59">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -549,7 +591,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/admin/aging/delete</td>
+<td align="center">/admin/aging/list</td>
 </tr>
 </tbody>
 </table>
@@ -687,6 +729,434 @@
     }
 }
 
+</code></pre>
+
+<h3 id="2">2. 发票管理</h3>
+<hr />
+<h4 id="201">2.0.1 发票列表</h4>
+<h5 id="_36">接口说明</h5>
+<p>商户详情</p>
+<h5 id="_37">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bill/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_38">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_39">错误说明</h5>
+<h5 id="_40">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;uid&quot;: 10002,
+                &quot;companyName&quot;: &quot;test&quot;,
+                &quot;taxNum&quot;: &quot;test&quot;,
+                &quot;type&quot;: &quot;转票&quot;,
+                &quot;address&quot;: &quot;地址&quot;,
+                &quot;name&quot;: &quot;姓名&quot;,
+                &quot;mobile&quot;: &quot;15201&quot;,
+                &quot;addTime&quot;: null
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
+</code></pre>
+
+<h4 id="202">2.0.2 添加发票</h4>
+<h5 id="_41">接口说明</h5>
+<p>缇娜家</p>
+<h5 id="_42">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post  json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bill/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_43">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">uid</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left">0 则为平台发票配置</td>
+</tr>
+<tr>
+<td align="left">companyName</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">公司名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">taxNum</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">税号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">发票类型</td>
+<td align="left">转票/普票</td>
+</tr>
+<tr>
+<td align="left">address</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">发票地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">姓名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">错误说明</h5>
+<pre><code class="json">
+{
+    &quot;uid&quot;:12345,
+    &quot;companyName&quot;:&quot;北京测试&quot;,
+    &quot;taxNum&quot;:&quot;xxxxxx&quot;,
+    &quot;mobile&quot;:&quot;12345&quot;,
+    &quot;name&quot;:&quot;姓名&quot;,
+    &quot;address&quot;:&quot;地址&quot;
+}
+
+</code></pre>
+
+<h5 id="_45">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: null,
+        &quot;uid&quot;: 12345,
+        &quot;companyName&quot;: &quot;北京测试&quot;,
+        &quot;taxNum&quot;: &quot;xxxxxx&quot;,
+        &quot;type&quot;: null,
+        &quot;address&quot;: &quot;地址&quot;,
+        &quot;name&quot;: &quot;姓名&quot;,
+        &quot;mobile&quot;: &quot;12345&quot;,
+        &quot;addTime&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="203">2.0.3 更新发票</h4>
+<h5 id="_46">接口说明</h5>
+<p>缇娜家</p>
+<h5 id="_47">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post  json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bill/create</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_48">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">uid</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left">0 则为平台发票配置</td>
+</tr>
+<tr>
+<td align="left">companyName</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">公司名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">taxNum</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">税号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">发票类型</td>
+<td align="left">转票/普票</td>
+</tr>
+<tr>
+<td align="left">address</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">发票地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">姓名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">mobile</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">错误说明</h5>
+<pre><code class="json">
+{
+    &quot;id&quot;:1,
+    &quot;uid&quot;:12345,
+    &quot;companyName&quot;:&quot;北京测试&quot;,
+    &quot;taxNum&quot;:&quot;xxxxxx&quot;,
+    &quot;mobile&quot;:&quot;12345&quot;,
+    &quot;name&quot;:&quot;姓名&quot;,
+    &quot;address&quot;:&quot;地址&quot;
+}
+
+</code></pre>
+
+<h5 id="_50">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: null,
+        &quot;uid&quot;: 12345,
+        &quot;companyName&quot;: &quot;北京测试&quot;,
+        &quot;taxNum&quot;: &quot;xxxxxx&quot;,
+        &quot;type&quot;: null,
+        &quot;address&quot;: &quot;地址&quot;,
+        &quot;name&quot;: &quot;姓名&quot;,
+        &quot;mobile&quot;: &quot;12345&quot;,
+        &quot;addTime&quot;: null
+    }
+}
+
+</code></pre>
+
+<h4 id="204">2.0.4 发票详情</h4>
+<h5 id="_51">接口说明</h5>
+<p>缇娜家</p>
+<h5 id="_52">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bill/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_53">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;uid&quot;: 12345,
+        &quot;companyName&quot;: &quot;北京测试&quot;,
+        &quot;taxNum&quot;: &quot;xxxxxx&quot;,
+        &quot;type&quot;: &quot;转票&quot;,
+        &quot;address&quot;: &quot;地址&quot;,
+        &quot;name&quot;: &quot;姓名&quot;,
+        &quot;mobile&quot;: &quot;12345&quot;,
+        &quot;addTime&quot;: null
+    }
+}
+</code></pre>
+
+<h4 id="205">2.0.5 删除发票</h4>
+<h5 id="_55">接口说明</h5>
+<h5 id="_56">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/admin/bill/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_57">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_58">请求实例</h5>
+<pre><code class="json">    {
+        &quot;id&quot;:123
+    }
+</code></pre>
+
+<h5 id="_59">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+    }
+}
 </code></pre></div>
         </div>
 
