@@ -1270,3 +1270,264 @@
 }
 
 ```
+
+
+
+
+### 5. 提仓
+
+
+-------
+
+
+#### 5.0.1 提仓预览 
+
+##### 接口说明
+
+
+
+##### 请求说明
+
+| http 请求方式          | post    |
+|:------------- |:---------------:|
+| url      |/stock/checkout |
+
+#####  输入参数
+
+ | 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| goodsId      | 是| int  |  商品ID | |
+| number      | 是| int  |  提仓数量 |   |
+| addressId      | 否 | int  |  提货地址 |   |
+| payType      | 否 | string  |  支付方式 |  |
+| packType      | 否 | int  |  打包方式 | 0: 整箱  1: 大包 2:小包  |
+
+
+#####  错误说明
+
+#####  返回实例
+
+
+
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "payTypes": [ //支付方式列表
+            {
+                "typeName": "balance",
+                "comment": "余额支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "ALIPAYCASH",
+                "comment": "支付宝支付",
+                "thumbnail": null
+            },
+            {
+                "typeName": "WX_APP",
+                "comment": "微信支付",
+                "thumbnail": null
+            }
+        ],
+        "address": { //地址
+            "id": 2,
+            "name": "孟宪德",
+            "userId": 10066,
+            "province": "河北省",
+            "city": "秦皇岛市",
+            "county": "北戴河区",
+            "addressDetail": "朝阳公园南路甲2号23号",
+            "areaCode": "1",
+            "postalCode": "2",
+            "tel": "13241109876",
+            "isDefault": false,
+            "addTime": "2021-12-18 19:38:11",
+            "updateTime": "2021-12-18 19:38:58",
+            "deleted": false,
+            "location": "116.475068,39.933085",
+            "locationId": "B000A7C61H"
+        },
+        "goods": { //商品信息
+            "id": 1,
+            "goodsSn": "00001",
+            "name": "侨宝2017年酿化陈皮",
+            "categoryId": 0,
+            "brandId": 0,
+            "gallery": [
+                "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/1h3xlxlboyzxzu6wn4yt.png"
+            ],
+            "keywords": "",
+            "brief": "",
+            "isOnSale": true,
+            "sortOrder": 100,
+            "picUrl": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png",
+            "shareUrl": "",
+            "isNew": true,
+            "isHot": false,
+            "unit": "箱",
+            "counterPrice": "2298.00",
+            "retailPrice": "2298.00",
+            "vipPrice": "2298.00",
+            "addTime": "2021-11-24 15:08:40",
+            "updateTime": "2022-01-11 01:35:46",
+            "deleted": false,
+            "tags": null,
+            "videos": null,
+            "testReports": null,
+            "goodsType": 0,
+            "expressType": 0,
+            "area": "天马",
+            "year": "2017",
+            "unitType": 1,
+            "weight": 18000,
+            "detail": [
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/pmrcuwt2z2i8r7luv0er.jpg",
+                    "size": "790*682"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/qnobzj1h3e0jktmy7ck8.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/1zj83hoxhjt1gunwk3je.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/6ezps7996rqnmxpfqjvn.jpg",
+                    "size": "790*898"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/rgzal4xtrlsigth749sq.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/z73132dp9vzdft7f8b4l.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/z7opj5e64khgzytkr5xn.jpg",
+                    "size": "790*898"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/s55tevmi69vi9jxsnqjs.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/4in6p6ue6xbhgmq3a90i.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/2unsmej0hla48pqh55nd.jpg",
+                    "size": "790*898"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/mim5e5epc5owcwrm060t.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/53402o648madbhjfthil.jpg",
+                    "size": "790*71"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/x346n1bz76oqzf96hob8.jpg",
+                    "size": "790*406"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/x4fel6n3j9q0xmdv4fv0.jpg",
+                    "size": "790*899"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/ycnrxhmssf9i1nq66rph.png",
+                    "size": "414*414"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5x74ql6jh0txon2okliz.png",
+                    "size": "414*349"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/ost9oo38jvlgt1spdcmp.png",
+                    "size": "414*359"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/dyk7zbxmadffek9wfemc.png",
+                    "size": "414*359"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/p370jcw2dibk1kujnlfs.png",
+                    "size": "414*349"
+                },
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/fqr65cxldy56piy3ja61.png",
+                    "size": "414*524"
+                }
+            ],
+            "agingImages": [
+                {
+                    "url": "https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/wycvrsvg20tzj018sbmb.png",
+                    "size": "750*3326"
+                }
+            ]
+        },
+        "actualPrice": "760.00",  //实付金额
+        "packingFee": "760.00", //打包费用
+        "userStock": { //库存信息
+            "id": 3,
+            "uid": 10066,
+            "goodsId": 1,
+            "amount": 998,
+            "freezeAmount": 62,
+            "addTime": null,
+            "updateTime": "2022-01-11 18:12:19"
+        }
+    }
+}
+
+```
+
+
+#### 5.0.2 发起提仓订单
+
+##### 接口说明
+
+缇娜家
+
+##### 请求说明
+
+| http 请求方式          | post   |
+|:------------- |:---------------:|
+| url      | /stock/submit |
+
+#####  输入参数
+
+ | 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| goodsId      | 是| int  |  商品ID | |
+| number      | 是| int  |  提仓数量 |   |
+| addressId      | 是 | int  |  提货地址 |   |
+| payType      | 是 | string  |  支付方式 |  |
+| packType      | 否 | int  |  打包方式 | 0: 整箱  1: 大包 2:小包  |
+
+
+    
+
+
+#####  返回实例
+
+```json
+    
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "payOrderId": "79",
+        "outPayOrderId": "prepay_id=wx11182107984767bd2ec008623bbdff0000",
+        "callPayInfo": "{\"appId\":\"wxb0a09ff275fac5ad\",\"nonceStr\":\"1641896468076\",\"packageValue\":\"prepay_id=wx11182107984767bd2ec008623bbdff0000\",\"paySign\":\"CEA33A1552F0C991A6A7769F9E3C3B71\",\"signType\":\"MD5\",\"timeStamp\":\"1641896468\"}",
+        "payCallbackInfo": null
+    }
+}
+
+```
