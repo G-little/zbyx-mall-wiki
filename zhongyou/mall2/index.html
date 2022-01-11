@@ -9,227 +9,214 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>新版本-2.00 - Mall Docs</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">Mall Docs</a>
-                </div>
+                <a class="navbar-brand" href="../..">Mall Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">Home</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../user/user/">Main</a>
+<li>
+    <a href="../../user/user/" class="dropdown-item">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mall <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../mall/aging/">酿化</a>
+<li>
+    <a href="../../mall/aging/" class="dropdown-item">酿化</a>
 </li>
                                     
-<li >
-    <a href="../../mall/">首页</a>
+<li>
+    <a href="../../mall/" class="dropdown-item">首页</a>
 </li>
                                     
-<li >
-    <a href="../../mall/catalog/">分类</a>
+<li>
+    <a href="../../mall/catalog/" class="dropdown-item">分类</a>
 </li>
                                     
-<li >
-    <a href="../../mall/coupon/">优惠券</a>
+<li>
+    <a href="../../mall/coupon/" class="dropdown-item">优惠券</a>
 </li>
                                     
-<li >
-    <a href="../../mall/goods/">产品</a>
+<li>
+    <a href="../../mall/goods/" class="dropdown-item">产品</a>
 </li>
                                     
-<li >
-    <a href="../../mall/search/">搜索</a>
+<li>
+    <a href="../../mall/search/" class="dropdown-item">搜索</a>
 </li>
                                     
-<li >
-    <a href="../../mall/cart/">购物车</a>
+<li>
+    <a href="../../mall/cart/" class="dropdown-item">购物车</a>
 </li>
                                     
-<li >
-    <a href="../../mall/address/">地址</a>
+<li>
+    <a href="../../mall/address/" class="dropdown-item">地址</a>
 </li>
                                     
-<li >
-    <a href="../../mall/activity/">活动</a>
+<li>
+    <a href="../../mall/activity/" class="dropdown-item">活动</a>
 </li>
                                     
-<li >
-    <a href="../../mall/order/">订单</a>
+<li>
+    <a href="../../mall/order/" class="dropdown-item">订单</a>
 </li>
                                     
-<li >
-    <a href="../../mall/my/">个人中心</a>
+<li>
+    <a href="../../mall/my/" class="dropdown-item">个人中心</a>
 </li>
                                     
-<li >
-    <a href="../../mall/collect/">收藏</a>
+<li>
+    <a href="../../mall/collect/" class="dropdown-item">收藏</a>
 </li>
                                     
-<li >
-    <a href="../../mall/aftersale/">售后</a>
+<li>
+    <a href="../../mall/aftersale/" class="dropdown-item">售后</a>
 </li>
                                     
-<li >
-    <a href="../../mall/vip/">会员</a>
+<li>
+    <a href="../../mall/vip/" class="dropdown-item">会员</a>
 </li>
                                     
-<li >
-    <a href="../../mall/charge/">充值</a>
+<li>
+    <a href="../../mall/charge/" class="dropdown-item">充值</a>
 </li>
                                     
-<li >
-    <a href="../../mall/live/">直播</a>
+<li>
+    <a href="../../mall/live/" class="dropdown-item">直播</a>
 </li>
                                     
-<li >
-    <a href="../../www/www/">官网</a>
+<li>
+    <a href="../../www/www/" class="dropdown-item">官网</a>
 </li>
                                     
-<li >
-    <a href="../../mall/invite/">邀请</a>
+<li>
+    <a href="../../mall/invite/" class="dropdown-item">邀请</a>
 </li>
                                     
-<li >
-    <a href="../../feed/feed/">圈子</a>
+<li>
+    <a href="../../feed/feed/" class="dropdown-item">圈子</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理后台 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../admin/user/">用户</a>
+<li>
+    <a href="../../admin/user/" class="dropdown-item">用户</a>
 </li>
                                     
-<li >
-    <a href="../../admin/goods/">商品</a>
+<li>
+    <a href="../../admin/goods/" class="dropdown-item">商品</a>
 </li>
                                     
-<li >
-    <a href="../../admin/ad/">推广</a>
+<li>
+    <a href="../../admin/ad/" class="dropdown-item">推广</a>
 </li>
                                     
-<li >
-    <a href="../../admin/topic/">活动</a>
+<li>
+    <a href="../../admin/topic/" class="dropdown-item">活动</a>
 </li>
                                     
-<li >
-    <a href="../../www/www-admin/">官网</a>
+<li>
+    <a href="../../www/www-admin/" class="dropdown-item">官网</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">溯源 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">溯源 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../trace/pda/">PDA</a>
+<li>
+    <a href="../../trace/pda/" class="dropdown-item">PDA</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">中优 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">中优 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../trading_index/">指数</a>
+<li>
+    <a href="../trading_index/" class="dropdown-item">指数</a>
 </li>
                                     
-<li >
-    <a href="../admin/">后台</a>
+<li>
+    <a href="../admin/" class="dropdown-item">后台</a>
 </li>
                                     
-<li >
-    <a href="../admin_1.0.1/">后台-1.0.1</a>
+<li>
+    <a href="../admin_1.0.1/" class="dropdown-item">后台-1.0.1</a>
 </li>
                                     
-<li >
-    <a href="../admin_1.0.2/">后台-1.0.2</a>
+<li>
+    <a href="../admin_1.0.2/" class="dropdown-item">后台-1.0.2</a>
 </li>
                                     
-<li class="active">
-    <a href="./">新版本-2.00</a>
+<li>
+    <a href="./" class="dropdown-item active">新版本-2.00</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">快递 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">快递 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../express/express/">app接口</a>
+<li>
+    <a href="../../express/express/" class="dropdown-item">app接口</a>
 </li>
                                     
-<li >
-    <a href="../../express/express_user/">用户app接口</a>
+<li>
+    <a href="../../express/express_user/" class="dropdown-item">用户app接口</a>
 </li>
                                     
-<li >
-    <a href="../../admin/express/">管理接口</a>
+<li>
+    <a href="../../admin/express/" class="dropdown-item">管理接口</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../admin_1.0.2/">
+                            <li class="nav-item">
+                                <a rel="prev" href="../admin_1.0.2/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../../express/express/">
+                            <li class="nav-item">
+                                <a rel="next" href="../../express/express/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -239,17 +226,46 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#20">中优商城2.0接口</a></li>
-            <li><a href="#_1">修订记录</a></li>
-            <li><a href="#_2">背景</a></li>
-            <li><a href="#_3">产品说明</a></li>
-            <li><a href="#_4">关键流程说明</a></li>
-            <li><a href="#_5">接口说明</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#20" class="nav-link">中优商城2.0接口</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">修订记录</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">背景</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">产品说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">关键流程说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">接口说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="20">中优商城2.0接口</h1>
 <div class="toc">
@@ -406,6 +422,24 @@
 </li>
 </ul>
 </li>
+<li><a href="#5">5. 提仓</a><ul>
+<li><a href="#501">5.0.1 提仓预览</a><ul>
+<li><a href="#_89">接口说明</a></li>
+<li><a href="#_90">请求说明</a></li>
+<li><a href="#_91">输入参数</a></li>
+<li><a href="#_92">错误说明</a></li>
+<li><a href="#_93">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#502">5.0.2 发起提仓订单</a><ul>
+<li><a href="#_94">接口说明</a></li>
+<li><a href="#_95">请求说明</a></li>
+<li><a href="#_96">输入参数</a></li>
+<li><a href="#_97">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -484,7 +518,7 @@
 </table>
 <h5 id="_9">错误说明</h5>
 <h5 id="_10">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 
 {
     &quot;c&quot;: 0,
@@ -700,7 +734,6 @@
 }
 
 </code></pre>
-
 <h4 id="111">1.1.1 库存预览</h4>
 <h5 id="_11">接口说明</h5>
 <h5 id="_12">请求说明</h5>
@@ -755,7 +788,7 @@
 </table>
 <h5 id="_14">错误说明</h5>
 <h5 id="_15">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 
 {
     &quot;c&quot;: 0,
@@ -787,7 +820,6 @@
 }
 
 </code></pre>
-
 <h4 id="112">1.1.2 求购</h4>
 <h5 id="_16">接口说明</h5>
 <h5 id="_17">请求说明</h5>
@@ -842,7 +874,7 @@
 </table>
 <h5 id="_19">错误说明</h5>
 <h5 id="_20">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 
 {
     &quot;c&quot;: 0,
@@ -853,7 +885,6 @@
 }
 
 </code></pre>
-
 <h4 id="113">1.1.3 出售</h4>
 <h5 id="_21">接口说明</h5>
 <h5 id="_22">请求说明</h5>
@@ -908,7 +939,7 @@
 </table>
 <h5 id="_24">错误说明</h5>
 <h5 id="_25">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 
 {
     &quot;c&quot;: 0,
@@ -919,7 +950,6 @@
 }
 
 </code></pre>
-
 <h4 id="113_1">1.1.3 立即出售</h4>
 <h5 id="_26">接口说明</h5>
 <h5 id="_27">请求说明</h5>
@@ -967,7 +997,7 @@
 </table>
 <h5 id="_29">错误说明</h5>
 <h5 id="_30">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 
 {
     &quot;c&quot;: 0,
@@ -978,7 +1008,6 @@
 }
 
 </code></pre>
-
 <h4 id="114">1.1.4 出售列表</h4>
 <h5 id="_31">接口说明</h5>
 <h5 id="_32">请求说明</h5>
@@ -1033,7 +1062,7 @@
 </table>
 <h5 id="_34">错误说明</h5>
 <h5 id="_35">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 
 {
     &quot;c&quot;: 0,
@@ -1092,7 +1121,6 @@
 }
 
 </code></pre>
-
 <h4 id="115">1.1.5 求购列表</h4>
 <h5 id="_36">接口说明</h5>
 <h5 id="_37">请求说明</h5>
@@ -1147,7 +1175,7 @@
 </table>
 <h5 id="_39">错误说明</h5>
 <h5 id="_40">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 
 {
     &quot;c&quot;: 0,
@@ -1206,7 +1234,6 @@
 }
 
 </code></pre>
-
 <h4 id="116">1.1.6 我的出售(库存管理)</h4>
 <h5 id="_41">接口说明</h5>
 <h5 id="_42">请求说明</h5>
@@ -1254,7 +1281,7 @@
 </table>
 <h5 id="_44">错误说明</h5>
 <h5 id="_45">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1293,7 +1320,6 @@
 }
 
 </code></pre>
-
 <h4 id="117">1.1.7 我的求购</h4>
 <h5 id="_46">接口说明</h5>
 <h5 id="_47">请求说明</h5>
@@ -1341,7 +1367,7 @@
 </table>
 <h5 id="_49">错误说明</h5>
 <h5 id="_50">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1397,7 +1423,6 @@
 }
 
 </code></pre>
-
 <h4 id="118">1.1.8 下架求购</h4>
 <h5 id="_51">接口说明</h5>
 <h5 id="_52">请求说明</h5>
@@ -1438,7 +1463,7 @@
 </table>
 <h5 id="_54">错误说明</h5>
 <h5 id="_55">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1447,7 +1472,6 @@
 }
 
 </code></pre>
-
 <h4 id="119">1.1.9 下架出售</h4>
 <h5 id="_56">接口说明</h5>
 <h5 id="_57">请求说明</h5>
@@ -1488,7 +1512,7 @@
 </table>
 <h5 id="_59">错误说明</h5>
 <h5 id="_60">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1497,7 +1521,6 @@
 }
 
 </code></pre>
-
 <h3 id="2">2. 圈子</h3>
 <hr />
 <h4 id="201-">2.0.1 圈子-求购</h4>
@@ -1554,7 +1577,7 @@
 </table>
 <h5 id="_64">错误说明</h5>
 <h5 id="_65">返回实例</h5>
-<pre><code class="json">{
+<pre><code class="language-json">{
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
@@ -1619,7 +1642,6 @@
 }
 
 </code></pre>
-
 <h4 id="202-">2.0.2 圈子-出售</h4>
 <h5 id="_66">接口说明</h5>
 <h5 id="_67">请求说明</h5>
@@ -1667,7 +1689,7 @@
 </table>
 <h5 id="_69">错误说明</h5>
 <h5 id="_70">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1733,7 +1755,6 @@
 }
 
 </code></pre>
-
 <h3 id="3">3. 酿化</h3>
 <hr />
 <h4 id="301">3.0.1 酿化管理</h4>
@@ -1783,7 +1804,7 @@
 </table>
 <h5 id="_74">错误说明</h5>
 <h5 id="_75">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1822,7 +1843,6 @@
 }
 
 </code></pre>
-
 <h4 id="302">3.0.2 酿化详情</h4>
 <h5 id="_76">接口说明</h5>
 <h5 id="_77">请求说明</h5>
@@ -1883,7 +1903,7 @@
 </tbody>
 </table>
 <h5 id="_79">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1906,7 +1926,6 @@
     }
 }
 </code></pre>
-
 <h3 id="4">4. 发票</h3>
 <hr />
 <h4 id="401">4.0.1 查看发票信息</h4>
@@ -1930,7 +1949,7 @@
 <p>无</p>
 <h5 id="_83">错误说明</h5>
 <h5 id="_84">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -1947,7 +1966,6 @@
     }
 }
 </code></pre>
-
 <h4 id="402">4.0.2 保存发票信息</h4>
 <h5 id="_85">接口说明</h5>
 <p>缇娜家</p>
@@ -2030,7 +2048,7 @@
 </tbody>
 </table>
 <h5 id="_88">返回实例</h5>
-<pre><code class="json">
+<pre><code class="language-json">
 {
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
@@ -2039,7 +2057,336 @@
     }
 }
 
+</code></pre>
+<h3 id="5">5. 提仓</h3>
+<hr />
+<h4 id="501">5.0.1 提仓预览</h4>
+<h5 id="_89">接口说明</h5>
+<h5 id="_90">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/stock/checkout</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_91">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">number</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">提仓数量</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">addressId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">提货地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">payType</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">支付方式</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">packType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">打包方式</td>
+<td align="left">0: 整箱  1: 大包 2:小包</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_92">错误说明</h5>
+<h5 id="_93">返回实例</h5>
+<pre><code class="language-json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;payTypes&quot;: [ //支付方式列表
+            {
+                &quot;typeName&quot;: &quot;balance&quot;,
+                &quot;comment&quot;: &quot;余额支付&quot;,
+                &quot;thumbnail&quot;: null
+            },
+            {
+                &quot;typeName&quot;: &quot;ALIPAYCASH&quot;,
+                &quot;comment&quot;: &quot;支付宝支付&quot;,
+                &quot;thumbnail&quot;: null
+            },
+            {
+                &quot;typeName&quot;: &quot;WX_APP&quot;,
+                &quot;comment&quot;: &quot;微信支付&quot;,
+                &quot;thumbnail&quot;: null
+            }
+        ],
+        &quot;address&quot;: { //地址
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;孟宪德&quot;,
+            &quot;userId&quot;: 10066,
+            &quot;province&quot;: &quot;河北省&quot;,
+            &quot;city&quot;: &quot;秦皇岛市&quot;,
+            &quot;county&quot;: &quot;北戴河区&quot;,
+            &quot;addressDetail&quot;: &quot;朝阳公园南路甲2号23号&quot;,
+            &quot;areaCode&quot;: &quot;1&quot;,
+            &quot;postalCode&quot;: &quot;2&quot;,
+            &quot;tel&quot;: &quot;13241109876&quot;,
+            &quot;isDefault&quot;: false,
+            &quot;addTime&quot;: &quot;2021-12-18 19:38:11&quot;,
+            &quot;updateTime&quot;: &quot;2021-12-18 19:38:58&quot;,
+            &quot;deleted&quot;: false,
+            &quot;location&quot;: &quot;116.475068,39.933085&quot;,
+            &quot;locationId&quot;: &quot;B000A7C61H&quot;
+        },
+        &quot;goods&quot;: { //商品信息
+            &quot;id&quot;: 1,
+            &quot;goodsSn&quot;: &quot;00001&quot;,
+            &quot;name&quot;: &quot;侨宝2017年酿化陈皮&quot;,
+            &quot;categoryId&quot;: 0,
+            &quot;brandId&quot;: 0,
+            &quot;gallery&quot;: [
+                &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/1h3xlxlboyzxzu6wn4yt.png&quot;
+            ],
+            &quot;keywords&quot;: &quot;&quot;,
+            &quot;brief&quot;: &quot;&quot;,
+            &quot;isOnSale&quot;: true,
+            &quot;sortOrder&quot;: 100,
+            &quot;picUrl&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5xa5i9lzwo8fyv62zx3r.png&quot;,
+            &quot;shareUrl&quot;: &quot;&quot;,
+            &quot;isNew&quot;: true,
+            &quot;isHot&quot;: false,
+            &quot;unit&quot;: &quot;箱&quot;,
+            &quot;counterPrice&quot;: &quot;2298.00&quot;,
+            &quot;retailPrice&quot;: &quot;2298.00&quot;,
+            &quot;vipPrice&quot;: &quot;2298.00&quot;,
+            &quot;addTime&quot;: &quot;2021-11-24 15:08:40&quot;,
+            &quot;updateTime&quot;: &quot;2022-01-11 01:35:46&quot;,
+            &quot;deleted&quot;: false,
+            &quot;tags&quot;: null,
+            &quot;videos&quot;: null,
+            &quot;testReports&quot;: null,
+            &quot;goodsType&quot;: 0,
+            &quot;expressType&quot;: 0,
+            &quot;area&quot;: &quot;天马&quot;,
+            &quot;year&quot;: &quot;2017&quot;,
+            &quot;unitType&quot;: 1,
+            &quot;weight&quot;: 18000,
+            &quot;detail&quot;: [
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/pmrcuwt2z2i8r7luv0er.jpg&quot;,
+                    &quot;size&quot;: &quot;790*682&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/qnobzj1h3e0jktmy7ck8.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/1zj83hoxhjt1gunwk3je.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/6ezps7996rqnmxpfqjvn.jpg&quot;,
+                    &quot;size&quot;: &quot;790*898&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/rgzal4xtrlsigth749sq.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/z73132dp9vzdft7f8b4l.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/z7opj5e64khgzytkr5xn.jpg&quot;,
+                    &quot;size&quot;: &quot;790*898&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/s55tevmi69vi9jxsnqjs.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/4in6p6ue6xbhgmq3a90i.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/2unsmej0hla48pqh55nd.jpg&quot;,
+                    &quot;size&quot;: &quot;790*898&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/mim5e5epc5owcwrm060t.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/53402o648madbhjfthil.jpg&quot;,
+                    &quot;size&quot;: &quot;790*71&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/x346n1bz76oqzf96hob8.jpg&quot;,
+                    &quot;size&quot;: &quot;790*406&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/x4fel6n3j9q0xmdv4fv0.jpg&quot;,
+                    &quot;size&quot;: &quot;790*899&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/ycnrxhmssf9i1nq66rph.png&quot;,
+                    &quot;size&quot;: &quot;414*414&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/5x74ql6jh0txon2okliz.png&quot;,
+                    &quot;size&quot;: &quot;414*349&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/ost9oo38jvlgt1spdcmp.png&quot;,
+                    &quot;size&quot;: &quot;414*359&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/dyk7zbxmadffek9wfemc.png&quot;,
+                    &quot;size&quot;: &quot;414*359&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/p370jcw2dibk1kujnlfs.png&quot;,
+                    &quot;size&quot;: &quot;414*349&quot;
+                },
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/fqr65cxldy56piy3ja61.png&quot;,
+                    &quot;size&quot;: &quot;414*524&quot;
+                }
+            ],
+            &quot;agingImages&quot;: [
+                {
+                    &quot;url&quot;: &quot;https://zhongyou-mall.oss-cn-beijing.aliyuncs.com/wycvrsvg20tzj018sbmb.png&quot;,
+                    &quot;size&quot;: &quot;750*3326&quot;
+                }
+            ]
+        },
+        &quot;actualPrice&quot;: &quot;760.00&quot;,  //实付金额
+        &quot;packingFee&quot;: &quot;760.00&quot;, //打包费用
+        &quot;userStock&quot;: { //库存信息
+            &quot;id&quot;: 3,
+            &quot;uid&quot;: 10066,
+            &quot;goodsId&quot;: 1,
+            &quot;amount&quot;: 998,
+            &quot;freezeAmount&quot;: 62,
+            &quot;addTime&quot;: null,
+            &quot;updateTime&quot;: &quot;2022-01-11 18:12:19&quot;
+        }
+    }
+}
+
+</code></pre>
+<h4 id="502">5.0.2 发起提仓订单</h4>
+<h5 id="_94">接口说明</h5>
+<p>缇娜家</p>
+<h5 id="_95">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/stock/submit</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_96">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">number</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">提仓数量</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">addressId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">提货地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">payType</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">支付方式</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">packType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">打包方式</td>
+<td align="left">0: 整箱  1: 大包 2:小包</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_97">返回实例</h5>
+<pre><code class="language-json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;payOrderId&quot;: &quot;79&quot;,
+        &quot;outPayOrderId&quot;: &quot;prepay_id=wx11182107984767bd2ec008623bbdff0000&quot;,
+        &quot;callPayInfo&quot;: &quot;{\&quot;appId\&quot;:\&quot;wxb0a09ff275fac5ad\&quot;,\&quot;nonceStr\&quot;:\&quot;1641896468076\&quot;,\&quot;packageValue\&quot;:\&quot;prepay_id=wx11182107984767bd2ec008623bbdff0000\&quot;,\&quot;paySign\&quot;:\&quot;CEA33A1552F0C991A6A7769F9E3C3B71\&quot;,\&quot;signType\&quot;:\&quot;MD5\&quot;,\&quot;timeStamp\&quot;:\&quot;1641896468\&quot;}&quot;,
+        &quot;payCallbackInfo&quot;: null
+    }
+}
+
 </code></pre></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -2048,40 +2395,37 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
