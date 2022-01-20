@@ -440,6 +440,24 @@
 </li>
 </ul>
 </li>
+<li><a href="#6">6. 收款账户</a><ul>
+<li><a href="#601">6.0.1 查看收款账户</a><ul>
+<li><a href="#_98">接口说明</a></li>
+<li><a href="#_99">请求说明</a></li>
+<li><a href="#_100">输入参数</a></li>
+<li><a href="#_101">错误说明</a></li>
+<li><a href="#_102">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#402_1">4.0.2 保存发票信息</a><ul>
+<li><a href="#_103">接口说明</a></li>
+<li><a href="#_104">请求说明</a></li>
+<li><a href="#_105">输入参数</a></li>
+<li><a href="#_106">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2382,6 +2400,107 @@
         &quot;outPayOrderId&quot;: &quot;prepay_id=wx11182107984767bd2ec008623bbdff0000&quot;,
         &quot;callPayInfo&quot;: &quot;{\&quot;appId\&quot;:\&quot;wxb0a09ff275fac5ad\&quot;,\&quot;nonceStr\&quot;:\&quot;1641896468076\&quot;,\&quot;packageValue\&quot;:\&quot;prepay_id=wx11182107984767bd2ec008623bbdff0000\&quot;,\&quot;paySign\&quot;:\&quot;CEA33A1552F0C991A6A7769F9E3C3B71\&quot;,\&quot;signType\&quot;:\&quot;MD5\&quot;,\&quot;timeStamp\&quot;:\&quot;1641896468\&quot;}&quot;,
         &quot;payCallbackInfo&quot;: null
+    }
+}
+
+</code></pre>
+<h3 id="6">6. 收款账户</h3>
+<hr />
+<h4 id="601">6.0.1 查看收款账户</h4>
+<h5 id="_98">接口说明</h5>
+<h5 id="_99">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/bank_account/read</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_100">输入参数</h5>
+<p>无</p>
+<h5 id="_101">错误说明</h5>
+<h5 id="_102">返回实例</h5>
+<pre><code class="language-json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: 1,
+        &quot;uid&quot;: 12345,
+        &quot;bankName&quot;: &quot;北京测试&quot;,
+        &quot;bankAccount&quot;: &quot;账号&quot;,
+        &quot;name&quot;: &quot;姓名&quot;,
+        &quot;addTime&quot;: null
+    }
+}
+</code></pre>
+<h4 id="402_1">4.0.2 保存发票信息</h4>
+<h5 id="_103">接口说明</h5>
+<p>缇娜家</p>
+<h5 id="_104">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/bank_account/save</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_105">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">bankName</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">公司名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">bankAccount</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">账号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">姓名</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_106">返回实例</h5>
+<pre><code class="language-json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
