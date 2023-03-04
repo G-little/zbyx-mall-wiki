@@ -609,6 +609,103 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 
 
 
+#### 1.10 手机号+密码登录
+
+##### 接口说明
+
+手机号+密码登陆
+
+##### 请求说明
+
+| http 请求方式          |post             |
+|:------------- |:---------------:|
+| url      |/user/password_login |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| mobile      | 是| string  |  手机号 |   |
+| password      | 是| string  |  密码 |   |
+| deviceId      | 是| string  |  设备号 |   |
+| deviceType      | 否| string  |  设备类型 |   1 手机  2 平板 3 pc 4 电脑|
+| os      | 否| string  |  操作系统及版本 |  |
+
+#####  错误说明
+
+先整理可能的错误类型，具体对应的错误码实施时再确定：
+
+1. 非法验证码
+
+
+
+#####  返回实例
+```json
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "uid": 11443, //用户ID
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g", //登录token
+        "accessExpiresIn": 1599098823065, //失效时间
+        "refreshToken": "fMYerhGCyudmIhLUW", //刷新token
+        "refreshExpiresIn": 1604369223065, //刷新token 失效时间
+        "user": { //用户信息
+            "uid": 11443,  //用户ID
+            "avatar": "/c/d/e", //用户头像
+            "name": "赵六", //用户昵称
+            "gender": 1, // 性别  1 男
+            "birthday": 153000000, //生日
+            "status": 0, //状态
+            "mobile": "15201008961", //手机号
+            "createTime": 1590149492786, //创建时间
+            "updateTime": 1590149538735 //更新时间
+        }
+    }
+}
+```
+
+#### 1.11 修改密码
+
+##### 接口说明
+
+修改登陆密码，修改登陆密码，需要调用sendsms 先发送手机号验证码类型设置5，然后调用该接口
+
+##### 请求说明
+
+| http 请求方式          |post             |
+|:------------- |:---------------:|
+| url      |/user/password/update |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| password      | 是| string  |  密码 |   |
+| smscode      | 是| string  |  验证码 |  由sendsms 发送短信获得  |
+
+#####  错误说明
+
+先整理可能的错误类型，具体对应的错误码实施时再确定：
+
+1. 非法验证码
+
+
+
+#####  返回实例
+```json
+{
+    "c": 0,
+    "m": null,
+    "d": {
+    }
+}
+```
+
+
+
+
+
 
 
 
